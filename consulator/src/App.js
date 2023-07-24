@@ -1,14 +1,19 @@
-import React from 'react'
-import Layout from './components/Layout/Layout'
+import React from "react";
+import { Routes, Route, useLocation } from "react-router-dom";
+import Home from "./pages/Home/Home";
+import routes from "./router";
+
 const App = () => {
+  const location = useLocation();
+  console.log(`location`, location);
   return (
-    <div>
-      <Layout>;h.cnjndc</Layout>
-    </div>
-  )
-}
+    <Routes>
+      {routes.length > 0 &&
+        routes.map((element) => (
+          <Route key ={element.id} index path={element.path} element={element.element} />
+        ))}
+    </Routes>
+  );
+};
 
-export default App
-
-
-
+export default App;
