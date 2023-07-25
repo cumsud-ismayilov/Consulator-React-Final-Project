@@ -1,11 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "../Navbar/navbar.scss"
+import Buttons from "../../ButtonComponent/Buttons";
+import {GoSearch} from "react-icons/go";
 const Navbar = () => {
   return (
     <div>
       <nav className="desktop-nav">
         <div className="container">
-          <div className="row">
+          <div className="row g-2 align-items-center justify-content-center">
             <div className="col-xl-2">
               <div className="site-logo">
                 <img
@@ -15,33 +18,34 @@ const Navbar = () => {
               </div>
             </div>
             <div className="col-xl-6">
-              <ul>
-                <li>
+              <ul className="navmiddle">
+                <li className="home">
                   <Link to="/">Home</Link>
                 </li>
-                <li>
+                <li className="about">
                   <Link to="/about">About</Link>
                 </li>
-                <li>
+                <li className="services">
                   <Link to="/services">Services</Link>
                 </li>
-                <li>
+                <li className="projects">
                   <Link to="/projects">Projects</Link>
                 </li>
-                <li>
+                <li className="pages">
                   <Link to="/page">Pages</Link>
                 </li>
-                <li>
+                <li className="blog">
                   <Link to="/blog">Blog</Link>
                 </li>
-                <li>
+                <li className="contact">
                   <Link to="/contact">Contact</Link>
                 </li>
               </ul>
             </div>
             <div className="col-xl-4">
               <div className="site-right">
-                 
+                 <Buttons type="text" tittle="Free Consulting"  className="consulting"/>
+                 <p className="search"><GoSearch/></p>
               </div>
             </div>
           </div>
