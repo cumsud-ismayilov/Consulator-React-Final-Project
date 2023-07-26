@@ -1,0 +1,105 @@
+main {
+  #problems {
+    padding: 9rem 0rem;
+    border-bottom: 1px solid #ebebeb;
+    .container {
+      .row {
+        .your-problems {
+            padding: 4rem 0rem;
+          p {
+            margin: 0;
+            font-size: 21px;
+            color: #8188a9;
+            font-weight: 500;
+          }
+          h2 {
+            font-size: 59px;
+            font-weight: 700;
+            line-height: 90px;
+            margin: 10px 0 25px;
+            color: #232f4b;
+          }
+          h3 {
+            font-size: 20px;
+            color: #676767;
+            line-height: 35px;
+            padding-left: 20px;
+            border-left: 2px solid #676767;
+            margin-bottom: 60px;
+          }
+          .started {
+            padding: 14px 43px;
+            cursor: pointer;
+            text-transform: capitalize;
+            border-radius: 6px;
+            color: #fff;
+            height: 58px;
+            font-weight: 500;
+            background: linear-gradient(270deg, #3757f7, #071e93);
+            border: 1px solid transparent;
+          }
+        }
+        .right-img {
+          width: 690px;
+          height: 100%;
+          position: relative;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+          }
+          .happy-clients {
+            position: absolute;
+            bottom: 30px;
+            left: -52px;
+            padding: 45px 30px;
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 0 1px 20px 0 rgba(43, 45, 118, 0.1);
+            display: flex;
+            align-items: baseline;
+            justify-content: center;
+            .clients-text {
+              p {
+                font-size: 48px;
+                color: #232f4b;
+                margin: 0;
+                font-weight: 600;
+              }
+              h3 {
+                margin-bottom: 0;
+                font-size: 21px;
+                color: #838383;
+                font-weight: 600;
+              }
+            }
+            .clients-img {
+              img {
+                width: 60px;
+                height: 60px;
+                object-fit: contain;
+                object-position: center;
+                border-radius: 50%;
+              }
+            }
+          }
+          .play-button {
+            position: absolute;
+            top: 44%;
+            left: 50%;
+            width: 80px;
+            height: 80px;
+            background-color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+           
+          }
+        }
+      }
+    }
+  }
+}

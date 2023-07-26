@@ -1,8 +1,7 @@
-@import "../../../style/global.scss";
-@import "../../../style/partials/mixin.scss";
-@import "../../../style/partials/varaible.scss";
+
 
 footer {
+  padding-top: 7rem;
   .foot-top {
     background-color: #1e2845;
     padding: 90px 0;
@@ -147,6 +146,23 @@ footer {
                 }
               }
             }
+          }
+        }
+      }
+    }
+  }
+  .foot-bottom {
+    background: #141d37;
+    padding: 20px 0;
+    .container {
+      .row {
+        .bottom-text {
+          p {
+            line-height: 1.8em;
+            color: #fff;
+            font-size: 14px;
+            margin: 0;
+            text-align: center;
           }
         }
       }

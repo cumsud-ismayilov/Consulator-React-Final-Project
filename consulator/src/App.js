@@ -1,6 +1,6 @@
 import React from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
-
+import "../src/style/global.scss"
 import routes from "./router";
 
 const App = () => {
