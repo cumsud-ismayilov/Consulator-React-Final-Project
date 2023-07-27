@@ -1,5 +1,6 @@
 import React from "react";
 import Buttons from "../../components/ButtonComponent/Buttons";
+
 import "../Home/Home.scss";
 import { FaPlay } from "react-icons/fa";
 
@@ -56,6 +57,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+      
     </main>
   );
 };
