@@ -1,22 +1,88 @@
 {
-    "featureditem":[
-        {
-            "id":1 ,
-            "image":"http://consultar-react.wpocean.com/static/media/document.8a4de5f9.svg",
-            "tittle":"Strategy and Planning",
-            "description":"One way to categorize the activities is in terms of the professional’s area of expertise such as competitive analysis, corporate strategy."
-        },
-        {
-            "id":1 ,
-            "image":"http://consultar-react.wpocean.com/static/media/bar-graph.75e8d96e.svg",
-            "tittle":"Market Analysis",
-            "description":"One way to categorize the activities is in terms of the professional’s area of expertise such as competitive analysis, corporate strategy."
-        },
-        {
-            "id":1 ,
-            "image":"http://consultar-react.wpocean.com/static/media/clipboard.0cef2a23.svg",
-            "tittle":"Investment Strategy",
-            "description":"One way to categorize the activities is in terms of the professional’s area of expertise such as competitive analysis, corporate strategy."
-        }
-    ]
+  "featureditem": [
+    {
+      "id": 1,
+      "image": "http://consultar-react.wpocean.com/static/media/document.8a4de5f9.svg",
+      "tittle": "Strategy and Planning",
+      "description": "One way to categorize the activities is in terms of the professional’s area of expertise such as competitive analysis, corporate strategy."
+    },
+    {
+      "id": 1,
+      "image": "http://consultar-react.wpocean.com/static/media/bar-graph.75e8d96e.svg",
+      "tittle": "Market Analysis",
+      "description": "One way to categorize the activities is in terms of the professional’s area of expertise such as competitive analysis, corporate strategy."
+    },
+    {
+      "id": 1,
+      "image": "http://consultar-react.wpocean.com/static/media/clipboard.0cef2a23.svg",
+      "tittle": "Investment Strategy",
+      "description": "One way to categorize the activities is in terms of the professional’s area of expertise such as competitive analysis, corporate strategy."
+    }
+  ],
+
+  "servicesitem": [
+    {
+      "id": 1,
+      "image": "http://consultar-react.wpocean.com/static/media/clipboard.0cef2a23.svg",
+      "description": "Strategy and Planning",
+      "tittle": "One way to categorize the activities is in terms of the professional’s area of expertise such as competitive analysis, corporate strategy the activities."
+    },
+    {
+      "id": 2,
+      "image": "http://consultar-react.wpocean.com/static/media/briefcase.5b197508.svg",
+      "description": "Corporate Finance",
+      "tittle": "One way to categorize the activities is in terms of the professional’s area of expertise such as competitive analysis, corporate strategy the activities."
+    },
+    {
+      "id": 3,
+      "image": "http://consultar-react.wpocean.com/static/media/chart.00b6eab1.svg",
+      "description": "Market Research",
+      "tittle": "One way to categorize the activities is in terms of the professional’s area of expertise such as competitive analysis, corporate strategy the activities."
+    },
+    {
+      "id": 4,
+      "image": "http://consultar-react.wpocean.com/static/media/badge.97f754ae.svg",
+      "description": "Business Analysis",
+      "tittle": "One way to categorize the activities is in terms of the professional’s area of expertise such as competitive analysis, corporate strategy the activities."
+    },
+    {
+      "id": 5,
+      "image": "http://consultar-react.wpocean.com/static/media/goal.7fdbf8ab.svg",
+      "description": "Consumer Markets",
+      "tittle": "One way to categorize the activities is in terms of the professional’s area of expertise such as competitive analysis, corporate strategy the activities."
+    },
+    {
+      "id": 6,
+      "image": "http://consultar-react.wpocean.com/static/media/handshake.77042259.svg",
+      "description": "Insurance",
+      "tittle": "One way to categorize the activities is in terms of the professional’s area of expertise such as competitive analysis, corporate strategy the activities."
+    }
+  ],
+  "packagesitem": [
+    {
+      "id": 1,
+      "description": "Basic Pack",
+      "tittle1": "24/7 Support available",
+      "tittle2": "Home Consulting System",
+      "tittle3": "30-Day analytics & insights",
+      "tittle4": "Ultimate Features"
+    },
+    {
+      "id": 2,
+      "description": "Standard Pack",
+      "tittle1": "24/7 Support available",
+      "tittle2": "Home Consulting System",
+      "tittle3": "30-Day analytics & insights",
+      "tittle4": "Ultimate Features"
+    },
+    {
+      "id": 3,
+      "description": "Basic Pack",
+      "tittle1": "24/7 Support available",
+      "tittle2": "Home Consulting System",
+      "tittle3": "30-Day analytics & insights",
+      "tittle4": "Ultimate Features"
+    }
+  ]
+
 }

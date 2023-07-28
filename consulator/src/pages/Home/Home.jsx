@@ -1,6 +1,8 @@
 import React from "react";
 import Buttons from "../../components/ButtonComponent/Buttons";
 import Featured from "../../components/FeaturedCards/Featured";
+import ServicesCards from "../../components/ServicesCards/Servicescards";
+import PackageCards from "../../components/PackageCards/PackageCard";
 import "../Home/Home.scss";
 import { FaPlay } from "react-icons/fa";
 
@@ -115,6 +117,32 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <section id="our-services">
+         <div className="container">
+           <div className="row">
+              <div className="col-xl-12">
+                 <div className="ourservices-tittle">
+                    <p>Our Services</p>
+                    <h2>Explore Our Services</h2>
+                 </div>
+              </div>
+           </div>
+         </div>
+      </section>
+      <ServicesCards/>
+      <section id="banner">
+         <div className="container">
+          <div className="row g-3">
+             <div className="col-xl-12">
+                <div className="banner-text">
+                   <p>Pricing</p>
+                   <h5>Our Pricing Packages</h5>
+                </div>
+             </div>
+          </div>
+         </div>
+      </section>
+      <PackageCards/>
     </main>
   );
 };

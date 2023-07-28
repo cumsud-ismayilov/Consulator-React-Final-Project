@@ -1,0 +1,57 @@
+#package {
+    padding: 3rem 0rem 4rem;
+  .container {
+    .row {
+      .package-cards {
+        box-shadow: 0 2px 20px 0 rgba(62, 65, 159, 0.09);
+        padding: 60px;
+        text-align: center;
+        p {
+          color: #232f4b;
+          font-size: 28px;
+          font-weight: 600;
+        }
+        .package-img {
+          padding-top: 10px;
+
+          img {
+            width: 72px;
+            height: 72px;
+            object-fit: contain;
+            object-position: center;
+          }
+        }
+        .package-ul {
+          list-style: none;
+          padding-top: 20px;
+          
+          .same {
+            padding: 20px 0;
+            font-size: 18px;
+            border-bottom: 1px solid #f2f2f2;
+            color: #4f555a;
+          }
+          .different {
+            padding: 20px 0;
+            font-size: 18px;
+            color: #4f555a;
+          }
+        }
+        .plan {
+          background: #f28c8c;
+          color: #fff;
+          font-weight: 500;
+          padding: 18px 45px;
+          border: 0;
+          border-radius: 6px;
+          text-transform: capitalize;
+          cursor: pointer;
+          transition: .3s ease-in-out;
+          &:hover{
+            filter: brightness(0.9);
+          }
+        }
+      }
+    }
+  }
+}
