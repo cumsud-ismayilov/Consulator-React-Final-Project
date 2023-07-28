@@ -5,6 +5,18 @@
             "image":"http://consultar-react.wpocean.com/static/media/document.8a4de5f9.svg",
             "tittle":"Strategy and Planning",
             "description":"One way to categorize the activities is in terms of the professional’s area of expertise such as competitive analysis, corporate strategy."
+        },
+        {
+            "id":1 ,
+            "image":"http://consultar-react.wpocean.com/static/media/bar-graph.75e8d96e.svg",
+            "tittle":"Market Analysis",
+            "description":"One way to categorize the activities is in terms of the professional’s area of expertise such as competitive analysis, corporate strategy."
+        },
+        {
+            "id":1 ,
+            "image":"http://consultar-react.wpocean.com/static/media/clipboard.0cef2a23.svg",
+            "tittle":"Investment Strategy",
+            "description":"One way to categorize the activities is in terms of the professional’s area of expertise such as competitive analysis, corporate strategy."
         }
     ]
 }
