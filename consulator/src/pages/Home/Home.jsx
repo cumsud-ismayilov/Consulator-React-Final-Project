@@ -4,7 +4,7 @@ import Featured from "../../components/FeaturedCards/Featured";
 import ServicesCards from "../../components/ServicesCards/Servicescards";
 import PackageCards from "../../components/PackageCards/PackageCard";
 import BlogData from "../../components/BlogData/BlogData";
-
+import Projectgallery from "../../components/Projectgallery/Projectgallery";
 import "../Home/Home.scss";
 import { FaPlay } from "react-icons/fa";
 import { Link } from "react-router-dom";
@@ -146,7 +146,48 @@ const Home = () => {
          </div>
       </section>
       <PackageCards/>
-      
+      <section id="facts">
+        <div className="container">
+           <div className="row">
+             <div className="col-xl-12">
+                <div className="facts-tittle">
+                    <div className="tittle1">
+                       <p>500+</p>
+                       <h2>Strategy and Planning</h2>
+                    </div>
+                    <div className="tittle2">
+                       <p>25+</p>
+                       <h2>Expert Consultants</h2>
+                    </div>
+                    <div className="tittle3">
+                       <p>95%</p>
+                       <h2>Client Satisfaction</h2>
+                    </div>
+                    <div className="tittle4">
+                       <p>30+</p>
+                       <h2>Award Winning</h2>
+                    </div>
+                </div>
+             </div>
+           </div>
+        </div>
+      </section>
+      <section id="projects-galery">
+        <div className="container">
+          <div className="row">
+            <div className="col-xl-12">
+              <div className="projectgalery-text">
+                 <div className="text1">
+                   <p>Projects</p>
+                   <h2>Our Project Gallery</h2>
+                 </div>
+                 <h4><Link to="/projects">More Projects</Link></h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <Projectgallery/>
       <section id="questions">
         <div className="container">
           <div className="row">

@@ -115,5 +115,31 @@
       "profession":"Marketing Manager",
       "date":"15 AUG,21"
     }
+  ],
+  "projectgallery":[
+    {
+      "id":1,
+      "images":"http://consultar-react.wpocean.com/static/media/img-6.357b30a1.jpg",
+      "hovertext":"Digital Analysis"
+           
+    },
+    {
+      "id":2,
+      "images":"http://consultar-react.wpocean.com/static/media/img-7.70c049b9.jpg",
+      "hovertext":"Corporate Finance"
+           
+    },
+    {
+      "id":3,
+      "images":"http://consultar-react.wpocean.com/static/media/img-8.810042e7.jpg",
+      "hovertext":"Market Research"
+           
+    },
+    {
+      "id":4,
+      "images":"http://consultar-react.wpocean.com/static/media/img-9.d5884426.jpg",
+      "hovertext":"Business Analysis"
+           
+    }
   ]
 }
