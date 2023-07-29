@@ -1,0 +1,98 @@
+#blog-packages {
+  padding-top: 3rem;
+  .container {
+    .row {
+      .blog-cards {
+        .blog-img {
+          width: 100%;
+          height: 280px;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            border-top-left-radius: 6px;
+            border-top-right-radius: 6px;
+          }
+        }
+        .cards-bottom {
+          box-shadow: 0 2px 20px 0 rgba(62, 65, 159, 0.09);
+          border-bottom-left-radius: 6px;
+          border-bottom-right-radius: 6px;
+          .blog-tittle {
+            padding: 30px 22px;
+            p {
+              color: #3757f7;
+              font-weight: 600;
+              background: #f3f3fb;
+              border-radius: 3px;
+              padding: 5px 20px;
+              font-size: 15px;
+              display: inline-block;
+              margin: 0;
+            }
+            h2 {
+              color: #232f4b;
+              line-height: 36px;
+              font-size: 19px;
+              font-weight: 600;
+              margin: 20px 0 0;
+              cursor: pointer;
+              transition: 0.3s ease-in-out;
+              &:hover {
+                color: #0d6efd;
+              }
+            }
+          }
+          .person-line {
+            border-top: 1px solid #f3f3fb;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 30px;
+
+            .person-about {
+              display: flex;
+              align-items: center;
+              gap: 19px;
+              img {
+                width: 45px;
+                height: 45px;
+                object-fit: contain;
+                object-position: center;
+                border-radius: 50%;
+              }
+              .person-name {
+                h4 {
+                  margin: 0;
+                  font-size: 18px;
+                  color: #232f4b;
+                  font-weight: 500;
+                  cursor: pointer;
+                  transition: 0.3s ease-in-out;
+                  &:hover {
+                    color: #0d6efd;
+                  }
+                }
+                h5 {
+                  margin: 0;
+                  font-size: 15px;
+                  color: #848892;
+                  font-weight: 400;
+                  padding-top: 9px;
+                }
+              }
+            }
+            h6 {
+              font-size: 14px;
+              color: #848892;
+              text-transform: uppercase;
+              letter-spacing: 2px;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+  }
+}

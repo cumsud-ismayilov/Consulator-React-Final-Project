@@ -3,8 +3,11 @@ import Buttons from "../../components/ButtonComponent/Buttons";
 import Featured from "../../components/FeaturedCards/Featured";
 import ServicesCards from "../../components/ServicesCards/Servicescards";
 import PackageCards from "../../components/PackageCards/PackageCard";
+import BlogData from "../../components/BlogData/BlogData";
+
 import "../Home/Home.scss";
 import { FaPlay } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -143,6 +146,35 @@ const Home = () => {
          </div>
       </section>
       <PackageCards/>
+      
+      <section id="questions">
+        <div className="container">
+          <div className="row">
+            <div className="col-xl-12">
+              <div className="questions-line">
+                 <div className="questions-text">
+                   <p>Have You a Different Question?</p>
+                   <h2>Please create a ticket to our support forum,a great place to learn, share, and troubleshoot. Get started.</h2>
+                 </div>
+                 <h4 className="support"><Link to="/contact">Ask Support Ticket</Link></h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="blog">
+          <div className="container">
+            <div className="row">
+              <div className="col-xl-12">
+                <div className="blog-text">
+                  <p>Blog</p>
+                  <h2>Our blog Packages</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+      <BlogData/>
     </main>
   );
 };
