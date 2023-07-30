@@ -1,18 +1,40 @@
 import React from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
-import "../src/style/global.scss"
+import "../src/style/global.scss";
 import routes from "./router";
+import Layout from "./components/Layout/Layout";
 
 const App = () => {
   const location = useLocation();
   console.log(`location`, location);
-  return (
-    <Routes>
-      {routes.length > 0 &&
-        routes.map((element) => (
-          <Route key ={element.id} index path={element.path} element={element.element} />
-        ))}
-    </Routes>
+  return location.pathname === "/login" ||location.pathname==="/register"? (
+   
+      <Routes>
+        {routes.length > 0 &&
+          routes.map((element) => (
+            <Route
+              key={element.id}
+              index
+              path={element.path}
+              element={element.element}
+            />
+          ))}
+      </Routes>
+    
+  ) : (
+    <Layout>
+      <Routes>
+        {routes.length > 0 &&
+          routes.map((element) => (
+            <Route
+              key={element.id}
+              index
+              path={element.path}
+              element={element.element}
+            />
+          ))}
+      </Routes>
+    </Layout>
   );
 };
 

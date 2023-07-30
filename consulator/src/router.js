@@ -5,6 +5,11 @@ import Services from './pages/Services/Services'
 import Contact from './pages/Contact/Contact'
 import Blog from './pages/Blog/Blog'
 import Page from './pages/Page/Page'
+import Pricing from './pages/Pricing/Pricing';
+import Testimional from './pages/Testimional/Testimional';
+import Error404 from './pages/Error404/Error404';
+import Login from './pages/Login/Login';
+import Register from './pages/Register/Register';
 import { v4 as uuidv4 } from 'uuid';
 const routes =[
     {
@@ -48,6 +53,36 @@ const routes =[
         name: "Page",
         element: <Page/>,
         path: "/page",
+    },
+    {
+        id: uuidv4(),
+        name: "Login",
+        element: <Login/>,
+        path: "/login",
+    },
+    {
+        id: uuidv4(),
+        name: "Register",
+        element: <Register/>,
+        path: "/register",
+    },
+    {
+        id: uuidv4(),
+        name: "Error404",
+        element: <Error404/>,
+        path: "/error404",
+    },
+    {
+        id: uuidv4(),
+        name: "Pricing",
+        element: <Pricing/>,
+        path: "/pricing",
+    },
+    {
+        id: uuidv4(),
+        name: "Testimional",
+        element: <Testimional/>,
+        path: "/testimional",
     },
 ]
 export default routes;

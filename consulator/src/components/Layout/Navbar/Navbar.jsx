@@ -32,7 +32,15 @@ const Navbar = () => {
                   <Link to="/projects">Projects</Link>
                 </li>
                 <li className="pages">
-                  <Link to="/page">Pages</Link>
+                  <Link className="page-li" to="/page">Pages
+                  <ul className="page-hover">
+                    <li  ><Link className="hover-li" to="/pricing">Pricing</Link></li>
+                    <li><Link className="hover-li" to="/testimional">Testimional</Link></li>
+                    <li><Link className="hover-li" to="/error404">Error404</Link></li>
+                    <li><Link className="hover-li" to="/login">Login</Link></li>
+                    <li><Link className="hover-li" to="/register">Register</Link></li>
+                  </ul>
+                  </Link>
                 </li>
                 <li className="blog">
                   <Link to="/blog">Blog</Link>
