@@ -13,6 +13,7 @@ import Register from './pages/Register/Register';
 import Projectsingle from './pages/Projectsingle/Projectsingle';
 import Projectstyle2 from './pages/Projectstyle2/Projectstyle2';
 import Project from './pages/Project/Project';
+import Servicesingle2 from './pages/Servicesingle2/Servicesingle2';
 import { v4 as uuidv4 } from 'uuid';
 const routes =[
     {
@@ -104,6 +105,12 @@ const routes =[
         name: "Project",
         element: <Project/>,
         path: "/project",
+    },
+    {
+        id: uuidv4(),
+        name: "Servicesingle2",
+        element: <Servicesingle2/>,
+        path: "/servicesingle2",
     },
 ]
 export default routes;
