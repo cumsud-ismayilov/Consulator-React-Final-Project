@@ -1,0 +1,62 @@
+#breadcumb-card {
+    padding: 5rem 0rem 0rem;
+  .container {
+    .row {
+      .gallery-cards {
+        position: relative;
+        overflow: hidden;
+        &:hover{
+            .card-hover{
+                transform: translateY(0px);
+            }
+        }
+        .cards-img {
+          width: 100%;
+          height: 490px;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+          }
+        }
+        .card-hover {
+          background-color: #0d6efd;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          width: 100%;
+          height: 490px;
+          filter: opacity(0.7);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          transform: translateY(-491px);
+          transition: .3s ease-in-out;
+          p {
+            font-size: 25px;
+            color: #fff;
+            font-weight: 600;
+          }
+          h3 {
+            width: 30px;
+            height: 30px;
+            border: 1px solid #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img {
+              width: 20px;
+              height: 20px;
+              object-fit: contain;
+              object-position: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}

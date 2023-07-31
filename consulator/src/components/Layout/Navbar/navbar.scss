@@ -488,7 +488,7 @@
           }
           .projects {
             position: relative;
-            a {
+            .project-li {
               text-decoration: none;
               font-size: 16px;
               padding: 35px 20px;
@@ -508,6 +508,47 @@
                   background: #3757f7;
                   transition: 0.3s ease-in-out;
                   border-radius: 3px;
+                }
+                .project-hover{
+                  display: block;
+                }
+              }
+              .project-hover {
+                list-style: none;
+                position: absolute;
+                top: 90px;
+                left: 0;
+                display: none;
+                transition: 0.3s ease-in-out;
+                background-color: #fff;
+                box-shadow: 0 2px 20px 0 rgba(62, 65, 159, 0.09);
+                width: 220px;
+                padding: 20px 0;
+                z-index: 9999;
+  
+                li {
+                  position: relative;
+                  &:hover {
+                    &:after {
+                      position: absolute;
+                      content: "";
+                      bottom: 0;
+                      width: 40px;
+                      height: 2px;
+                      left: 20px;
+                      background: #3757f7;
+  
+                      transition: 0.3s ease-in-out;
+                    }
+                  }
+                  .hover-li1 {
+                    text-decoration: none;
+                    font-size: 18px;
+                    display: block;
+                    padding: 10px 20px;
+                    color: #232f4b;
+                    font-weight: 500;
+                  }
                 }
               }
             }
