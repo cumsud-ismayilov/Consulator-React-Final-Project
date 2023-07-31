@@ -10,6 +10,8 @@ import Testimional from './pages/Testimional/Testimional';
 import Error404 from './pages/Error404/Error404';
 import Login from './pages/Login/Login';
 import Register from './pages/Register/Register';
+import Projectsingle from './pages/Projectsingle/Projectsingle';
+import Projectstyle2 from './pages/Projectstyle2/Projectstyle2';
 import { v4 as uuidv4 } from 'uuid';
 const routes =[
     {
@@ -83,6 +85,18 @@ const routes =[
         name: "Testimional",
         element: <Testimional/>,
         path: "/testimional",
+    },
+    {
+        id: uuidv4(),
+        name: "Projectsingle",
+        element: <Projectsingle/>,
+        path: "/projectsingle",
+    },
+    {
+        id: uuidv4(),
+        name: "Projectstyle2",
+        element: <Projectstyle2/>,
+        path: "/projectstyle2",
     },
 ]
 export default routes;

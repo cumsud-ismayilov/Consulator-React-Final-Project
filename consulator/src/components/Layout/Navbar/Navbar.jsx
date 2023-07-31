@@ -29,7 +29,14 @@ const Navbar = () => {
                   <Link to="/services">Services</Link>
                 </li>
                 <li className="projects">
-                  <Link to="/projects">Projects</Link>
+                  <Link className="project-li" to="/projects">Projects
+                  <ul className="project-hover">
+                    <li  ><Link className="hover-li1" to="/project">Project</Link></li>
+                    <li><Link className="hover-li1" to="/projectstyle2">Project Style 2</Link></li>
+                    <li><Link className="hover-li1" to="/projectsingle">Project Single</Link></li>
+                    
+                  </ul>
+                  </Link>
                 </li>
                 <li className="pages">
                   <Link className="page-li" to="/page">Pages
