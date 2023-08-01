@@ -9,8 +9,13 @@ main {
           background-color: #fff;
           display: flex;
           flex-direction: column;
+          width: 100%;
           align-items: center;
           justify-content: center;
+          position: relative;
+      
+      
+          }
           h3 {
             width: 90px;
             height: 90px;
@@ -47,4 +52,4 @@ main {
       }
     }
   }
-}
+

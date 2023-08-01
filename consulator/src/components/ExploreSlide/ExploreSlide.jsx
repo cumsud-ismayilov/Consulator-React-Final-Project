@@ -2,7 +2,7 @@ import React from "react";
 import { useEffect, useState } from "react";
 import "../ExploreSlide/ExploreSlide.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
+import { Pagination,Autoplay } from "swiper/modules";
 import "swiper/scss";
 import "swiper/scss/navigation";
 import "swiper/scss/pagination";
@@ -26,11 +26,15 @@ const ExploreSlide = () => {
             
             <Swiper
               slidesPerView={4}
-              spaceBetween={10}
+              spaceBetween={20}
               pagination={{
                 clickable: true,
               }}
-              modules={[Pagination]}
+              autoplay={{
+                delay: 1000,
+                disableOnInteraction: false,
+              }}
+              modules={[Pagination,Autoplay]}
               className="mySwiper"
             >
               
