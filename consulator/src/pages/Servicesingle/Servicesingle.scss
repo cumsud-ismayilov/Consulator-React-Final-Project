@@ -1,0 +1,112 @@
+main{
+    #servicesingle {
+        .back-img {
+          background-image: url(http://consultar-react.wpocean.com/static/media/page-title.be0e30a3.jpg);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          width: 100%;
+          height: 380px;
+          position: relative;
+    
+          .breadcumb-text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #232f4b;
+            filter: opacity(0.7);
+            height: 380px;
+            p {
+              color: #fff;
+              font-size: 46px;
+              font-weight: 500;
+            }
+            .pricing-ul {
+              padding: 0;
+              list-style: none;
+    
+              display: flex;
+              align-items: center;
+              gap: 5px;
+    
+              .pricing-li1 {
+                a {
+                  text-decoration: none;
+                  color: #fff;
+                  font-size: 18px;
+                  font-weight: 500;
+                  transition: 0.3s ease-in-out;
+                  &:hover {
+                    color: #0d6efd;
+                    font-size: 18px;
+                    font-weight: 500;
+                  }
+                }
+              }
+              .pricing-li2 {
+                color: #cbd4fd;
+    
+                font-size: 18px;
+                font-weight: 500;
+              }
+            }
+          }
+        }
+      }
+      #single-sec1{
+        padding-top: 7rem;
+        .container{
+            .row{
+                .content-img{
+                    width: 100%;
+                    height: 466px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+                }
+                .single-widget{
+                    padding: 30px 40px;
+                    border: 1px solid #e1e1e1;
+                    margin-bottom: 40px;
+                    position: relative;
+                    h2{
+                        font-size: 25px;
+                        color: #232f4b;
+                        padding-bottom: 28px;
+                        position: relative;
+                        text-align: center;
+                      
+                    }
+                    img{
+                        position: absolute;
+                        top: 16%;
+                        left: 43%;
+                    }
+                    .single-ul{
+                        list-style: none;
+                        padding: 0;
+                        .single-li{
+                            font-size: 16px;
+                            font-weight: 400;
+                            color: #232f4b;
+                            display: flex;
+                            align-items: center;
+                            gap: 15px;
+                            border-bottom: 1px solid #e1e1e1;
+                            padding: 15px 0 14px 0px;
+                            cursor: pointer;
+                            transition: .3s ease-in-out;
+                            &:hover{
+                                color: #3757f7;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+      }
+}

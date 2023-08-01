@@ -26,7 +26,14 @@ const Navbar = () => {
                   <Link to="/about">About</Link>
                 </li>
                 <li className="services">
-                  <Link to="/services">Services</Link>
+                  <Link className="service-li" to="/services">Services
+                  <ul className="service-hover">
+                    <li  ><Link className="hover-li2" to="/service">Service</Link></li>
+                    <li><Link className="hover-li2" to="/servicestyle2">Service Style 2</Link></li>
+                    <li><Link className="hover-li2" to="/servicesingle">Service Single</Link></li>
+                    
+                  </ul>
+                  </Link>
                 </li>
                 <li className="projects">
                   <Link className="project-li" to="/projects">Projects

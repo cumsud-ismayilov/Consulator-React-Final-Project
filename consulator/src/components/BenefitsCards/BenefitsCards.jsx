@@ -25,7 +25,7 @@ const BenefitsCards = () => {
                         <img src={element.image} alt="img" />
                     </div>
                     <div className="benefits-text">
-                        <p><Link to="/servicesingle2">{element.desc}</Link></p>
+                        <p><Link to="/servicesingle">{element.desc}</Link></p>
                         <h2>{element.tittle}</h2>
                     </div>
                 </div>

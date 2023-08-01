@@ -13,7 +13,9 @@ import Register from './pages/Register/Register';
 import Projectsingle from './pages/Projectsingle/Projectsingle';
 import Projectstyle2 from './pages/Projectstyle2/Projectstyle2';
 import Project from './pages/Project/Project';
-import Servicesingle2 from './pages/Servicesingle2/Servicesingle2';
+import Servicesingle from './pages/Servicesingle/Servicesingle';
+import Service from './pages/Service/Service';
+import Servicestyle2 from './pages/Servicestyle2/Servicestyle2';
 import { v4 as uuidv4 } from 'uuid';
 const routes =[
     {
@@ -108,9 +110,21 @@ const routes =[
     },
     {
         id: uuidv4(),
-        name: "Servicesingle2",
-        element: <Servicesingle2/>,
-        path: "/servicesingle2",
+        name: "Servicesingle",
+        element: <Servicesingle/>,
+        path: "/servicesingle",
+    },
+    {
+        id: uuidv4(),
+        name: "Servicestyle2",
+        element: <Servicestyle2/>,
+        path: "/servicestyle2",
+    },
+    {
+        id: uuidv4(),
+        name: "Service",
+        element: <Service/>,
+        path: "/service",
     },
 ]
 export default routes;

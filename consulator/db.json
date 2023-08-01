@@ -231,5 +231,37 @@
       "desc":"Market Research",
       "tittle":"One way to categorize the activities is in terms ..."
     }
+  ],
+  "serviceslidedata":[
+    {
+      "id":1,
+      "images":"https://www.svgrepo.com/show/211425/trophy-award.svg",
+      "desc":"Consumer Markets",
+      "tittle":"One way to categorize the activities is in terms ..."
+    },
+    {
+      "id":2,
+      "images":"https://cdn-icons-png.flaticon.com/512/770/770706.png",
+      "desc":"Consumer Markets",
+      "tittle":"One way to categorize the activities is in terms ..."
+    },
+    {
+      "id":3,
+      "images":"https://www.freepnglogos.com/uploads/lamp/lamp-logo-idea-creativity-svg-png-icon-download-2.png",
+      "desc":"Consumer Markets",
+      "tittle":"One way to categorize the activities is in terms ..."
+    },
+    {
+      "id":4,
+      "images":"https://www.pngmart.com/files/23/Growth-PNG-Clipart.png",
+      "desc":"Consumer Markets",
+      "tittle":"One way to categorize the activities is in terms ..."
+    },
+    {
+      "id":5,
+      "images":"https://pixlok.com/wp-content/uploads/2022/02/Form-Icon-SVG-098ytghjk.png",
+      "desc":"Consumer Markets",
+      "tittle":"One way to categorize the activities is in terms ..."
+    }
   ]
 }
