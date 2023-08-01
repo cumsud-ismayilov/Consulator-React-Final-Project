@@ -199,5 +199,37 @@
       "desc":"Investment Strategy",
       "tittle":"The lower-numbered purposes are better understood and practiced "
     }
+  ],
+  "exploreslidedata":[
+    {
+      "id":1,
+      "desc":"Market Research",
+      "tittle":"One way to categorize the activities is in terms ..."
+    },
+    {
+      "id":2,
+      "desc":"Business Analysis",
+      "tittle":"One way to categorize the activities is in terms ..."
+    },
+    {
+      "id":3,
+      "desc":"Consumer Markets",
+      "tittle":"One way to categorize the activities is in terms ..."
+    },
+    {
+      "id":4,
+      "desc":"Strategy and Planning",
+      "tittle":"One way to categorize the activities is in terms ..."
+    },
+    {
+      "id":5,
+      "desc":"Corporate Finance",
+      "tittle":"One way to categorize the activities is in terms ..."
+    },
+    {
+      "id":6,
+      "desc":"Market Research",
+      "tittle":"One way to categorize the activities is in terms ..."
+    }
   ]
 }
