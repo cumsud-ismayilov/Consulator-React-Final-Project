@@ -289,5 +289,28 @@
       "desc":"Investment Strategy",
       "tittle":"The lower-numbered purposes are better understood and practiced "
     }
+  ],
+  "officeinfo":[
+    {
+      "id":1,
+      "image":"http://consultar-react.wpocean.com/static/media/home.25b512b9.svg",
+      "caption":"Address",
+      "tittle":"7 Green Lake Street Crawfordsville, IN 47933"
+    },
+    {
+      "id":2,
+      "image":"http://consultar-react.wpocean.com/static/media/mail-2.31556cf8.svg",
+       "caption":"Email Us",
+       "email":"consultar@gmail.com helloyou@gmail.com"
+       
+    },
+    {
+      "id":3,
+      "image":"http://consultar-react.wpocean.com/static/media/home.25b512b9.svg",
+      "caption":"Call Now",
+      "number1":"+1 800 123 456 789  +1 800 123 654 987"
+      
+      
+    }
   ]
 }
