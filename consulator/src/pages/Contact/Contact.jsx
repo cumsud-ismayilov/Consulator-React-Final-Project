@@ -19,6 +19,18 @@ const Contact = () => {
         </div>
       </section>
      <ContactCards/>
+     <section id='contact-section'>
+        <div className='container'>
+          <div className='row'>
+             <div className='col-xl-10'>
+                 <div className='wpo-contact-info'>
+                    <p>Have Any Question?</p>
+                    <h2>It is a long established fact that a reader will be distracted content of a page when looking.</h2>
+                 </div>
+             </div>
+          </div>
+        </div>
+     </section>
     </main>
   )
 }
