@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 const Projects = () => {
   return (
     <main>
-      <section id="problems2">
+      <section id="problems3">
         <div className="container">
           <div className="row">
             <div className="col-xl-6">
@@ -65,7 +65,7 @@ const Projects = () => {
         </div>
       </section>
       <Featured />
-      <section id="about-section2">
+      <section id="about-section3">
         <div className="container">
           <div className="row g-3">
             <div className="col-xl-6">
@@ -120,7 +120,7 @@ const Projects = () => {
           </div>
         </div>
       </section>
-      <section id="our-services2">
+      <section id="our-services3">
          <div className="container">
            <div className="row">
               <div className="col-xl-12">
@@ -133,7 +133,7 @@ const Projects = () => {
          </div>
       </section>
       <ServicesCards/>
-      <section id="banner2">
+      <section id="banner3">
          <div className="container">
           <div className="row g-3">
              <div className="col-xl-12">
@@ -146,7 +146,7 @@ const Projects = () => {
          </div>
       </section>
       <PackageCards/>
-      <section id="facts2">
+      <section id="facts3">
         <div className="container">
            <div className="row">
              <div className="col-xl-12">
@@ -172,7 +172,7 @@ const Projects = () => {
            </div>
         </div>
       </section>
-      <section id="projects-galery2">
+      <section id="projects-galery3">
         <div className="container">
           <div className="row">
             <div className="col-xl-12">
@@ -188,7 +188,7 @@ const Projects = () => {
         </div>
       </section>
       <Projectgallery/>
-      <section id="questions2">
+      <section id="questions3">
         <div className="container">
           <div className="row">
             <div className="col-xl-12">
@@ -203,7 +203,7 @@ const Projects = () => {
           </div>
         </div>
       </section>
-      <section id="blog2">
+      <section id="blog3">
           <div className="container">
             <div className="row">
               <div className="col-xl-12">
