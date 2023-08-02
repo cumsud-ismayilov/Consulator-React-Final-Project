@@ -263,5 +263,31 @@
       "desc":"Consumer Markets",
       "tittle":"One way to categorize the activities is in terms ..."
     }
+  ],
+  "servicesingleitem":[
+    {
+      "id":1,
+      "image":"http://consultar-react.wpocean.com/static/media/document.8a4de5f9.svg",
+      "desc":"Business Planning",
+      "tittle":"The lower-numbered purposes are better understood and practiced "
+    },
+    {
+      "id":2,
+      "image":"http://consultar-react.wpocean.com/static/media/bar-graph.75e8d96e.svg",
+      "desc":"Market Analysis",
+      "tittle":"The lower-numbered purposes are better understood and practiced "
+    },
+    {
+      "id":3,
+      "image":"http://consultar-react.wpocean.com/static/media/clipboard.0cef2a23.svg",
+      "desc":"Investment Strategy",
+      "tittle":"The lower-numbered purposes are better understood and practiced "
+    },
+    {
+      "id":3,
+      "image":"http://consultar-react.wpocean.com/static/media/clipboard.0cef2a23.svg",
+      "desc":"Investment Strategy",
+      "tittle":"The lower-numbered purposes are better understood and practiced "
+    }
   ]
 }

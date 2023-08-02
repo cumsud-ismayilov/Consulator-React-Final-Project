@@ -55,7 +55,7 @@ main {
     }
   }
   #single-sec1 {
-    padding-top: 7rem;
+    padding: 7rem 0rem 7rem;
     .container {
       .row {
         .content-img {
@@ -139,7 +139,7 @@ main {
             position: relative;
             text-align: center;
           }
-          img{
+          img {
             position: absolute;
             top: 21%;
             left: 43%;
@@ -177,6 +177,100 @@ main {
             a {
               text-decoration: none;
             }
+          }
+        }
+        .content-img3 {
+          width: 100%;
+          height: 300px;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+          }
+        }
+        .content-img4 {
+          width: 100%;
+          height: 300px;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+          }
+        }
+        .instagram-widget {
+          padding: 30px 40px;
+          border: 1px solid #e1e1e1;
+          margin-bottom: 40px;
+          position: relative;
+          h3 {
+            font-size: 25px;
+            color: #232f4b;
+            padding-bottom: 28px;
+            position: relative;
+            text-align: center;
+          }
+          .post-img {
+            position: absolute;
+            top: 23%;
+            left: 46%;
+          }
+          .foot-projects3 {
+            padding: 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 7px;
+            margin: 0;
+            padding-top: 26px;
+            li {
+              a {
+                text-decoration: none;
+                img {
+                  width: 100px;
+                  height: 94px;
+                }
+              }
+            }
+          }
+          .foot-projects4 {
+            padding: 0;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 7px;
+            padding-top: 7px;
+            li {
+              a {
+                text-decoration: none;
+                img {
+                  width: 100px;
+                  height: 94px;
+                }
+              }
+            }
+          }
+        }
+        .solutions {
+          margin-left: 11px;
+          h4 {
+            color: #232f4b;
+            font-size: 31px;
+            font-weight: 600;
+            margin-bottom: 34px;
+          }
+        }
+        .benefits-text {
+          margin-left: 11px;
+          padding: 2rem 0rem 2rem;
+          h4 {
+            color: #232f4b;
+            font-size: 31px;
+            font-weight: 600;
+            margin-bottom: 11px;
           }
         }
       }
