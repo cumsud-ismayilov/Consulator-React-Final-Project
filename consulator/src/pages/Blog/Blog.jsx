@@ -12,6 +12,8 @@ import { TbPointFilled } from "react-icons/tb";
 import { LuMessageCircle } from "react-icons/lu";
 import { IoCalendarOutline } from "react-icons/io5";
 import { BsFillPlayFill } from "react-icons/bs";
+import { AiOutlineLeft,AiOutlineRight } from "react-icons/ai";
+
 
 const Blog = () => {
   return (
@@ -85,6 +87,25 @@ const Blog = () => {
                <div className="play-video">
                   <h5><BsFillPlayFill color="#0d6efd" size="35"/></h5>
                </div>
+              </div>
+              <div className="entry-meta">
+                <ul>
+                  <li className="user"><BiUser/>By<Link to="/">Jenny Watson</Link> <TbPointFilled color="#3757f7"/></li>
+                  <li className="comments"><LuMessageCircle/> Comments 35 <TbPointFilled color="#3757f7"/></li>
+                  <li className="comments"><IoCalendarOutline/> 24 Jun 2021</li>
+                </ul>
+              </div>
+              <div className="entry-details">
+                <h1><Link to="/blog">Why Choose Management Consulting?</Link></h1>
+                <h2>Consulting is a great career path if you want to build a broad skill set that includes everything from critical thinking and strategic planning to communications. If you love rising to a challenge.</h2>
+                <h3><Link to="/">READ MORE...</Link></h3>
+              </div>
+              <div className="blog-pagination">
+                <h6 className="pagination1"><Link to="/"><AiOutlineLeft size="21"/></Link></h6>
+                <h6 className="pagination2"><Link to="/">1</Link></h6>
+                <h6 className="pagination1"><Link to="/">2</Link></h6>
+                <h6 className="pagination1"><Link to="/">3</Link></h6>
+                <h6 className="pagination1"><Link to="/"><AiOutlineRight size="21"/></Link></h6>
               </div>
             </div>
             <div className="col-xl-4">
