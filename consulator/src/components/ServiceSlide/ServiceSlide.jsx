@@ -17,8 +17,7 @@ const ServiceSlide = () => {
         });
     }, []);
   return (
-    <main>
-      <section id="serviceslide">
+    <section id="serviceslide">
         <div className="container">
           <div className="row">
             
@@ -55,7 +54,6 @@ const ServiceSlide = () => {
           </div>
         </div>
       </section>
-    </main>
   )
 }
 
