@@ -309,6 +309,131 @@ main {
             }
           }
         }
+        .search-widget {
+          padding-top: 4rem;
+          form {
+            position: relative;
+            .form-controls {
+              background-color: rgba(55, 87, 247, 0.05);
+              height: 70px;
+              font-size: 16px;
+              padding: 6px 50px 6px 20px;
+              border: 0;
+              border-radius: 5px;
+              box-shadow: none;
+              transition: all 0.3s;
+              width: 100%;
+            }
+            .search-icon {
+              background: transparent;
+              font-size: 20px;
+              color: #fff;
+              background-color: #3757f7;
+              border: 0;
+              outline: 0;
+              position: absolute;
+              right: 10px;
+              top: 52%;
+              height: 50px;
+              line-height: 50px;
+              width: 50px;
+              border-radius: 6px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              cursor: pointer;
+              transform: translateY(-50%);
+            }
+          }
+        }
+        .category-widget {
+          padding-top: 4rem;
+          h3 {
+            font-size: 23px;
+            color: #232f4b;
+            margin: 0 0 40px;
+            position: relative;
+            text-transform: capitalize;
+            font-weight: 600;
+          }
+          .category-ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 28px;
+            .category-li {
+              font-size: 17px;
+              color: #232f4b;
+              font-weight: 600;
+              display: flex;
+              align-items: baseline;
+              justify-content: space-between;
+              cursor: pointer;
+              transition: 0.3s ease-in-out;
+              &:hover {
+                color: rgb(55, 87, 247);
+              }
+              h1 {
+                font-size: 17px;
+                color: #232f4b;
+                font-weight: 600;
+                cursor: pointer;
+                transition: 0.3s ease-in-out;
+                &:hover {
+                  color: rgb(55, 87, 247);
+                }
+              }
+            }
+          }
+        }
+        .recent-post-widget {
+          padding-top: 4rem;
+          h3 {
+            font-size: 23px;
+            color: #232f4b;
+            margin: 0 0 40px;
+            position: relative;
+            text-transform: capitalize;
+            font-weight: 600;
+          }
+          .posts {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            .post1 {
+              display: flex;
+              gap: 20px;
+
+              img {
+                width: 86px;
+                height: 86px;
+                border-radius: 5px;
+                object-fit: cover;
+                object-position: center;
+              }
+              h5 {
+                a {
+                  text-decoration: none;
+                  color: #232f4b;
+                  font-size: 18px;
+                  font-weight: 600;
+                  cursor: pointer;
+                  transition: 0.3s ease-in-out;
+                  &:hover {
+                    color: rgb(55, 87, 247);
+                  }
+                }
+              }
+              h6 {
+                font-size: 14px;
+                color: #4f555a;
+                font-weight: 400;
+                line-height: 28.8px;
+              }
+            }
+          }
+        }
       }
     }
   }
