@@ -434,6 +434,120 @@ main {
             }
           }
         }
+        .wpo-instagram-widget {
+          padding-top: 4rem;
+          h3 {
+            font-size: 23px;
+            color: #232f4b;
+            margin: 0 0 40px;
+            position: relative;
+            text-transform: capitalize;
+            font-weight: 600;
+          }
+          .widget-projects1 {
+            padding: 0;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            margin: 0;
+
+            a {
+              text-decoration: none;
+              img {
+                width: 112px;
+                height: 94px;
+                border-radius: 5px;
+              }
+            }
+          }
+          .widget-projects2 {
+            padding: 0;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            padding-top: 7px;
+            a {
+              text-decoration: none;
+              img {
+                width: 112px;
+                height: 94px;
+                border-radius: 5px;
+              }
+            }
+          }
+        }
+        .tag-widget {
+          padding-top: 4rem;
+          h3 {
+            font-size: 23px;
+            color: #232f4b;
+            margin: 0 0 40px;
+            position: relative;
+            text-transform: capitalize;
+            font-weight: 600;
+          }
+          .tag-ul {
+            list-style: none;
+            padding: 0;
+            overflow: hidden;
+            li {
+              float: left;
+              margin: 0 8px 8px 0;
+              a {
+                text-decoration: none;
+                font-size: 15px;
+                display: inline-block;
+                padding: 5px 18px;
+                color: #232f4b;
+                background: #ecf4fb;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: .3s ease-in-out;
+                &:hover{
+                  background-color: #3757f7;
+                  color: #fff;
+                }
+              }
+            }
+          }
+        }
+        .wpo-contact-widget{
+          border: 0;
+          background-color: #3757f7;
+          padding: 30px 40px;
+          margin-top: 4rem;
+          h2{
+            font-size: 36px;
+            font-weight: 700;
+            text-align: left;
+            color: #fff;
+            margin-bottom: 20px;
+          }
+          h4{
+            color: #fff;
+            font-size: 17px;
+            line-height: 23px;
+            font-weight: 400;
+          }
+          .contact-loc{
+            text-decoration: none;
+            display: inline-block;
+            border: 1px solid #fff;
+            font-size: 18px;
+            color: #fff;
+            padding: 10px 90px 10px 20px;
+            margin-top: 20px;
+            position: relative;
+            h5{
+              position: absolute;
+              top: 10px;
+              right: 13px;
+          
+            }
+          }
+        }
       }
     }
   }

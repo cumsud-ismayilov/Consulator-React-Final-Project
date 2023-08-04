@@ -13,7 +13,7 @@ import { LuMessageCircle } from "react-icons/lu";
 import { IoCalendarOutline } from "react-icons/io5";
 import { BsFillPlayFill } from "react-icons/bs";
 import { AiOutlineLeft,AiOutlineRight } from "react-icons/ai";
-import { HiOutlineSearch } from "react-icons/hi";
+import { HiOutlineSearch ,HiOutlineArrowRight} from "react-icons/hi";
 
 const Blog = () => {
   return (
@@ -184,6 +184,83 @@ const Blog = () => {
                     </div>
                   </div>
                 </div>
+              </div>
+              <div className="wpo-instagram-widget">
+                <h3>Projects</h3>
+                <ul className="widget-projects1">
+                  <li>
+                    <Link to="/projects">
+                      <img
+                        src="http://consultar-react.wpocean.com/static/media/13.24d6b753.jpg"
+                        alt="foto1"
+                      />
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/projects">
+                      <img
+                        src="	http://consultar-react.wpocean.com/static/media/14.98c65c6b.jpg"
+                        alt="foto1"
+                      />
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/projects">
+                      <img
+                        src="	http://consultar-react.wpocean.com/static/media/15.83edb115.jpg"
+                        alt="foto1"
+                      />
+                    </Link>
+                  </li>
+                </ul>
+                <ul className="widget-projects2">
+                  <li>
+                    <Link to="/projects">
+                      <img
+                        src="	http://consultar-react.wpocean.com/static/media/16.3cd9adcf.jpg"
+                        alt="foto1"
+                      />
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/projects">
+                      <img
+                        src="	http://consultar-react.wpocean.com/static/media/17.fe06c998.jpg"
+                        alt="foto1"
+                      />
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/projects">
+                      <img
+                        src="	http://consultar-react.wpocean.com/static/media/18.9a19b91c.jpg"
+                        alt="foto1"
+                      />
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+              <div className="tag-widget">
+                <h3>Tags</h3>
+                <ul className="tag-ul">
+                  <li><Link to="/blog">Consulting</Link></li>
+                  <li><Link to="/blog">Planning</Link></li>
+                  <li><Link to="/blog">Marketing</Link></li>
+                  <li><Link to="/blog">Strategy</Link></li>
+                  <li><Link to="/blog">Finance</Link></li>
+                  <li><Link to="/blog">Solution</Link></li>
+                  <li><Link to="/blog">Corporate</Link></li>
+                  <li><Link to="/blog">Idea</Link></li>
+                  <li><Link to="/blog">Market Reserch</Link></li>
+                </ul>
+              </div>
+              <div className="wpo-contact-widget">
+                <h2>How We Can 
+                  <br />
+                  Help You!
+                </h2>
+                <h4>labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </h4>
+                <Link to="/contact" className="contact-loc">Contact Us <h5><HiOutlineArrowRight/></h5></Link>
               </div>
             </div>
           </div>
