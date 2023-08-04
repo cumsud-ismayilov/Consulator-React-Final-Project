@@ -16,6 +16,13 @@ import Project from './pages/Project/Project';
 import Servicesingle from './pages/Servicesingle/Servicesingle';
 import Service from './pages/Service/Service';
 import Servicestyle2 from './pages/Servicestyle2/Servicestyle2';
+import BlogFullWidth from './pages/BlogFullWidth/BlogFullWidth';
+import BlogDetails from './pages/BlogDetails/BlogDetails';
+import BlogLeftSidebar from './pages/BlogLeftSidebar/BlogLeftSidebar';
+import BlogRightSidebar from './pages/BlogRightSidebar/BlogRightSidebar';
+import Blogdetailsrightsidebar from './pages/Blogdetailsrightsidebar/Blogdetailsrightsidebar';
+import Blogdetailsleftsidebar from './pages/Blogdetailsleftsidebar/Blogdetailsleftsidebar';
+import Blogdetailsfullwidth from './pages/Blogdetailsfullwidth/Blogdetailsfullwidth';
 import { v4 as uuidv4 } from 'uuid';
 const routes =[
     {
@@ -125,6 +132,48 @@ const routes =[
         name: "Service",
         element: <Service/>,
         path: "/service",
+    },
+    {
+        id: uuidv4(),
+        name: "BlogRightSidebar",
+        element: <BlogRightSidebar/>,
+        path: "/blogrightsidebar",
+    },
+    {
+        id: uuidv4(),
+        name: "BlogLeftSidebar",
+        element: <BlogLeftSidebar/>,
+        path: "/blogleftsidebar",
+    },
+    {
+        id: uuidv4(),
+        name: "BlogFullWidth",
+        element: <BlogFullWidth/>,
+        path: "/blogfullwidth",
+    },
+    {
+        id: uuidv4(),
+        name: "BlogDetails",
+        element: <BlogDetails/>,
+        path: "/blogdetails",
+    },
+    {
+        id: uuidv4(),
+        name: "Blogdetailsrightsidebar",
+        element: <Blogdetailsrightsidebar/>,
+        path: "/blogdetailsrightsidebar",
+    },
+    {
+        id: uuidv4(),
+        name: "Blogdetailsleftsidebar",
+        element: <Blogdetailsleftsidebar/>,
+        path: "/blogdetailsleftsidebar",
+    },
+    {
+        id: uuidv4(),
+        name: "Blogdetailsfullwidth",
+        element: <Blogdetailsfullwidth/>,
+        path: "/blogdetailsfullwidth",
     },
 ]
 export default routes;

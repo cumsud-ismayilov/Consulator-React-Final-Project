@@ -5,7 +5,7 @@ import { TfiLocationPin,TfiGoogle } from "react-icons/tfi";
 import { HiOutlineMailOpen } from "react-icons/hi";
 import { Link } from "react-router-dom";
 import Buttons from "../../ButtonComponent/Buttons";
-import {GoSearch} from "react-icons/go";
+import {GoSearch,GoChevronRight} from "react-icons/go";
 const BannerNavbar = () => {
   return (
     <div>
@@ -82,7 +82,21 @@ const BannerNavbar = () => {
                   </Link>
                 </li>
                 <li className="blog">
-                  <Link to="/blog">Blog</Link>
+                  <Link className='blog-li' to="/blog">Blog
+                  <ul className="blog-hover">
+                    <li  className="hover-li3"><Link className="hover-a3" to="/blogrightsidebar">Blog right sidebar</Link></li>
+                    <li className="hover-li3"><Link className="hover-a3" to="/blogleftsidebar">Blog left sidebar</Link></li>
+                    <li className="hover-li3"><Link className="hover-a3" to="/blogfullwidth">Blog fullwidth</Link></li>
+                    <li className="hover-li4"><Link className="hover-a4" to="/blogdetails">Blog details <GoChevronRight/>
+                    <ul className="blog-hover2">
+                      <li className="hover-li5"><Link to="/blogdetailsrightsidebar" className="hover-a5">Blog details right sidebar</Link></li>
+                      <li className="hover-li5"><Link  to="/blogdetailsleftsidebar" className="hover-a5">Blog details left sidebar</Link></li>
+                      <li className="hover-li5"><Link to="/blogdetailsfullwidth" className="hover-a5"> Blog details fullwidth</Link></li>
+                    </ul>
+                    </Link></li>
+                    
+                  </ul>
+                  </Link>
                 </li>
                 <li className="contact">
                   <Link to="/contact">Contact</Link>

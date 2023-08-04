@@ -93,7 +93,7 @@
                 transition: 0.3s ease-in-out;
                 border-radius: 3px;
               }
-              .service-hover{
+              .service-hover {
                 display: block;
               }
             }
@@ -160,11 +160,11 @@
                 transition: 0.3s ease-in-out;
                 border-radius: 3px;
               }
-              .project-hover{
+              .project-hover {
                 display: block;
               }
             }
-             .project-hover {
+            .project-hover {
               list-style: none;
               position: absolute;
               top: 90px;
@@ -273,7 +273,7 @@
         }
         .blog {
           position: relative;
-          a {
+          .blog-li {
             text-decoration: none;
             font-size: 16px;
             padding: 35px 20px;
@@ -293,6 +293,116 @@
                 background: #3757f7;
                 transition: 0.3s ease-in-out;
                 border-radius: 3px;
+              }
+              .blog-hover {
+                display: block;
+              }
+            }
+            .blog-hover {
+              list-style: none;
+              position: absolute;
+              top: 90px;
+              left: 0;
+              display: none;
+              transition: 0.3s ease-in-out;
+              background-color: #fff;
+              box-shadow: 0 2px 20px 0 rgba(62, 65, 159, 0.09);
+              width: 220px;
+              padding: 20px 0;
+              z-index: 9999;
+
+              .hover-li3 {
+                position: relative;
+                &:hover {
+                  &:after {
+                    position: absolute;
+                    content: "";
+                    bottom: 0;
+                    width: 40px;
+                    height: 2px;
+                    left: 20px;
+                    background: #3757f7;
+
+                    transition: 0.3s ease-in-out;
+                  }
+                }
+                .hover-a3 {
+                  text-decoration: none;
+                  font-size: 18px;
+                  display: block;
+                  padding: 10px 20px;
+                  color: #232f4b;
+                  font-weight: 500;
+                }
+              }
+              .hover-li4 {
+                position: relative;
+                &:hover {
+                  &:after {
+                    position: absolute;
+                    content: "";
+                    bottom: 0;
+                    width: 40px;
+                    height: 2px;
+                    left: 20px;
+                    background: #3757f7;
+
+                    transition: 0.3s ease-in-out;
+                  }
+                }
+                .hover-a4 {
+                  text-decoration: none;
+                  font-size: 18px;
+                  display: block;
+                  padding: 10px 20px;
+                  color: #232f4b;
+                  font-weight: 500;
+                  position: relative;
+                  cursor: pointer;
+                  transition: 0.3s ease-in-out;
+                  &:hover{
+                    .blog-hover2{
+                      display: block;
+                    }
+                  }
+                  .blog-hover2 {
+                    position: absolute;
+                    top: 13px;
+                    right: -270px;
+                    display: none;
+                    list-style: none;
+                    transition: 0.3s ease-in-out;
+                    background-color: #fff;
+                    box-shadow: 0 2px 20px 0 rgba(62, 65, 159, 0.09);
+                    width: 270px;
+                    padding: 20px 0;
+                    z-index: 9999;
+                    .hover-li5 {
+                      position: relative;
+                      &:hover {
+                        &:after {
+                          position: absolute;
+                          content: "";
+                          bottom: 0;
+                          width: 40px;
+                          height: 2px;
+                          left: 20px;
+                          background: #3757f7;
+
+                          transition: 0.3s ease-in-out;
+                        }
+                      }
+                      .hover-a5 {
+                        text-decoration: none;
+                        font-size: 18px;
+                        display: block;
+                        padding: 10px 20px;
+                        color: #232f4b;
+                        font-weight: 500;
+                      }
+                    }
+                  }
+                }
               }
             }
           }
@@ -371,7 +481,6 @@
 }
 
 .banner-nav {
-  
   .nav-top {
     padding: 15px 130px;
     background-color: #283a5e;
@@ -404,12 +513,12 @@
             gap: 5px;
           }
         }
-        .social-page{
+        .social-page {
           display: flex;
           align-items: center;
           gap: 18px;
           justify-content: flex-end;
-          p{
+          p {
             margin: 0;
             color: #e5e3e3;
             font-size: 15px;
@@ -417,11 +526,11 @@
             line-height: 16px;
             word-spacing: 3px;
           }
-          svg{
+          svg {
             color: #fff;
             cursor: pointer;
-            transition: .3s ease-in-out;
-            &:hover{
+            transition: 0.3s ease-in-out;
+            &:hover {
               color: #0d6efd;
             }
           }
@@ -524,7 +633,7 @@
                   transition: 0.3s ease-in-out;
                   border-radius: 3px;
                 }
-                .service-hover{
+                .service-hover {
                   display: block;
                 }
               }
@@ -540,7 +649,7 @@
                 width: 220px;
                 padding: 20px 0;
                 z-index: 9999;
-  
+
                 li {
                   position: relative;
                   &:hover {
@@ -552,7 +661,7 @@
                       height: 2px;
                       left: 20px;
                       background: #3757f7;
-  
+
                       transition: 0.3s ease-in-out;
                     }
                   }
@@ -591,7 +700,7 @@
                   transition: 0.3s ease-in-out;
                   border-radius: 3px;
                 }
-                .project-hover{
+                .project-hover {
                   display: block;
                 }
               }
@@ -607,7 +716,7 @@
                 width: 220px;
                 padding: 20px 0;
                 z-index: 9999;
-  
+
                 li {
                   position: relative;
                   &:hover {
@@ -619,7 +728,7 @@
                       height: 2px;
                       left: 20px;
                       background: #3757f7;
-  
+
                       transition: 0.3s ease-in-out;
                     }
                   }
@@ -674,7 +783,7 @@
                 width: 220px;
                 padding: 20px 0;
                 z-index: 9999;
-  
+
                 li {
                   position: relative;
                   &:hover {
@@ -686,7 +795,7 @@
                       height: 2px;
                       left: 20px;
                       background: #3757f7;
-  
+
                       transition: 0.3s ease-in-out;
                     }
                   }
@@ -704,7 +813,7 @@
           }
           .blog {
             position: relative;
-            a {
+            .blog-li {
               text-decoration: none;
               font-size: 16px;
               padding: 35px 20px;
@@ -724,6 +833,116 @@
                   background: #3757f7;
                   transition: 0.3s ease-in-out;
                   border-radius: 3px;
+                }
+                .blog-hover{
+                  display: block;
+                }
+              }
+              .blog-hover {
+                list-style: none;
+                position: absolute;
+                top: 90px;
+                left: 0;
+                display: none;
+                transition: 0.3s ease-in-out;
+                background-color: #fff;
+                box-shadow: 0 2px 20px 0 rgba(62, 65, 159, 0.09);
+                width: 220px;
+                padding: 20px 0;
+                z-index: 9999;
+  
+                .hover-li3 {
+                  position: relative;
+                  &:hover {
+                    &:after {
+                      position: absolute;
+                      content: "";
+                      bottom: 0;
+                      width: 40px;
+                      height: 2px;
+                      left: 20px;
+                      background: #3757f7;
+  
+                      transition: 0.3s ease-in-out;
+                    }
+                  }
+                  .hover-a3 {
+                    text-decoration: none;
+                    font-size: 18px;
+                    display: block;
+                    padding: 10px 20px;
+                    color: #232f4b;
+                    font-weight: 500;
+                  }
+                }
+                .hover-li4 {
+                  position: relative;
+                  &:hover {
+                    &:after {
+                      position: absolute;
+                      content: "";
+                      bottom: 0;
+                      width: 40px;
+                      height: 2px;
+                      left: 20px;
+                      background: #3757f7;
+  
+                      transition: 0.3s ease-in-out;
+                    }
+                  }
+                  .hover-a4 {
+                    text-decoration: none;
+                    font-size: 18px;
+                    display: block;
+                    padding: 10px 20px;
+                    color: #232f4b;
+                    font-weight: 500;
+                    position: relative;
+                    cursor: pointer;
+                    transition: 0.3s ease-in-out;
+                    &:hover{
+                      .blog-hover2{
+                        display: block;
+                      }
+                    }
+                    .blog-hover2 {
+                      position: absolute;
+                      top: 13px;
+                      right: -270px;
+                      display: none;
+                      list-style: none;
+                      transition: 0.3s ease-in-out;
+                      background-color: #fff;
+                      box-shadow: 0 2px 20px 0 rgba(62, 65, 159, 0.09);
+                      width: 270px;
+                      padding: 20px 0;
+                      z-index: 9999;
+                      .hover-li5 {
+                        position: relative;
+                        &:hover {
+                          &:after {
+                            position: absolute;
+                            content: "";
+                            bottom: 0;
+                            width: 40px;
+                            height: 2px;
+                            left: 20px;
+                            background: #3757f7;
+  
+                            transition: 0.3s ease-in-out;
+                          }
+                        }
+                        .hover-a5 {
+                          text-decoration: none;
+                          font-size: 18px;
+                          display: block;
+                          padding: 10px 20px;
+                          color: #232f4b;
+                          font-weight: 500;
+                        }
+                      }
+                    }
+                  }
                 }
               }
             }
