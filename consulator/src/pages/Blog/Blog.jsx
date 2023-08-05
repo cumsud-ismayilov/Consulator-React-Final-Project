@@ -43,28 +43,28 @@ const Blog = () => {
               </div>
               <div className="entry-meta">
                 <ul>
-                  <li className="user"><BiUser/>By<Link to="/">Jenny Watson</Link> <TbPointFilled color="#3757f7"/></li>
+                  <li className="user"><BiUser/>By<Link to="/blogdetailsrightsidebar">Jenny Watson</Link> <TbPointFilled color="#3757f7"/></li>
                   <li className="comments"><LuMessageCircle/> Comments 35 <TbPointFilled color="#3757f7"/></li>
                   <li className="comments"><IoCalendarOutline/> 24 Jun 2021</li>
                 </ul>
               </div>
               <div className="entry-details">
-                <h1><Link to="/blog">8 Mistakes Founders Make When Starting a Business.</Link></h1>
+                <h1><Link to="/blogdetailsrightsidebar">8 Mistakes Founders Make When Starting a Business.</Link></h1>
                 <h2>Consulting is a great career path if you want to build a broad skill set that includes everything from critical thinking and strategic planning to communications. If you love rising to a challenge.</h2>
-                <h3><Link to="/">READ MORE...</Link></h3>
+                <h3><Link to="/blogdetailsrightsidebar">READ MORE...</Link></h3>
               </div>
               <div className="format-standart">
               <div className="entry-meta">
                 <ul>
-                  <li className="user"><BiUser/>By<Link to="/">Jenny Watson</Link> <TbPointFilled color="#3757f7"/></li>
+                  <li className="user"><BiUser/>By<Link to="/blogdetailsrightsidebar">Jenny Watson</Link> <TbPointFilled color="#3757f7"/></li>
                   <li className="comments"><LuMessageCircle/> Comments 35 <TbPointFilled color="#3757f7"/></li>
                   <li className="comments"><IoCalendarOutline/> 24 Jun 2021</li>
                 </ul>
               </div>
               <div className="entry-details">
-                <h1><Link to="/blog">Tips From Successful Small Business Owners</Link></h1>
+                <h1><Link to="/blogdetailsrightsidebar">Tips From Successful Small Business Owners</Link></h1>
                 <h2>Consulting is a great career path if you want to build a broad skill set that includes everything from critical thinking and strategic planning to communications. If you love rising to a challenge.</h2>
-                <h3><Link to="/">READ MORE...</Link></h3>
+                <h3><Link to="/blogdetailsrightsidebar">READ MORE...</Link></h3>
               </div>
               </div>
               <div className="postslider-img">
@@ -72,15 +72,15 @@ const Blog = () => {
               </div>
               <div className="entry-meta">
                 <ul>
-                  <li className="user"><BiUser/>By<Link to="/">Jenny Watson</Link> <TbPointFilled color="#3757f7"/></li>
+                  <li className="user"><BiUser/>By<Link to="/blogdetailsrightsidebar">Jenny Watson</Link> <TbPointFilled color="#3757f7"/></li>
                   <li className="comments"><LuMessageCircle/> Comments 35 <TbPointFilled color="#3757f7"/></li>
                   <li className="comments"><IoCalendarOutline/> 24 Jun 2021</li>
                 </ul>
               </div>
               <div className="entry-details">
-                <h1><Link to="/blog">Worst Ways Small Businesses Waste Money on Marketing</Link></h1>
+                <h1><Link to="/blogdetailsrighttsidebar">Worst Ways Small Businesses Waste Money on Marketing</Link></h1>
                 <h2>Consulting is a great career path if you want to build a broad skill set that includes everything from critical thinking and strategic planning to communications. If you love rising to a challenge.</h2>
-                <h3><Link to="/">READ MORE...</Link></h3>
+                <h3><Link to="/blogdetailsrightsidebar">READ MORE...</Link></h3>
               </div>
               <div className="format-video">
                 <img src="http://consultar-react.wpocean.com/static/media/img-6.a0329f56.jpg" alt="format-video" />
@@ -90,22 +90,22 @@ const Blog = () => {
               </div>
               <div className="entry-meta">
                 <ul>
-                  <li className="user"><BiUser/>By<Link to="/">Jenny Watson</Link> <TbPointFilled color="#3757f7"/></li>
+                  <li className="user"><BiUser/>By<Link to="/blogdetailsrightsidebar">Jenny Watson</Link> <TbPointFilled color="#3757f7"/></li>
                   <li className="comments"><LuMessageCircle/> Comments 35 <TbPointFilled color="#3757f7"/></li>
                   <li className="comments"><IoCalendarOutline/> 24 Jun 2021</li>
                 </ul>
               </div>
               <div className="entry-details">
-                <h1><Link to="/blog">Why Choose Management Consulting?</Link></h1>
+                <h1><Link to="/blogdetailsrightsidebar">Why Choose Management Consulting?</Link></h1>
                 <h2>Consulting is a great career path if you want to build a broad skill set that includes everything from critical thinking and strategic planning to communications. If you love rising to a challenge.</h2>
                 <h3><Link to="/">READ MORE...</Link></h3>
               </div>
               <div className="blog-pagination">
-                <h6 className="pagination1"><Link to="/"><AiOutlineLeft size="21"/></Link></h6>
-                <h6 className="pagination2"><Link to="/">1</Link></h6>
-                <h6 className="pagination1"><Link to="/">2</Link></h6>
-                <h6 className="pagination1"><Link to="/">3</Link></h6>
-                <h6 className="pagination1"><Link to="/"><AiOutlineRight size="21"/></Link></h6>
+                <h6 className="pagination1"><Link to="/blogleftsidebar"><AiOutlineLeft size="21"/></Link></h6>
+                <h6 className="pagination2"><Link to="/blogleftsidebar">1</Link></h6>
+                <h6 className="pagination1"><Link to="/blogleftsidebar">2</Link></h6>
+                <h6 className="pagination1"><Link to="/blogleftsidebar">3</Link></h6>
+                <h6 className="pagination1"><Link to="/blogleftsidebar"><AiOutlineRight size="21"/></Link></h6>
               </div>
             </div>
             <div className="col-xl-4">
