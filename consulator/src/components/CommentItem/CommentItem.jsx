@@ -14,7 +14,7 @@ const CommentItem = () => {
   }, []);
 
   return (
-    <div id="comments-item">
+    <div className="comments-item">
       {comments.length > 0 &&
         comments.map((element, index) => (
           <div key={index} className="comment-cards">

@@ -288,14 +288,14 @@ main {
           }
         }
         .more-post2 {
-            overflow: hidden;
-            border: 1px solid #d8e0f1;
-            padding: 0 25px;
-            display: flex;
-            margin: 2rem 0rem;
+          overflow: hidden;
+          border: 1px solid #d8e0f1;
+          padding: 0 25px;
+          display: flex;
+          margin: 2rem 0rem;
           .previos-text {
             padding: 40px 0;
-            
+
             h3 {
               a {
                 text-decoration: none;
@@ -308,16 +308,16 @@ main {
                 align-items: center;
                 gap: 8px;
                 cursor: pointer;
-                transition: .3s ease-in-out;
-                &:hover{
-                    color: #0d6efd;
+                transition: 0.3s ease-in-out;
+                &:hover {
+                  color: #0d6efd;
                 }
               }
             }
             h4 {
-                font-size: 16px;
-                color: #232f4b;
-                padding-top: 8px;
+              font-size: 16px;
+              color: #232f4b;
+              padding-top: 8px;
             }
           }
           .next-text {
@@ -339,25 +339,100 @@ main {
                 justify-content: flex-end;
                 gap: 8px;
                 cursor: pointer;
-                transition: .3s ease-in-out;
-                &:hover{
-                    color: #0d6efd;
+                transition: 0.3s ease-in-out;
+                &:hover {
+                  color: #0d6efd;
                 }
               }
             }
             h4 {
-                font-size: 16px;
-                color: #232f4b;
-                padding-top: 8px;
+              font-size: 16px;
+              color: #232f4b;
+              padding-top: 8px;
             }
           }
         }
-        .comments-text{
+        .comments-text {
+          font-size: 22px;
+          font-weight: 500;
+          text-transform: uppercase;
+          letter-spacing: 3px;
+          padding-top: 2rem;
+        }
+        .comment-respond {
+          padding-top: 6rem;
+          .post-comments {
             font-size: 22px;
-            font-weight: 500;
             text-transform: uppercase;
-            letter-spacing: 3px;
-            padding-top: 2rem;
+            letter-spacing: 2px;
+          }
+          form {
+            .comments-text2 {
+              background-color: #fff;
+              width: 100%;
+              border: 1px solid #a4adbe;
+              margin-bottom: 15px;
+              outline: 0;
+              border-radius: 30px;
+              box-shadow: none;
+              height: 220px;
+              padding: 15px;
+            }
+            .website-and-name {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              .website-input {
+                background-color: #fff;
+                height: 55px;
+                border: 1px solid #a4adbe;
+                padding: 6px 15px;
+                margin-bottom: 15px;
+                outline: 0;
+                border-radius: 30px;
+                box-shadow: none;
+                width: 420px;
+                transition: all 0.3s;
+              }
+              .namess {
+                background-color: #fff;
+                height: 55px;
+                border: 1px solid #a4adbe;
+                padding: 6px 15px;
+                margin-bottom: 15px;
+                outline: 0;
+                border-radius: 30px;
+                box-shadow: none;
+                transition: all 0.3s;
+                width: 420px;
+              }
+            }
+            .emaill {
+              background-color: #fff;
+              height: 55px;
+              border: 1px solid #a4adbe;
+              padding: 6px 15px;
+              margin-bottom: 15px;
+              outline: 0;
+              border-radius: 30px;
+              box-shadow: none;
+              transition: all 0.3s;
+              width: 100%;
+            }
+          }
+          .posted{
+            background-color: #1e2845;
+            color: #fff;
+            border: 0;
+            outline: 0;
+            text-transform: uppercase;
+            font-size: 15px;
+            letter-spacing: 2px;
+            border-radius: 30px;
+            padding: 6px 15px;
+            height: 55px;
+            box-shadow: none;
+          }
         }
         .about-widget {
           background-color: #f4f8fc;

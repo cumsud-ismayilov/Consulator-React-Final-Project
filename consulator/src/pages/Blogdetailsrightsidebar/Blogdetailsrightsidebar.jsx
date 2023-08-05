@@ -16,6 +16,7 @@ import { AiOutlineInstagram } from "react-icons/ai";
 import { HiOutlineSearch, HiOutlineArrowRight } from "react-icons/hi";
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 import  CommentsCards from "../../components/CommentItem/CommentItem"
+import Buttons from "../../components/ButtonComponent/Buttons";
 const Blogdetailsrightsidebar = () => {
   return (
     <main>
@@ -174,6 +175,18 @@ const Blogdetailsrightsidebar = () => {
                 Comments
               </h3>
               <CommentsCards/>
+              <div className="comment-respond">
+                <h4 className="post-comments">Post Comments</h4>
+                <form>
+                  <textarea name="" id="comments-text2" className="comments-text2" cols="30" rows="10" placeholder="Write Your Comments..."></textarea>
+                  <div className="website-and-name">
+                    <input type="url" placeholder="Website" className="website-input" id="website-input" />
+                    <input type="text" name="namess" id="namess" placeholder="Name" className="namess"/>
+                  </div>
+                  <input type="email" className="emaill" id="emaill" placeholder="Email" name="email" />
+                </form>
+                <Buttons type="text" tittle="Post comments" className="posted" />
+              </div>
             </div>
             <div className="col-xl-4">
               <div className="about-widget">
