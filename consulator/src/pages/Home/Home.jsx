@@ -6,7 +6,9 @@ import PackageCards from "../../components/PackageCards/PackageCard";
 import BlogData from "../../components/BlogData/BlogData";
 import Projectgallery from "../../components/Projectgallery/Projectgallery";
 import "../Home/Home.scss";
-import { FaPlay } from "react-icons/fa";
+import TestimionalCards from "../../components/TestimionalSlide/TestimionalSlide"
+import { FaPlay,FaQuoteLeft } from "react-icons/fa";
+import { BsArrowLeft,BsArrowRight } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
 const Home = () => {
@@ -188,6 +190,25 @@ const Home = () => {
         </div>
       </section>
       <Projectgallery/>
+      <section id="testimional-tittle">
+        <div className="container">
+          <div className="row">
+            <div className="col-xl-12">
+               <div className="wpo-testimional-tittle">
+                  <div className="tittle1">
+                     <p><FaQuoteLeft/></p>
+                     <h2> What <span>Our Clients</span> are Saying</h2>
+                  </div>
+                  <div className="tittle2">
+                    <h4><BsArrowLeft/></h4>
+                    <h5><BsArrowRight/></h5>
+                  </div>
+               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <TestimionalCards/>
       <section id="questions">
         <div className="container">
           <div className="row">

@@ -280,7 +280,7 @@ main {
     }
   }
   #questions {
-    padding: 4rem 0rem;
+    padding-bottom: 4rem;
     .container {
       .row {
         .questions-line {
@@ -458,6 +458,90 @@ main {
               font-size: 14px;
               text-transform: uppercase;
               font-weight: 400;
+            }
+          }
+        }
+      }
+    }
+  }
+  #testimional-tittle {
+    .container {
+      .row {
+        .wpo-testimional-tittle {
+          padding-top: 7rem;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .tittle1 {
+            position: relative;
+            p {
+              background-color: #3757f7;
+              width: 106px;
+              height: 106px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin: 0;
+              svg {
+                color: #fff;
+                font-size: 50px;
+              }
+            }
+            h2 {
+              color: #232f4b;
+              font-size: 43px;
+              font-weight: 600;
+              margin: 0;
+              position: absolute;
+              bottom: -64px;
+              left: 106px;
+              width: 442px;
+              span {
+                color: #071e93;
+              }
+            }
+          }
+          .tittle2 {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            h4 {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background: #fff;
+              width: 50px;
+              height: 50px;
+              line-height: 65px;
+              border: 1px solid #b7b7b7;
+              color: #6e6e6e;
+              padding: 0;
+              cursor: pointer;
+              position: relative;
+              margin: 0;
+           
+              svg {
+                color: #3757f7;
+                font-size: 25px;
+              }
+            }
+            h5 {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background: #fff;
+              width: 50px;
+              height: 50px;
+              line-height: 65px;
+              cursor: pointer;
+              border: 1px solid #b7b7b7;
+              color: #6e6e6e;
+              padding: 0;
+              margin: 0;
+              svg {
+                color: #3757f7;
+                font-size: 25px;
+              }
             }
           }
         }
