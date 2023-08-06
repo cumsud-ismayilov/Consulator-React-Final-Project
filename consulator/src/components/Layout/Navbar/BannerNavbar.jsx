@@ -1,4 +1,5 @@
 import React from 'react'
+import { useState } from "react";
 import "../Navbar/navbar.scss"
 import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 import { TfiLocationPin,TfiGoogle } from "react-icons/tfi";
@@ -7,6 +8,17 @@ import { Link } from "react-router-dom";
 import Buttons from "../../ButtonComponent/Buttons";
 import {GoSearch,GoChevronRight} from "react-icons/go";
 const BannerNavbar = () => {
+  const [fix, setFix] = useState(false);
+
+  const setFixed = () => {
+    if (window.scrollY >= 90) {
+      setFix(true);
+    } else {
+      setFix(false);
+    }
+  };
+
+  window.addEventListener('scroll',setFixed)
   return (
     <div>
       <nav className='banner-nav'>
@@ -31,7 +43,7 @@ const BannerNavbar = () => {
             </div>
            </div>
         </div>
-        <div className="nav-bottom">
+        <div className={fix ? 'nav-bottom actice-nav' : 'nav-bottom'}>
         <div className="container">
           <div className="row g-3 align-items-center justify-content-center">
             <div className="col-xl-3">

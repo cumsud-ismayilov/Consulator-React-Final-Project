@@ -40,3 +40,32 @@
 
 
 
+
+// Animated navbar 
+
+.actice-nav {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  box-shadow: 0 -5px 15px rgba(8,106,216,.29) !important;
+  animation-name: fadeInUp;
+  animation-duration: 1s;
+  z-index: 9999;
+ 
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    top: -50px;
+  }
+  to {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+
+

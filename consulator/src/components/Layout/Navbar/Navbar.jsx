@@ -1,12 +1,24 @@
 import React from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
-import "../Navbar/navbar.scss"
+import "../Navbar/navbar.scss";
 import Buttons from "../../ButtonComponent/Buttons";
-import {GoSearch ,GoChevronRight} from "react-icons/go";
+import { GoSearch, GoChevronRight } from "react-icons/go";
 const Navbar = () => {
+  const [fix, setFix] = useState(false);
+
+  const setFixed = () => {
+    if (window.scrollY >= 90) {
+      setFix(true);
+    } else {
+      setFix(false);
+    }
+  };
+
+  window.addEventListener('scroll',setFixed)
   return (
     <div>
-      <nav className="desktop-nav">
+      <nav className={fix ? 'desktop-nav actice-nav' : 'desktop-nav'}>
         <div className="container">
           <div className="row g-3 align-items-center justify-content-center">
             <div className="col-xl-3">
@@ -26,53 +38,134 @@ const Navbar = () => {
                   <Link to="/about">About</Link>
                 </li>
                 <li className="services">
-                  <Link className="service-li" to="/services">Services
-                  <ul className="service-hover">
-                    <li  ><Link className="hover-li2" to="/service">Service</Link></li>
-                    <li><Link className="hover-li2" to="/servicestyle2">Service Style 2</Link></li>
-                    <li><Link className="hover-li2" to="/servicesingle">Service Single</Link></li>
-                    
-                  </ul>
+                  <Link className="service-li" to="/services">
+                    Services
+                    <ul className="service-hover">
+                      <li>
+                        <Link className="hover-li2" to="/service">
+                          Service
+                        </Link>
+                      </li>
+                      <li>
+                        <Link className="hover-li2" to="/servicestyle2">
+                          Service Style 2
+                        </Link>
+                      </li>
+                      <li>
+                        <Link className="hover-li2" to="/servicesingle">
+                          Service Single
+                        </Link>
+                      </li>
+                    </ul>
                   </Link>
                 </li>
                 <li className="projects">
-                  <Link className="project-li" to="/projects">Projects
-                  <ul className="project-hover">
-                    <li  ><Link className="hover-li1" to="/project">Project</Link></li>
-                    <li><Link className="hover-li1" to="/projectstyle2">Project Style 2</Link></li>
-                    <li><Link className="hover-li1" to="/projectsingle">Project Single</Link></li>
-                    
-                  </ul>
+                  <Link className="project-li" to="/projects">
+                    Projects
+                    <ul className="project-hover">
+                      <li>
+                        <Link className="hover-li1" to="/project">
+                          Project
+                        </Link>
+                      </li>
+                      <li>
+                        <Link className="hover-li1" to="/projectstyle2">
+                          Project Style 2
+                        </Link>
+                      </li>
+                      <li>
+                        <Link className="hover-li1" to="/projectsingle">
+                          Project Single
+                        </Link>
+                      </li>
+                    </ul>
                   </Link>
                 </li>
                 <li className="pages">
-                  <Link className="page-li" to="/page">Pages
-                  <ul className="page-hover">
-                    <li  ><Link className="hover-li" to="/pricing">Pricing</Link></li>
-                    <li><Link className="hover-li" to="/testimional">Testimional</Link></li>
-                    <li><Link className="hover-li" to="/error404">Error404</Link></li>
-                    <li><Link className="hover-li" to="/login">Login</Link></li>
-                    <li><Link className="hover-li" to="/register">Register</Link></li>
-                  </ul>
+                  <Link className="page-li" to="/page">
+                    Pages
+                    <ul className="page-hover">
+                      <li>
+                        <Link className="hover-li" to="/pricing">
+                          Pricing
+                        </Link>
+                      </li>
+                      <li>
+                        <Link className="hover-li" to="/testimional">
+                          Testimional
+                        </Link>
+                      </li>
+                      <li>
+                        <Link className="hover-li" to="/error404">
+                          Error404
+                        </Link>
+                      </li>
+                      <li>
+                        <Link className="hover-li" to="/login">
+                          Login
+                        </Link>
+                      </li>
+                      <li>
+                        <Link className="hover-li" to="/register">
+                          Register
+                        </Link>
+                      </li>
+                    </ul>
                   </Link>
                 </li>
                 <li className="blog">
-                  <Link className="blog-li" to="/blog">Blog
-                  <ul className="blog-hover">
-                    <li  className="hover-li3"><Link className="hover-a3" to="/blogrightsidebar">Blog right sidebar</Link></li>
-                    <li className="hover-li3"><Link className="hover-a3" to="/blogleftsidebar">Blog left sidebar</Link></li>
-                    <li className="hover-li3"><Link className="hover-a3" to="/blogfullwidth">Blog fullwidth</Link></li>
-                    <li className="hover-li4"><Link className="hover-a4" to="/blogdetails">Blog details <GoChevronRight/>
-                    <ul className="blog-hover2">
-                      <li className="hover-li5"><Link to="/blogdetailsrightsidebar" className="hover-a5">Blog details right sidebar</Link></li>
-                      <li className="hover-li5"><Link  to="/blogdetailsleftsidebar" className="hover-a5">Blog details left sidebar</Link></li>
-                      <li className="hover-li5"><Link to="/blogdetailsfullwidth" className="hover-a5"> Blog details fullwidth</Link></li>
+                  <Link className="blog-li" to="/blog">
+                    Blog
+                    <ul className="blog-hover">
+                      <li className="hover-li3">
+                        <Link className="hover-a3" to="/blogrightsidebar">
+                          Blog right sidebar
+                        </Link>
+                      </li>
+                      <li className="hover-li3">
+                        <Link className="hover-a3" to="/blogleftsidebar">
+                          Blog left sidebar
+                        </Link>
+                      </li>
+                      <li className="hover-li3">
+                        <Link className="hover-a3" to="/blogfullwidth">
+                          Blog fullwidth
+                        </Link>
+                      </li>
+                      <li className="hover-li4">
+                        <Link className="hover-a4" to="/blogdetails">
+                          Blog details <GoChevronRight />
+                          <ul className="blog-hover2">
+                            <li className="hover-li5">
+                              <Link
+                                to="/blogdetailsrightsidebar"
+                                className="hover-a5"
+                              >
+                                Blog details right sidebar
+                              </Link>
+                            </li>
+                            <li className="hover-li5">
+                              <Link
+                                to="/blogdetailsleftsidebar"
+                                className="hover-a5"
+                              >
+                                Blog details left sidebar
+                              </Link>
+                            </li>
+                            <li className="hover-li5">
+                              <Link
+                                to="/blogdetailsfullwidth"
+                                className="hover-a5"
+                              >
+                                {" "}
+                                Blog details fullwidth
+                              </Link>
+                            </li>
+                          </ul>
+                        </Link>
+                      </li>
                     </ul>
-                    </Link></li>
-                    
-                  </ul>
                   </Link>
-                 
                 </li>
                 <li className="contact">
                   <Link to="/contact">Contact</Link>
@@ -81,8 +174,14 @@ const Navbar = () => {
             </div>
             <div className="col-xl-3">
               <div className="site-right">
-                 <Buttons type="text" tittle="Free Consulting"  className="consulting"/>
-                 <p className="search"><GoSearch size={20}/></p>
+                <Buttons
+                  type="text"
+                  tittle="Free Consulting"
+                  className="consulting"
+                />
+                <p className="search">
+                  <GoSearch size={20} />
+                </p>
               </div>
             </div>
           </div>
