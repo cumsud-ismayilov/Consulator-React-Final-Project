@@ -1,4 +1,7 @@
 import Home from './pages/Home/Home';
+import Homestyle1 from './pages/Homestyle1/Homestyle1';
+import Homestyle2 from './pages/Homestyle2/Homestyle2';
+import Homestyle3 from './pages/Homestyle3/Homestyle3';
 import About from './pages/About/About';
 import Projects from './pages/Projects/Projects'
 import Services from './pages/Services/Services'
@@ -174,6 +177,24 @@ const routes =[
         name: "Blogdetailsfullwidth",
         element: <Blogdetailsfullwidth/>,
         path: "/blogdetailsfullwidth",
+    },
+    {
+        id: uuidv4(),
+        name: "Homestyle1",
+        element: <Homestyle1/>,
+        path: "/homestyle1",
+    },
+    {
+        id: uuidv4(),
+        name: "Homestyle2",
+        element: <Homestyle2/>,
+        path: "/homestyle2",
+    },
+    {
+        id: uuidv4(),
+        name: "Homestyle3",
+        element: <Homestyle3/>,
+        path: "/homestyle3",
     },
 ]
 export default routes;

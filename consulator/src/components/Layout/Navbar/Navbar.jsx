@@ -32,7 +32,25 @@ const Navbar = () => {
             <div className="col-xl-6">
               <ul className="navmiddle">
                 <li className="home">
-                  <Link to="/">Home</Link>
+                  <Link className="home-li" to="/">Home
+                  <ul className="home-hover">
+                      <li>
+                        <Link className="hover-li6" to="/homestyle1">
+                          Home style 1
+                        </Link>
+                      </li>
+                      <li>
+                        <Link className="hover-li6" to="/homestyle2">
+                          Home style 2
+                        </Link>
+                      </li>
+                      <li>
+                        <Link className="hover-li6" to="/homestyle3">
+                          Home style 3
+                        </Link>
+                      </li>
+                    </ul>
+                  </Link>
                 </li>
                 <li className="about">
                   <Link to="/about">About</Link>
