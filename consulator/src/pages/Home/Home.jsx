@@ -58,9 +58,11 @@ const Home = () => {
                     />
                   </div>
                 </div>
-                <h4 className="play-button">
-                  <FaPlay color="#3757f7" />
-                </h4>
+                <div className="video-btn">
+                  <h1>
+                    <FaPlay color="#3757f7" size="28px" />
+                  </h1>
+                </div>
               </div>
             </div>
           </div>

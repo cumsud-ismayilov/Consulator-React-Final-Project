@@ -1,19 +1,80 @@
 import React from "react";
 import Buttons from "../../components/ButtonComponent/Buttons";
-import Featured from "../../components/FeaturedCards/Featured";
-import ServicesCards from "../../components/ServicesCards/Servicescards";
+import FeaturedCards2 from "../../components/FeaturedCards2/FeaturedCards2";
 import PackageCards from "../../components/PackageCards/PackageCard";
 import BlogData from "../../components/BlogData/BlogData";
 import Projectgallery from "../../components/Projectgallery/Projectgallery";
 import "../Home/Home.scss";
 import TestimionalCards from "../../components/TestimionalSlide/TestimionalSlide";
-import { FaPlay, FaQuoteLeft } from "react-icons/fa";
+import { FaQuoteLeft } from "react-icons/fa";
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import ExploreSlide from "../../components/ExploreSlide/ExploreSlide";
 
 const Homestyle3 = () => {
   return (
     <main>
+      <section id="wpo-hero-slide">
+        <div id="carouselExample" className="carousel slide">
+          <div className="carousel-inner">
+            <div className="carousel-item active">
+              <img
+                src="http://consultar-react.wpocean.com/static/media/slide-3.29832202.jpg"
+                alt="img"
+              />
+             <div className="slide-tittle">
+                <p>We bring the right people together.</p>
+                <h3>Helping You Solve Your Problems</h3>
+                <h4>Facilitating client learning that is,teaching clients how to resolve similar problems in the future.</h4>
+              <Buttons type="text" tittle="Get Started" className="started"/>
+             </div>
+            </div>
+            <div className="carousel-item">
+              <img
+                src="	http://consultar-react.wpocean.com/static/media/slide-2.d425a7db.jpg"
+                alt="img"
+              />
+               <div className="slide-tittle">
+                <p>We bring the right people together.</p>
+                <h3>Helping You Solve Your Problems</h3>
+                <h4>Facilitating client learning that is,teaching clients how to resolve similar problems in the future.</h4>
+              <Buttons type="text" tittle="Get Started" className="started"/>
+             </div>
+            </div>
+          </div>
+          <button
+            className="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="prev"
+          >
+            <h2 className="slide-left-button">
+              {" "}
+              <span
+                className="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+            </h2>
+            <span className="visually-hidden">Previous</span>
+          </button>
+          <button
+            className="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="next"
+          >
+          <h2 className="slide-right-button">
+          <span
+              className="carousel-control-next-icon"
+              aria-hidden="true"
+            ></span>
+          </h2>
+            <span className="visually-hidden">Next</span>
+          </button>
+        </div>
+       
+      </section>
+      <FeaturedCards2/>
       <section id="about-section">
         <div className="container">
           <div className="row g-3">
@@ -81,7 +142,7 @@ const Homestyle3 = () => {
           </div>
         </div>
       </section>
-      <ServicesCards />
+      <ExploreSlide />
       <section id="banner">
         <div className="container">
           <div className="row g-3">
