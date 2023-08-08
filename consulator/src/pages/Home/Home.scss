@@ -1,18 +1,33 @@
 main {
   #problems {
+    @media screen and (max-width: 768px) {
+      padding: 0;
+      background-color: #edf2f8;
+    }
     padding: 9rem 0rem;
     border-bottom: 1px solid #ebebeb;
     .container {
       .row {
         .your-problems {
+          @media screen and (max-width: 768px) {
+            padding: 20px 0px;
+            border-top: 1px solid #fff;
+          }
           padding: 4rem 0rem;
           p {
+            @media screen and (max-width: 768px) {
+              font-size: 18px;
+            }
             margin: 0;
             font-size: 21px;
             color: #8188a9;
             font-weight: 500;
           }
           h2 {
+            @media screen and (max-width: 768px) {
+              font-size: 32px;
+              line-height: 53px;
+            }
             font-size: 59px;
             font-weight: 700;
             line-height: 90px;
@@ -44,12 +59,18 @@ main {
           height: 100%;
           position: relative;
           img {
+            @media screen and (max-width: 768px) {
+              display: none;
+            }
             width: 100%;
             height: 100%;
             object-fit: cover;
             object-position: center;
           }
           .happy-clients {
+            @media screen and (max-width: 768px) {
+              display: none;
+            }
             position: absolute;
             bottom: 30px;
             left: -52px;
@@ -85,6 +106,9 @@ main {
             }
           }
           .video-btn {
+            @media screen and (max-width: 768px) {
+              display: none;
+            }
             position: absolute;
             top: 191px;
             right: 244px;
@@ -117,6 +141,44 @@ main {
               top: -22rem;
               left: -52rem;
             }
+          }
+
+        }
+      }
+      .happy-clients2 {
+        margin: 22px;
+        @media screen and (max-width: 768px) {
+          display: block;
+        }
+        display: none;
+        padding: 20px;
+        background: #fff;
+        text-align: center;
+        border-radius: 20px;
+        box-shadow: 0 1px 20px 0 rgba(43, 45, 118, 0.1);
+        
+        .clients-text {
+          p {
+            font-size: 48px;
+            color: #232f4b;
+            margin: 0;
+            font-weight: 600;
+          }
+          h3 {
+            margin-bottom: 0;
+            font-size: 21px;
+            color: #838383;
+            font-weight: 600;
+          }
+        }
+        .clients-img {
+          padding-top: 14px;
+          img {
+            width: 50px;
+            height: 50px;
+            object-fit: contain;
+            object-position: center;
+            border-radius: 50%;
           }
         }
       }

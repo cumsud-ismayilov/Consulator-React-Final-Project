@@ -63,7 +63,7 @@
 // Home slide
 .carousel {
   overflow: hidden;
- 
+
   &:hover {
     .slide-left-button {
       opacity: 1;
@@ -120,7 +120,6 @@
           font-weight: 500;
           height: 60px;
           background: linear-gradient(270deg, #3757f7, #071e93);
-         
         }
       }
     }
@@ -161,5 +160,48 @@
   }
 }
 
+// Mobil Menu
 
+.navbar {
+  .navbar-button {
+      .menu-bars {
+      background-color: #0d6efd;
+      padding: 6px;
+      border-radius: 5px;
+    }
+  }
+  .nav-menu {
+    background-color: #232f4b;
+    width: 250px;
+    height: 795px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    left: -100%;
+    transition: 850ms;
+    .nav-menu-items {
+      width: 100%;
+      .navbar-toggle {
+        width: 100%;
+        height: 80px;
+        padding-right: 33px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        .menu-bars {
+          list-style: none;
+          padding: 6px;
+          border: 1px solid #fff;
+        
+        }
+      }
+    }
+  }
+}
 
+.nav-menu.active {
+  left: 0;
+  transition: 350ms;
+}
