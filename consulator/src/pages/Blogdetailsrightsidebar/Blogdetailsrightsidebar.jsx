@@ -13,7 +13,7 @@ import { TbPointFilled } from "react-icons/tb";
 import { LuMessageCircle } from "react-icons/lu";
 import { IoCalendarOutline } from "react-icons/io5";
 import { AiOutlineInstagram } from "react-icons/ai";
-import { HiOutlineSearch, HiOutlineArrowRight } from "react-icons/hi";
+import { HiSearch, HiArrowRight } from "react-icons/hi";
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 import  CommentsCards from "../../components/CommentItem/CommentItem"
 import Buttons from "../../components/ButtonComponent/Buttons";
@@ -225,14 +225,14 @@ const Blogdetailsrightsidebar = () => {
               <div className="search-widget">
                 <form>
                   <input
-                    type="search"
+                    type=""
                     name="form-controls"
                     id="form-controls"
                     className="form-controls"
-                    placeholder="Search Post.."
+                    placeholder=" Post.."
                   />
                   <p className="search-icon">
-                    <HiOutlineSearch size="25px" />
+                    <HiSearch size="25px" />
                   </p>
                 </form>
               </div>
@@ -281,7 +281,7 @@ const Blogdetailsrightsidebar = () => {
                     />
                     <div className="post-deatils">
                       <h5>
-                        <Link>Researching the Consulting Career Path</Link>
+                        <Link>Reing the Consulting Career Path</Link>
                       </h5>
                       <h6>22 May 2021 </h6>
                     </div>
@@ -401,7 +401,7 @@ const Blogdetailsrightsidebar = () => {
                 <Link to="/contact" className="contact-loc">
                   Contact Us{" "}
                   <h5>
-                    <HiOutlineArrowRight />
+                    <HiArrowRight />
                   </h5>
                 </Link>
               </div>

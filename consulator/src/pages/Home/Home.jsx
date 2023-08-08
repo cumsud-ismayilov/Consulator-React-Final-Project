@@ -1,4 +1,5 @@
 import React from "react";
+
 import Buttons from "../../components/ButtonComponent/Buttons";
 import Featured from "../../components/FeaturedCards/Featured";
 import ServicesCards from "../../components/ServicesCards/Servicescards";
@@ -6,12 +7,14 @@ import PackageCards from "../../components/PackageCards/PackageCard";
 import BlogData from "../../components/BlogData/BlogData";
 import Projectgallery from "../../components/Projectgallery/Projectgallery";
 import "../Home/Home.scss";
-import TestimionalCards from "../../components/TestimionalSlide/TestimionalSlide"
-import { FaPlay,FaQuoteLeft } from "react-icons/fa";
-import { BsArrowLeft,BsArrowRight } from "react-icons/bs";
+import TestimionalCards from "../../components/TestimionalSlide/TestimionalSlide";
+import { FaPlay, FaQuoteLeft } from "react-icons/fa";
+import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
+
 import { Link } from "react-router-dom";
 
 const Home = () => {
+
   return (
     <main>
       <section id="problems">
@@ -60,10 +63,20 @@ const Home = () => {
                 </div>
                 <div className="video-btn">
                   <h1>
-                    <FaPlay color="#3757f7" size="28px" />
+                    <FaPlay  color="#3757f7" size="28px" />
                   </h1>
+                 
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="video">
+        <div className="container">
+          <div className="row">
+            <div className="col-xl-12">
+              <div className="video-player"></div>
             </div>
           </div>
         </div>
@@ -125,55 +138,55 @@ const Home = () => {
         </div>
       </section>
       <section id="our-services">
-         <div className="container">
-           <div className="row">
-              <div className="col-xl-12">
-                 <div className="ourservices-tittle">
-                    <p>Our Services</p>
-                    <h2>Explore Our Services</h2>
-                 </div>
+        <div className="container">
+          <div className="row">
+            <div className="col-xl-12">
+              <div className="ourservices-tittle">
+                <p>Our Services</p>
+                <h2>Explore Our Services</h2>
               </div>
-           </div>
-         </div>
-      </section>
-      <ServicesCards/>
-      <section id="banner">
-         <div className="container">
-          <div className="row g-3">
-             <div className="col-xl-12">
-                <div className="banner-text">
-                   <p>Pricing</p>
-                   <h5>Our Pricing Packages</h5>
-                </div>
-             </div>
+            </div>
           </div>
-         </div>
+        </div>
       </section>
-      <PackageCards/>
+      <ServicesCards />
+      <section id="banner">
+        <div className="container">
+          <div className="row g-3">
+            <div className="col-xl-12">
+              <div className="banner-text">
+                <p>Pricing</p>
+                <h5>Our Pricing Packages</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <PackageCards />
       <section id="facts">
         <div className="container">
-           <div className="row">
-             <div className="col-xl-12">
-                <div className="facts-tittle">
-                    <div className="tittle1">
-                       <p>500+</p>
-                       <h2>Strategy and Planning</h2>
-                    </div>
-                    <div className="tittle2">
-                       <p>25+</p>
-                       <h2>Expert Consultants</h2>
-                    </div>
-                    <div className="tittle3">
-                       <p>95%</p>
-                       <h2>Client Satisfaction</h2>
-                    </div>
-                    <div className="tittle4">
-                       <p>30+</p>
-                       <h2>Award Winning</h2>
-                    </div>
+          <div className="row">
+            <div className="col-xl-12">
+              <div className="facts-tittle">
+                <div className="tittle1">
+                  <p>500+</p>
+                  <h2>Strategy and Planning</h2>
                 </div>
-             </div>
-           </div>
+                <div className="tittle2">
+                  <p>25+</p>
+                  <h2>Expert Consultants</h2>
+                </div>
+                <div className="tittle3">
+                  <p>95%</p>
+                  <h2>Client Satisfaction</h2>
+                </div>
+                <div className="tittle4">
+                  <p>30+</p>
+                  <h2>Award Winning</h2>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <section id="projects-galery">
@@ -181,64 +194,80 @@ const Home = () => {
           <div className="row">
             <div className="col-xl-12">
               <div className="projectgalery-text">
-                 <div className="text1">
-                   <p>Projects</p>
-                   <h2>Our Project Gallery</h2>
-                 </div>
-                 <h4><Link to="/projects">More Projects</Link></h4>
+                <div className="text1">
+                  <p>Projects</p>
+                  <h2>Our Project Gallery</h2>
+                </div>
+                <h4>
+                  <Link to="/projects">More Projects</Link>
+                </h4>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <Projectgallery/>
+      <Projectgallery />
       <section id="testimional-tittle">
         <div className="container">
           <div className="row">
             <div className="col-xl-12">
-               <div className="wpo-testimional-tittle">
-                  <div className="tittle1">
-                     <p><FaQuoteLeft/></p>
-                     <h2> What <span>Our Clients</span> are Saying</h2>
-                  </div>
-                  <div className="tittle2">
-                    <h4><BsArrowLeft/></h4>
-                    <h5><BsArrowRight/></h5>
-                  </div>
-               </div>
+              <div className="wpo-testimional-tittle">
+                <div className="tittle1">
+                  <p>
+                    <FaQuoteLeft />
+                  </p>
+                  <h2>
+                    {" "}
+                    What <span>Our Clients</span> are Saying
+                  </h2>
+                </div>
+                <div className="tittle2">
+                  <h4>
+                    <BsArrowLeft />
+                  </h4>
+                  <h5>
+                    <BsArrowRight />
+                  </h5>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <TestimionalCards/>
+      <TestimionalCards />
       <section id="questions">
         <div className="container">
           <div className="row">
             <div className="col-xl-12">
               <div className="questions-line">
-                 <div className="questions-text">
-                   <p>Have You a Different Question?</p>
-                   <h2>Please create a ticket to our support forum,a great place to learn, share, and troubleshoot. Get started.</h2>
-                 </div>
-                 <h4 className="support"><Link to="/contact">Ask Support Ticket</Link></h4>
+                <div className="questions-text">
+                  <p>Have You a Different Question?</p>
+                  <h2>
+                    Please create a ticket to our support forum,a great place to
+                    learn, share, and troubleshoot. Get started.
+                  </h2>
+                </div>
+                <h4 className="support">
+                  <Link to="/contact">Ask Support Ticket</Link>
+                </h4>
               </div>
             </div>
           </div>
         </div>
       </section>
       <section id="blog">
-          <div className="container">
-            <div className="row">
-              <div className="col-xl-12">
-                <div className="blog-text">
-                  <p>Blog</p>
-                  <h2>Our blog Packages</h2>
-                </div>
+        <div className="container">
+          <div className="row">
+            <div className="col-xl-12">
+              <div className="blog-text">
+                <p>Blog</p>
+                <h2>Our blog Packages</h2>
               </div>
             </div>
           </div>
+        </div>
       </section>
-      <BlogData/>
+      <BlogData />
     </main>
   );
 };

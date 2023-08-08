@@ -13,7 +13,7 @@ import { LuMessageCircle } from "react-icons/lu";
 import { IoCalendarOutline } from "react-icons/io5";
 import { BsFillPlayFill } from "react-icons/bs";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
-import { HiOutlineSearch, HiOutlineArrowRight } from "react-icons/hi";
+import { HiSearch, HiArrowRight } from "react-icons/hi";
 
 const BlogLeftSidebar = () => {
   return (
@@ -71,7 +71,7 @@ const BlogLeftSidebar = () => {
               <div className="search-widget">
                 <form>
                   <input type="search" name="form-controls" id="form-controls" className="form-controls" placeholder="Search Post.."/>
-                  <p className="search-icon"><HiOutlineSearch size="25px"/></p>
+                  <p className="search-icon"><HiSearch size="25px"/></p>
                 </form>
               </div>
               <div className="category-widget">
@@ -186,7 +186,7 @@ const BlogLeftSidebar = () => {
                   Help You!
                 </h2>
                 <h4>labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </h4>
-                <Link to="/contact" className="contact-loc">Contact Us <h5><HiOutlineArrowRight/></h5></Link>
+                <Link to="/contact" className="contact-loc">Contact Us <h5><HiArrowRight/></h5></Link>
               </div>
             </div>
             <div className="col-xl-8">
