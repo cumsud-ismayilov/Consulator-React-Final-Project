@@ -6,7 +6,7 @@ import Buttons from "../../ButtonComponent/Buttons";
 import { GoSearch, GoChevronRight } from "react-icons/go";
 import { AiOutlineClose, AiOutlineSearch } from "react-icons/ai";
 import { FaBars } from "react-icons/fa";
-import { GrClose } from "react-icons/gr";
+import { IoCloseOutline } from "react-icons/io5";
 const Navbar = () => {
   const [fix, setFix] = useState(false);
 
@@ -271,7 +271,7 @@ const Navbar = () => {
                     <ul className="nav-menu-items" onClick={showSidebar}>
                       <li className="navbar-toggle">
                         <Link to="#"  className="menu-bars" >
-                          <GrClose  size="20px" />
+                          <IoCloseOutline color="#fff" size="20px" />
                         </Link>
                       </li>
                       <li className="lorem">

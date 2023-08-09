@@ -1,0 +1,133 @@
+#login-page {
+  background-color: #f9f9f9;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  .login {
+    width: 500px;
+    max-width: 90%;
+
+    background: #fff;
+    padding: 70px 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+    position: relative;
+    z-index: 1;
+    p {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #232f4b;
+    }
+    h2 {
+      font-size: 13px;
+      margin-bottom: 30px;
+      text-align: center;
+      font-weight: 400;
+      color: #666;
+    }
+    .passwordinputs {
+      margin-top: 22px;
+    }
+    .checkedandpassword {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 22px;
+      .checked-icons {
+        display: flex;
+        align-items: center;
+       
+        h3 {
+          color: #4f555a;
+          font-size: 14px;
+          font-weight: 400;
+          margin: 0;
+          cursor: pointer;
+        }
+      }
+      .forgot-password {
+        a {
+          text-decoration: none;
+          font-size: 16px;
+          font-weight: 500;
+          color: #246fea;
+          cursor: pointer;
+        }
+      }
+    }
+    .login-button {
+      background-color: #0a58ca;
+      border: none;
+      width: 100%;
+      border-radius: 5px;
+      height: 36px;
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: 400;
+      margin-top: 18px;
+    }
+    .login-social {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 26px 0px 26px;
+      .face-bk {
+        margin: 0;
+        background-color: #3b5998;
+        width: 100px;
+        height: 33px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .twitter {
+        margin: 0;
+        background-color: #55acee;
+        width: 100px;
+        height: 33px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .lnkedin {
+        margin: 0;
+        background-color: #0077b5;
+        width: 100px;
+        height: 33px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    .nothelp {
+        display: flex;
+        align-items: baseline;
+        gap: 12px;
+        justify-content: center;
+      .dont-account {
+        margin: 0;
+        color: #4f555a;
+        font-size: 12px;
+        letter-spacing: 0;
+        font-weight: 400;
+      }
+      .toregister {
+        a {
+          text-decoration: none;
+          margin: 0;
+          color: #0077b5;
+          font-size: 12px;
+          letter-spacing: 0;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}

@@ -25,6 +25,9 @@
         .featured-text {
           text-align: center;
           p {
+            @media screen and (max-width: 768px){
+              font-size: 21px;
+            }
             color: #232f4b;
             font-size: 25px;
             font-weight: 500;
@@ -36,6 +39,9 @@
             }
           }
           h2 {
+            @media screen and (max-width: 768px){
+              width: 327px;
+            }
             margin-bottom: 0;
             font-size: 14px;
             font-weight: 400;
