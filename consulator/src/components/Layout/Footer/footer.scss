@@ -3,6 +3,9 @@
 footer {
   
   .foot-top {
+    @media screen and (max-width: 768px){
+      padding: 53px 0;
+    }
     background-color: #1e2845;
     padding: 90px 0;
     .container {

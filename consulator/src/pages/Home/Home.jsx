@@ -179,7 +179,7 @@ const Home = () => {
             <div className="col-xl-12">
               <div className="banner-text">
                 <p>Pricing</p>
-                <h5>Our Pricing Packages</h5>
+                <h5 className="pricing-packages">Our Pricing Packages</h5>
               </div>
             </div>
           </div>
@@ -236,19 +236,19 @@ const Home = () => {
             <div className="col-xl-12">
               <div className="wpo-testimional-tittle">
                 <div className="tittle1">
-                  <p>
-                    <FaQuoteLeft />
+                  <p className="queto">
+                    <FaQuoteLeft size="34px"/>
                   </p>
-                  <h2>
+                  <h2 className="our-clients">
                     {" "}
                     What <span>Our Clients</span> are Saying
                   </h2>
                 </div>
                 <div className="tittle2">
-                  <h4>
+                  <h4 className="two-arrow">
                     <BsArrowLeft />
                   </h4>
-                  <h5>
+                  <h5 className="two-arrow">
                     <BsArrowRight />
                   </h5>
                 </div>

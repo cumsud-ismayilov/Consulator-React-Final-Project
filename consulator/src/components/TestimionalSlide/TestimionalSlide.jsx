@@ -22,12 +22,13 @@ const TestimionalSlide = () => {
       <div className="container">
         <div className="row">
           <Swiper
-            slidesPerView={3}
-            spaceBetween={20}
+          slidesPerView={3}
+          spaceBetween={20}
             autoplay={{
               delay: 1500,
               disableOnInteraction: false,
             }}
+            
             modules={[Autoplay]}
             className="mySwiper"
           >

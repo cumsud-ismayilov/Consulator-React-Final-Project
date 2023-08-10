@@ -1,5 +1,8 @@
 #blog-packages {
   padding: 3rem 0rem 6rem;
+  @media screen and (max-width: 768px){
+    padding: 3rem 0rem 4rem;
+  }
   .container {
     .row {
       .blog-cards {
@@ -45,6 +48,9 @@
             }
           }
           .person-line {
+            @media screen and (max-width: 768px){
+              padding: 17px 12px;
+            }
             border-top: 1px solid #f3f3fb;
             display: flex;
             justify-content: space-between;
@@ -75,6 +81,9 @@
                   }
                 }
                 h5 {
+                  @media screen and (max-width: 768px){
+                    
+                  }
                   margin: 0;
                   font-size: 15px;
                   color: #848892;
