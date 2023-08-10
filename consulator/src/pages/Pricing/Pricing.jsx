@@ -16,7 +16,7 @@ const Pricing = () => {
             </div>
          </div>
       </section>
-      <section id="banner">
+      <section id="banner99">
          <div className="container">
           <div className="row g-3">
              <div className="col-xl-12">

@@ -6,7 +6,7 @@ import { AiOutlineDoubleLeft } from "react-icons/ai";
 const Error404 = () => {
   return (
     <main>
-        <section id='breadcumb-area'>
+        <section id='breadcumb-area22'>
          <div className='back-img'>
             <div className='breadcumb-text'>
                <p>404</p>
