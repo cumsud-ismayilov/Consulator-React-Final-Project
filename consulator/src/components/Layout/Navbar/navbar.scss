@@ -599,6 +599,9 @@
 }
 
 .banner-nav {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
   .nav-top {
     padding: 15px 130px;
     background-color: #283a5e;
