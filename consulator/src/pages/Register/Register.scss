@@ -6,6 +6,9 @@
     justify-content: center;
     
     .register {
+      @media screen and (max-width: 768px){
+        padding: 70px 22px;
+      }
       width: 500px;
       max-width: 90%;
   
