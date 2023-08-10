@@ -2,8 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../Testimional/Testimional.scss";
 import { FaQuoteLeft } from "react-icons/fa";
-import { BsArrowLeft,BsArrowRight } from "react-icons/bs";
-import TestimionalCards from "../../components/TestimionalSlide/TestimionalSlide"
+import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
+import TestimionalCards from "../../components/TestimionalSlide/TestimionalSlide";
 
 const Testimional = () => {
   return (
@@ -25,21 +25,30 @@ const Testimional = () => {
         <div className="container">
           <div className="row">
             <div className="col-xl-12">
-               <div className="wpo-testimional-tittle">
-                  <div className="tittle1">
-                     <p><FaQuoteLeft/></p>
-                     <h2> What <span>Our Clients</span> are Saying</h2>
-                  </div>
-                  <div className="tittle2">
-                    <h4><BsArrowLeft/></h4>
-                    <h5><BsArrowRight/></h5>
-                  </div>
-               </div>
+              <div className="wpo-testimional-tittle">
+                <div className="tittle1">
+                  <p className="queto">
+                    <FaQuoteLeft />
+                  </p>
+                  <h2 className="our-clients ">
+                    {" "}
+                    What <span>Our Clients</span> are Saying
+                  </h2>
+                </div>
+                <div className="tittle2">
+                  <h4 className="two-arrow">
+                    <BsArrowLeft />
+                  </h4>
+                  <h5 className="two-arrow">
+                    <BsArrowRight />
+                  </h5>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <TestimionalCards/>
+      <TestimionalCards />
     </main>
   );
 };

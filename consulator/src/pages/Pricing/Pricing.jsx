@@ -22,7 +22,7 @@ const Pricing = () => {
              <div className="col-xl-12">
                 <div className="banner-text">
                    <p>Pricing</p>
-                   <h5>Our Pricing Packages</h5>
+                   <h5 className='pricing-packages'>Our Pricing Packages</h5>
                 </div>
              </div>
           </div>

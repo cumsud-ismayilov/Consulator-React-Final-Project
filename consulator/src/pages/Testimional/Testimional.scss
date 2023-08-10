@@ -1,6 +1,9 @@
 main {
   #testimional-page {
     .back-img {
+      @media screen and (max-width: 768px){
+        height: 260px;
+      }
       background-image: url(http://consultar-react.wpocean.com/static/media/page-title.be0e30a3.jpg);
       background-position: center;
       background-repeat: no-repeat;
@@ -10,6 +13,9 @@ main {
       position: relative;
 
       .breadcumb-text {
+        @media screen and (max-width: 768px){
+          height: 260px;
+        }
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -18,6 +24,9 @@ main {
         filter: opacity(0.7);
         height: 380px;
         p {
+          @media screen and (max-width: 768px){
+            font-size: 28px;
+          }
           color: #fff;
           font-size: 46px;
           font-weight: 500;
@@ -64,7 +73,7 @@ main {
           justify-content: space-between;
           .tittle1 {
             position: relative;
-            p {
+            .queto {
               background-color: #3757f7;
               width: 106px;
               height: 106px;
@@ -72,12 +81,22 @@ main {
               align-items: center;
               justify-content: center;
               margin: 0;
+              @media screen and (max-width: 768px) {
+                width: 80px;
+                height: 80px;
+              }
               svg {
                 color: #fff;
                 font-size: 50px;
               }
             }
-            h2 {
+            .our-clients {
+              @media screen and (max-width: 768px){
+                left: 79px;
+                font-size: 26px;
+                bottom: -25px;
+                width: 264px;
+              }
               color: #232f4b;
               font-size: 43px;
               font-weight: 600;
@@ -92,10 +111,14 @@ main {
             }
           }
           .tittle2 {
+          
             display: flex;
             align-items: center;
             gap: 16px;
-            h4 {
+            .two-arrow {
+              @media screen and (max-width: 768px){
+                display: none;
+              }
               display: flex;
               align-items: center;
               justify-content: center;
@@ -109,7 +132,7 @@ main {
               cursor: pointer;
               position: relative;
               margin: 0;
-           
+
               svg {
                 color: #3757f7;
                 font-size: 25px;
