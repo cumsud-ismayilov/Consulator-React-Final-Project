@@ -108,9 +108,11 @@ main {
     }
   }  
   #problems6 {
+    display: none;
     @media screen and (max-width: 768px) {
       padding: 0;
       background-color: #edf2f8;
+      display: block;
     }
     padding: 9rem 0rem;
     border-bottom: 1px solid #ebebeb;
