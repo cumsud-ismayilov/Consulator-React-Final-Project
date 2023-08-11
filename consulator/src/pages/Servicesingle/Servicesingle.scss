@@ -1,6 +1,9 @@
 main {
   #servicesingle {
     .back-img {
+      @media screen and (max-width: 768px) {
+        height: 260px;
+      }
       background-image: url(http://consultar-react.wpocean.com/static/media/page-title.be0e30a3.jpg);
       background-position: center;
       background-repeat: no-repeat;
@@ -10,6 +13,9 @@ main {
       position: relative;
 
       .breadcumb-text {
+        @media screen and (max-width: 768px) {
+          height: 260px;
+        }
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -18,6 +24,9 @@ main {
         filter: opacity(0.7);
         height: 380px;
         p {
+          @media screen and (max-width: 768px) {
+            font-size: 28px;
+          }
           color: #fff;
           font-size: 46px;
           font-weight: 500;
@@ -55,10 +64,16 @@ main {
     }
   }
   #single-sec1 {
+    @media screen and (max-width: 768px) {
+      padding: 4rem 0rem 7rem;
+    }
     padding: 7rem 0rem 7rem;
     .container {
       .row {
         .content-img {
+          @media screen and (max-width: 768px) {
+            height: 210px;
+          }
           width: 100%;
           height: 466px;
           img {
@@ -69,6 +84,9 @@ main {
           }
         }
         .single-widget {
+          @media screen and (max-width: 768px) {
+            margin-top: 27px;
+          }
           padding: 30px 40px;
           border: 1px solid #e1e1e1;
           margin-bottom: 40px;
@@ -107,6 +125,9 @@ main {
         }
         .service-content-des {
           p {
+            @media screen and (max-width: 768px) {
+              font-size: 22px;
+            }
             margin-bottom: 30px;
             font-size: 28px;
             color: #232f4b;
@@ -180,6 +201,10 @@ main {
           }
         }
         .content-img3 {
+          @media screen and (max-width: 768px) {
+            width: 100%;
+            height: 210px;
+          }
           width: 100%;
           height: 300px;
           img {
@@ -190,6 +215,11 @@ main {
           }
         }
         .content-img4 {
+          @media screen and (max-width: 768px) {
+            width: 100%;
+            height: 210px;
+            margin-top: 12px;
+          }
           width: 100%;
           height: 300px;
           img {
@@ -200,6 +230,9 @@ main {
           }
         }
         .instagram-widget {
+          @media screen and (max-width: 768px) {
+            margin-top: 24px;
+          }
           padding: 30px 40px;
           border: 1px solid #e1e1e1;
           margin-bottom: 40px;

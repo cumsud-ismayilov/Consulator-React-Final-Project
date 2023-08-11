@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "../Servicesingle/Servicesingle.scss";
 import { BsChevronRight } from "react-icons/bs";
 import SignUPButton from "../../components/ButtonComponent/Buttons";
-import AccordionItem from "../../components/AccordionItem/Accordion"
+import AccordionItem from "../../components/AccordionItem/Accordion";
 import ServiceSingleCards from "../../components/ServiceSingleCards/ServiceSingleCards.";
 const Servicesingle = () => {
   return (
@@ -195,8 +195,10 @@ const Servicesingle = () => {
                 </ul>
               </div>
             </div>
-            <div className="solutions">
-              <h4>Our Solutions</h4>
+            <div className="col-xl-4">
+              <div className="solutions">
+                <h4>Our Solutions</h4>
+              </div>
             </div>
             <ServiceSingleCards />
             <div className="col-xl-8">
@@ -204,7 +206,7 @@ const Servicesingle = () => {
                 <h4>Benefits</h4>
               </div>
             </div>
-            <AccordionItem/>
+            <AccordionItem />
           </div>
         </div>
       </section>
