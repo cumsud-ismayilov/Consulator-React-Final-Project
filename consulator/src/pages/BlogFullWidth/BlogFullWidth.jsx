@@ -14,7 +14,7 @@ import { AiOutlineLeft,AiOutlineRight } from "react-icons/ai";
 const BlogFullWidth = () => {
   return (
     <main>
-        <section id="blog-page">
+        <section id="blog-page2">
         <div className="back-img">
           <div className="breadcumb-text">
             <p>Latest News</p>
