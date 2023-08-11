@@ -1,5 +1,8 @@
 .comments-item {
   .comment-cards {
+    @media screen and (max-width: 768px){
+      flex-wrap: wrap;
+    }
     display: flex;
     gap: 21px;
     border-bottom: 1px solid #e4effb;
@@ -13,6 +16,9 @@
     }
     .commentstext {
       .nameanddate {
+        @media screen and (max-width: 768px){
+          flex-wrap: wrap;
+        }
         display: flex;
         align-items: baseline;
         gap: 9px;

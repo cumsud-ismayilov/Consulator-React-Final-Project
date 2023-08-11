@@ -8,7 +8,7 @@ const Layout = ({children}) => {
   return (
     <div>
       {
-        location.pathname==="/"|| location.pathname==="/page"?
+        location.pathname==="/"|| location.pathname==="/page"|| location.pathname==="/blogdetails"?
         <Navbar/>:<BannerNavbar/>
       }
       <div>{children}</div>

@@ -1,6 +1,9 @@
 main {
   #blogdetailsrightsidebar {
     .back-img {
+      @media screen and (max-width: 768px) {
+        height: 260px;
+      }
       background-image: url(http://consultar-react.wpocean.com/static/media/page-title.be0e30a3.jpg);
       background-position: center;
       background-repeat: no-repeat;
@@ -10,6 +13,9 @@ main {
       position: relative;
 
       .breadcumb-text {
+        @media screen and (max-width: 768px) {
+          height: 260px;
+        }
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -18,6 +24,9 @@ main {
         filter: opacity(0.7);
         height: 380px;
         p {
+          @media screen and (max-width: 768px) {
+            font-size: 28px;
+          }
           color: #fff;
           font-size: 46px;
           font-weight: 500;
@@ -55,10 +64,16 @@ main {
     }
   }
   #blogdetailsrightsidebar3 {
+    @media screen and (max-width: 768px) {
+      padding: 4rem 0rem 4rem;
+    }
     padding: 7rem 0rem 7rem;
     .container {
       .row {
         .format-standart-img {
+          @media screen and (max-width: 768px) {
+            height: 206px;
+          }
           width: 100%;
           height: 500px;
           img {
@@ -71,12 +86,21 @@ main {
         .entry-meta {
           padding: 2rem 0rem;
           ul {
+            @media screen and (max-width: 768px) {
+              display: flex;
+              flex-direction: column;
+              gap: 0;
+              align-items: baseline;
+            }
             list-style: none;
             padding: 0;
             display: flex;
             align-items: center;
             gap: 27px;
             .user {
+              @media screen and (max-width: 768px) {
+                font-size: 12px;
+              }
               color: #4f555a;
               font-weight: 400;
               font-size: 15px;
@@ -95,6 +119,9 @@ main {
               }
             }
             .comments {
+              @media screen and (max-width: 768px) {
+                font-size: 12px;
+              }
               color: #4f555a;
               font-weight: 400;
               font-size: 15px;
@@ -107,6 +134,9 @@ main {
         }
         .entry-details {
           h1 {
+            @media screen and (max-width: 768px) {
+              font-size: 18px;
+            }
             font-size: 29px;
             font-weight: 600;
             a {
@@ -136,6 +166,11 @@ main {
           }
         }
         .blockquote {
+          @media screen and (max-width: 768px) {
+            width: 336px;
+            padding: 48px;
+
+          }
           background-color: #f4f8fc;
           padding: 65px;
           margin-top: 2rem;
@@ -148,6 +183,9 @@ main {
             text-decoration: underline;
           }
           .quote-icon {
+            @media screen and (max-width: 768px) {
+              right: 154px;
+            }
             width: 50px;
             background-color: #fff;
             height: 50px;
@@ -172,7 +210,17 @@ main {
           align-items: center;
           justify-content: space-between;
           padding-top: 2rem;
+          @media screen and (max-width: 768px) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 14px;
+          }
           img {
+            @media screen and (max-width: 768px) {
+              width: 162px;
+              height: 120px;
+            }
             width: 420px;
             height: 273px;
             object-fit: cover;
@@ -187,12 +235,18 @@ main {
           border-bottom: 1px solid #e1e1e1;
           padding-bottom: 18px;
           span {
+            @media screen and (max-width: 768px){
+              font-size: 13px;
+            }
             color: #232f4b;
             font-weight: 600;
             display: inline-block;
             text-transform: uppercase;
           }
           .plan-ul {
+            @media screen and (max-width: 768px){
+              flex-wrap: wrap;
+            }
             list-style: none;
             padding: 0;
             display: flex;
@@ -220,6 +274,9 @@ main {
           padding-top: 2rem;
 
           span {
+            @media screen and (max-width: 768px){
+              font-size: 13px;
+            }
             color: #232f4b;
             font-weight: 600;
             display: inline-block;
@@ -233,6 +290,9 @@ main {
             gap: 12px;
 
             .plan-li1 {
+              @media screen and (max-width: 768px){
+                font-size: 13px;
+              }
               font-size: 16px;
               text-transform: capitalize;
               background: none;
@@ -247,6 +307,9 @@ main {
           }
         }
         .author-box {
+          @media screen and (max-width: 768px){
+            flex-wrap: wrap;
+          }
           display: flex;
           align-items: center;
           gap: 27px;
@@ -288,6 +351,10 @@ main {
           }
         }
         .more-post2 {
+          @media screen and (max-width: 768px){
+            flex-wrap: wrap;
+            
+          }
           overflow: hidden;
           border: 1px solid #d8e0f1;
           padding: 0 25px;
@@ -321,6 +388,11 @@ main {
             }
           }
           .next-text {
+            @media screen and (max-width: 768px){
+              border-left: none;
+              border-top: 1px solid #d8e0f1;
+              text-align: left;
+            }
             padding: 40px 0;
             text-align: right;
             border-left: 1px solid #d8e0f1;
@@ -328,6 +400,12 @@ main {
             padding-right: 5px;
             h3 {
               a {
+                @media screen and (max-width: 768px){
+                  display: flex;
+                  align-items: center;
+                  justify-content: flex-start;
+                  gap: 8px;
+                }
                 text-decoration: none;
                 font-size: 15px;
                 color: #6e6e6e;
@@ -368,6 +446,9 @@ main {
           }
           form {
             .comments-text2 {
+              @media screen and (max-width: 768px){
+                height: 160px;
+              }
               background-color: #fff;
               width: 100%;
               border: 1px solid #a4adbe;
@@ -379,6 +460,9 @@ main {
               padding: 15px;
             }
             .website-and-name {
+              @media screen and (max-width: 768px){
+                flex-wrap: wrap;
+              }
               display: flex;
               align-items: center;
               justify-content: space-between;
@@ -420,7 +504,7 @@ main {
               width: 100%;
             }
           }
-          .posted{
+          .posted {
             background-color: #1e2845;
             color: #fff;
             border: 0;
@@ -435,6 +519,9 @@ main {
           }
         }
         .about-widget {
+          @media screen and (max-width: 768px){
+            margin-top: 20px;
+          }
           background-color: #f4f8fc;
           padding: 45px;
           display: flex;
@@ -493,6 +580,9 @@ main {
             }
           }
           .aw-shape {
+            @media screen and (max-width: 768px) {
+              right: -68px;
+            }
             width: 160px;
             height: 160px;
             position: absolute;
@@ -562,6 +652,9 @@ main {
             flex-direction: column;
             gap: 28px;
             .category-li {
+              @media screen and (max-width: 768px) {
+                font-size: 14px;
+              }
               font-size: 17px;
               color: #232f4b;
               font-weight: 600;
@@ -574,6 +667,9 @@ main {
                 color: rgb(55, 87, 247);
               }
               h1 {
+                @media screen and (max-width: 768px) {
+                  font-size: 14px;
+                }
                 font-size: 17px;
                 color: #232f4b;
                 font-weight: 600;
@@ -613,6 +709,9 @@ main {
               }
               h5 {
                 a {
+                  @media screen and (max-width: 768px) {
+                    font-size: 14px;
+                  }
                   text-decoration: none;
                   color: #232f4b;
                   font-size: 18px;
@@ -625,6 +724,9 @@ main {
                 }
               }
               h6 {
+                @media screen and (max-width: 768px) {
+                  font-size: 12px;
+                }
                 font-size: 14px;
                 color: #4f555a;
                 font-weight: 400;
@@ -654,6 +756,10 @@ main {
             a {
               text-decoration: none;
               img {
+                @media screen and (max-width: 768px) {
+                  width: 108px;
+                  height: 92px;
+                }
                 width: 112px;
                 height: 94px;
                 border-radius: 5px;
@@ -670,6 +776,10 @@ main {
             a {
               text-decoration: none;
               img {
+                @media screen and (max-width: 768px) {
+                  width: 108px;
+                  height: 92px;
+                }
                 width: 112px;
                 height: 94px;
                 border-radius: 5px;
