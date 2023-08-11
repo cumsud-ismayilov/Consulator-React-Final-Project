@@ -651,7 +651,7 @@ main {
               }
             }
             .our-clients {
-              @media screen and (max-width: 768px){
+              @media screen and (max-width: 768px) {
                 left: 79px;
                 font-size: 26px;
                 bottom: -25px;
@@ -671,12 +671,11 @@ main {
             }
           }
           .tittle2 {
-          
             display: flex;
             align-items: center;
             gap: 16px;
             .two-arrow {
-              @media screen and (max-width: 768px){
+              @media screen and (max-width: 768px) {
                 display: none;
               }
               display: flex;

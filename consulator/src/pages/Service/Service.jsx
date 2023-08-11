@@ -18,13 +18,13 @@ const Service = () => {
           </div>
         </div>
       </section>
-      <section id="our-services2">
+      <section id="our-services22">
          <div className="container">
            <div className="row">
               <div className="col-xl-12">
                  <div className="ourservices-tittle">
                     <p>Our Services</p>
-                    <h2>Explore Our Services</h2>
+                    <h2 className="exploreservices">Explore Our Services</h2>
                  </div>
               </div>
            </div>
