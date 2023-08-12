@@ -5,8 +5,10 @@ import ServicesCards from "../../components/ServicesCards/Servicescards";
 import PackageCards from "../../components/PackageCards/PackageCard";
 import BlogData from "../../components/BlogData/BlogData";
 import Projectgallery from "../../components/Projectgallery/Projectgallery";
+import TestimionalCards from "../../components/TestimionalSlide/TestimionalSlide";
 import "../Projects/Projects.scss"
-import { FaPlay } from "react-icons/fa";
+import { FaPlay ,FaQuoteLeft} from "react-icons/fa";
+import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
 const Projects = () => {
@@ -56,9 +58,11 @@ const Projects = () => {
                     />
                   </div>
                 </div>
-                <h4 className="play-button">
-                  <FaPlay color="#3757f7" />
-                </h4>
+                <div className="video-btn">
+                  <h1>
+                    <FaPlay color="#3757f7" size="28px" />
+                  </h1>
+                </div>
               </div>
             </div>
           </div>
@@ -188,6 +192,34 @@ const Projects = () => {
         </div>
       </section>
       <Projectgallery/>
+      <section id="testimional-tittle">
+        <div className="container">
+          <div className="row">
+            <div className="col-xl-12">
+              <div className="wpo-testimional-tittle">
+                <div className="tittle1">
+                  <p className="queto">
+                    <FaQuoteLeft size="34px"/>
+                  </p>
+                  <h2 className="our-clients">
+                    {" "}
+                    What <span>Our Clients</span> are Saying
+                  </h2>
+                </div>
+                <div className="tittle2">
+                  <h4 className="two-arrow">
+                    <BsArrowLeft />
+                  </h4>
+                  <h5 className="two-arrow">
+                    <BsArrowRight />
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <TestimionalCards />
       <section id="questions3">
         <div className="container">
           <div className="row">
