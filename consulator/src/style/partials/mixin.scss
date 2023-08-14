@@ -29,8 +29,28 @@
   gap: $gap4;
 }
 
-@mixin FootProjects($align-items4,$gap5){
- display: flex;
- align-items: $align-items4;
- gap: $gap5;
+@mixin FootProjects($align-items4, $gap5) {
+  display: flex;
+  align-items: $align-items4;
+  gap: $gap5;
+}
+
+@mixin BreadCumb-Text($flx-direction1, $algn-itms1, $jstfy-cntnt1) {
+  display: flex;
+  flex-direction: $flx-direction1;
+  align-items: $algn-itms1;
+  justify-content: $jstfy-cntnt1;
+}
+
+@mixin Pricing-UL($algn-itms2, $gap6) {
+  display: flex;
+  align-items: $algn-itms2;
+  gap: $gap6;
+}
+
+@mixin Error404($flx-direction2,$algn-itms3,$jstfy-cntnt2){
+  display: flex;
+  flex-direction:$flx-direction2 ;
+  align-items: $algn-itms3;
+  justify-content:$jstfy-cntnt2 ;
 }

@@ -1,129 +1,118 @@
+@import ".../../../../style/partials//varaible.scss";
+@import ".../../../../style//partials//mixin.scss";
 main {
   #breadcumb-area22 {
     .back-img {
       @media screen and (max-width: 768px) {
-        height: 260px;
+        height: $height5;
       }
       background-image: url(http://consultar-react.wpocean.com/static/media/page-title.be0e30a3.jpg);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      width: 100%;
-      height: 380px;
-      position: relative;
+      background-position: $back-post1;
+      background-repeat: $back-repeat;
+      background-size: $back-size1;
+      width: $width2;
+      height: $height6;
+      position: $position-rela;
 
       .breadcumb-text {
         @media screen and (max-width: 768px) {
-          height: 260px;
+          height: $height5;
         }
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background-color: #232f4b;
-        filter: opacity(0.7);
-        height: 380px;
+        @include BreadCumb-Text(column, center, center);
+        background-color:$back-color5;
+        filter: $filter-one;
+        height: $height6;
         p {
           @media screen and (max-width: 768px) {
-            font-size: 28px;
+            font-size: $fn-size5;
           }
-          color: #fff;
-          font-size: 46px;
-          font-weight: 500;
+          color: $color1;
+          font-size: $fn-size6;
+          font-weight: $fn-weight1;
         }
         .pricing-ul {
-          padding: 0;
-          list-style: none;
-
-          display: flex;
-          align-items: center;
-          gap: 5px;
+          padding: $padding-default;
+          list-style: $list-style1;
+          @include Pricing-UL(center, 5px);
 
           .pricing-li1 {
             a {
-              text-decoration: none;
-              color: #fff;
-              font-size: 18px;
-              font-weight: 500;
-              transition: 0.3s ease-in-out;
+              text-decoration: $txt-decoration2;
+              color: $color1;
+              font-size:$fn-size7;
+              font-weight: $fn-weight1;
+              transition: $transition1;
               &:hover {
-                color: #0d6efd;
-                font-size: 18px;
-                font-weight: 500;
+                color:$color4 ;
+                font-size: $fn-size7;
+                font-weight: $fn-weight1;
               }
             }
           }
           .pricing-li2 {
-            color: #cbd4fd;
+            color: $color5;
 
-            font-size: 18px;
-            font-weight: 500;
+            font-size:$fn-size7;
+            font-weight: $fn-weight1;
           }
         }
       }
     }
   }
   #error404 {
-    padding-bottom: 6rem;
+    padding-bottom: $pd-bottom1;
     .container {
       .row {
         .error404-sec {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          padding-top: 7rem;
+          @include Error404(column,center,center);
+          padding-top:$padding-top6;
           .error404-img {
             @media screen and (max-width: 768px) {
-              width: 326px;
-              height: 161px;
+              width: $width5;
+              height: $height7;
             }
-            width: 444px;
-            height: 222px;
+            width: $width6;
+            height: $height8;
             img {
-              width: 100%;
-              height: 100%;
-              object-fit: cover;
-              object-position: center;
+              width: $width2;
+              height: $height2;
+              object-fit: $object-ft1;
+              object-position: $object-post1;
             }
           }
           .error404-text {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-
+            @include Error404(column,center,center);
             p {
-              color: #232f4b;
-              font-size: 22px;
-              font-weight: 500;
-              padding-top: 4rem;
+              color: $color6;
+              font-size:$fn-size8;
+              font-weight: $fn-weight1;
+              padding-top:$padding-top7;
             }
             h3 {
               @media screen and (max-width: 768px) {
-                width: 300px;
+                width: $width7;
               }
-              font-size: 15px;
-              color: #4f555a;
-              line-height: 28.8px;
-              font-weight: 400;
-              width: 900px;
-              text-align: center;
+              font-size: $fn-size9;
+              color:$color7 ;
+              line-height:$ln-height3 ;
+              font-weight:$fn-weight2;
+              width: $width8;
+              text-align: $txt-align1;
             }
             .turnhome {
-              padding: 10px 42px;
-              cursor: pointer;
-              text-transform: capitalize;
-              border-radius: 6px;
-              color: #fff;
-              margin-top: 1rem;
-              font-weight: 500;
-              height: 65px;
-              background: linear-gradient(270deg, #3757f7, #071e93);
-              border: 1px solid transparent;
+              padding:$padding-random2;
+              cursor: $cursor;
+              text-transform:$text-transform2 ;
+              border-radius:$br-radius2;
+              color: $color1;
+              margin-top:$margin-top1;
+              font-weight: $fn-weight1;
+              height: $height9;
+              background: $back-color6;
+              border:$border1;
               a {
-                text-decoration: none;
-                color: #fff;
+                text-decoration: $txt-decoration2;
+                color: $color1;
               }
             }
           }
