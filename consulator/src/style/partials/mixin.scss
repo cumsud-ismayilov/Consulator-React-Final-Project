@@ -1,0 +1,36 @@
+@mixin SocialMedia($align-items1, $justfy1, $gap1) {
+  display: flex;
+  align-items: $align-items1;
+  justify-content: $justfy1;
+  gap: $gap1;
+}
+
+@mixin SocialMedia2($align-items2, $justify2) {
+  display: flex;
+  align-items: $align-items2;
+  justify-content: $justify2;
+}
+
+@mixin FootContact($flex-direction1, $gap2) {
+  display: flex;
+  flex-direction: $flex-direction1;
+  gap: $gap2;
+}
+
+@mixin FootContact-li($align-items3, $gap3) {
+  display: flex;
+  align-items: $align-items3;
+  gap: $gap3;
+}
+
+@mixin FootServices($flex-diection2, $gap4) {
+  display: flex;
+  flex-direction: $flex-diection2;
+  gap: $gap4;
+}
+
+@mixin FootProjects($align-items4,$gap5){
+ display: flex;
+ align-items: $align-items4;
+ gap: $gap5;
+}

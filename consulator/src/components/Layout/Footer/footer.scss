@@ -1,151 +1,137 @@
-
-
+@import "../../../style/partials/varaible.scss";
+@import "../../../style//partials//mixin.scss";
 footer {
-  
   .foot-top {
-    @media screen and (max-width: 768px){
-      padding: 53px 0;
+    @media screen and (max-width: 768px) {
+      padding: $padding-random;
     }
-    background-color: #1e2845;
-    padding: 90px 0;
+    background-color: $back-color1;
+    padding: $padding-top1;
     .container {
       .row {
         .line1 {
           .sitelogo2 {
-            width: 200px;
-            height: 42px;
+            width: $width1;
+            height: $height1;
             img {
-              width: 100%;
-              height: 100%;
-              object-fit: cover;
-              object-position: center;
-              cursor: pointer;
+              width: $width2;
+              height: $height2;
+              object-fit: $object-ft1;
+              object-position: $object-post1;
+              cursor: $cursor;
             }
           }
           p {
-            margin: 0;
-            font-size: 16px;
-            color: #fff;
-            margin-bottom: 0.8em;
-            line-height: 1.9em;
-            padding-top: 28px;
+            margin: $margin1;
+            font-size: $fnt-size1;
+            color: $color1;
+            margin-bottom: $margin-btm1;
+            line-height: $ln-height1;
+            padding-top: $padding-top2;
           }
           .social-media {
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            gap: 20px;
-            padding-top: 8px;
+            @include SocialMedia(center, flex-start, 20px);
+            padding-top: $padding-top3;
             h2 {
-              margin: 0;
-              width: 36px;
-              height: 36px;
-              background: hsla(0, 0%, 100%, 0.1);
-              border-radius: 50%;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              cursor: pointer;
-              transition: 0.3s ease-in-out;
+              margin: $margin1;
+              width: $widht3;
+              height: $height3;
+              background: $back-color2;
+              border-radius: $br-radius1;
+              @include SocialMedia2(center, center);
+              cursor: $cursor;
+              transition: $transition1;
               &:hover {
-                background-color: #fff;
+                background-color: $back-color3;
                 svg {
-                  color: #141d37;
+                  color: $color2;
                 }
               }
               svg {
-                color: #fff;
+                color: $color1;
               }
             }
           }
         }
         .line2 {
           h3 {
-            font-size: 20px;
-            color: #fff;
-            margin: 0;
-            text-transform: uppercase;
+            font-size: $fn-size2;
+            color: $color1;
+            margin: $margin1;
+            text-transform: $text-transform1;
           }
           .foot-contact {
-            list-style: none;
-            padding: 0;
-            padding-top: 26px;
-            display: flex;
-            flex-direction: column;
-            gap: 21px;
+            list-style: $list-style1;
+            padding: $padding-default;
+            padding-top: $padding-top4;
+            @include FootContact(column, 21px);
 
             li {
-              color: #e5e3e3;
-              font-size: 17px;
-              display: flex;
-              align-items: flex-start;
-              gap: 8px;
+              color: $color3;
+              font-size: $fn-size3;
+              @include FootContact-li(flex-start, 8px);
             }
           }
         }
         .line3 {
           h3 {
-            font-size: 20px;
-            color: #fff;
-            margin: 0;
-            text-transform: uppercase;
+            font-size: $fn-size2;
+            color: $color1;
+            margin: $margin1;
+            text-transform: $text-transform1;
           }
           .foot-services {
-            list-style: none;
-            padding: 0;
-            padding-top: 26px;
-            display: flex;
-            flex-direction: column;
-            gap: 14px;
+            list-style: $list-style1;
+            padding:$padding-default;
+            padding-top: $padding-top4;
+            @include FootServices(column,14px);
+           
             li {
-              color: #fff;
-              font-size: 17px;
-              cursor: pointer;
-              transition: 0.3s ease-in-out;
+              color:$color1;
+              font-size: $fn-size3;
+              cursor: $cursor;
+              transition:$transition1;
               &:hover {
-                text-decoration: underline;
+                text-decoration: $txt-decoration1;
               }
             }
           }
         }
         .line4 {
           h3 {
-            font-size: 20px;
-            color: #fff;
-            margin: 0;
-            text-transform: uppercase;
+            font-size: $fn-size2;
+            color:$color1;
+            margin:$margin1;
+            text-transform: $text-transform1;
           }
           .foot-projects1 {
-            padding: 0;
-            list-style: none;
-            display: flex;
-            align-items: center;
-            gap: 7px;
-            margin: 0;
-            padding-top: 26px;
+            padding:$padding-default;
+            list-style: $list-style1;
+            @include FootProjects(center,7px);
+        
+            margin: $margin1;
+            padding-top:$padding-top4;
             li {
               a {
-                text-decoration: none;
+                text-decoration: $txt-decoration2;
                 img {
-                  width: 100px;
-                  height: 94px;
+                  width: $width4;
+                  height:$width4;
                 }
               }
             }
           }
           .foot-projects2 {
-            padding: 0;
-            list-style: none;
-            display: flex;
-            align-items: center;
-            gap: 7px;
-            padding-top: 7px;
+            padding: $padding-default;
+            list-style: $list-style1;
+            @include FootProjects(center,7px);
+            padding-top: $padding-top5;
             li {
               a {
-                text-decoration: none;
+                text-decoration: $txt-decoration2;
                 img {
-                  width: 100px;
-                  height: 94px;
+                  width: $width4;
+                  height: $height4;
                 }
               }
             }
@@ -155,17 +141,17 @@ footer {
     }
   }
   .foot-bottom {
-    background: #141d37;
-    padding: 20px 0;
+    background: $back-color4;
+    padding: $pd-one;
     .container {
       .row {
         .bottom-text {
           p {
-            line-height: 1.8em;
-            color: #fff;
-            font-size: 14px;
-            margin: 0;
-            text-align: center;
+            line-height:$ln-height2;
+            color:$color1;
+            font-size: $fn-size4;
+            margin:$margin1;
+            text-align: $txt-align1;
           }
         }
       }

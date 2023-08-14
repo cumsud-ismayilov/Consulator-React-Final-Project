@@ -7,6 +7,7 @@ import { GoSearch, GoChevronRight } from "react-icons/go";
 import { AiOutlineClose, AiOutlineSearch } from "react-icons/ai";
 import { FaBars } from "react-icons/fa";
 import { IoCloseOutline } from "react-icons/io5";
+import { RiArrowDownSLine } from "react-icons/ri";
 const Navbar = () => {
   const [fix, setFix] = useState(false);
 
@@ -38,6 +39,8 @@ const Navbar = () => {
 
   const [sidebar,setSidebar]=useState(false);
   const showSidebar =()=>setSidebar(!sidebar)
+
+
 
   return (
     <div>
@@ -268,21 +271,16 @@ const Navbar = () => {
                     </Link>
                   </div>
                   <div className={sidebar ? "nav-menu active" : "nav-menu"}>
-                    <ul className="nav-menu-items" onClick={showSidebar}>
-                      <li className="navbar-toggle">
+                    <ul className="nav-menu-items" >
+                      <li className="navbar-toggle" onClick={showSidebar}>
                         <Link to="#"  className="menu-bars" >
                           <IoCloseOutline color="#fff" size="20px" />
                         </Link>
                       </li>
-                      <li className="lorem">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing
-                        elit. Vitae eveniet sequi nisi fuga voluptatibus
-                        perspiciatis aliquam! Aperiam, reprehenderit nostrum
-                        beatae sed animi, nobis earum ipsam sit, impedit ipsum
-                        deserunt necessitatibus? Veniam numquam perspiciatis
-                        itaque, mollitia inventore in fugit odit reiciendis
-                        
-                        
+                      <li className="mobil-home">
+                        Home
+                      <RiArrowDownSLine size="16px" />
+                       
                       </li>
                     </ul>
                   </div>

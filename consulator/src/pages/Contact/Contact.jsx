@@ -4,6 +4,8 @@ import "../Contact/Contact.scss"
 import ContactCards from '../../components/ContactCards/ContactCards';
 import Buttons from "../../components/ButtonComponent/Buttons";
 
+
+
 const Contact = () => {
   return (
     <main>
@@ -69,6 +71,7 @@ const Contact = () => {
           </div>
         </div>
      </section>
+    
    
     </main>
   )
