@@ -48,9 +48,23 @@
   gap: $gap6;
 }
 
-@mixin Error404($flx-direction2,$algn-itms3,$jstfy-cntnt2){
+@mixin Error404($flx-direction2, $algn-itms3, $jstfy-cntnt2) {
   display: flex;
-  flex-direction:$flx-direction2 ;
+  flex-direction: $flx-direction2;
   align-items: $algn-itms3;
-  justify-content:$jstfy-cntnt2 ;
+  justify-content: $jstfy-cntnt2;
+}
+
+@mixin BreadCumb($flx-direction3, $algn-itms4, $jstfy-cntnt3) {
+  display: flex;
+  flex-direction: $flx-direction3;
+  align-items: $algn-itms4;
+  justify-content: $jstfy-cntnt3;
+}
+
+@mixin BannerText($flx-direction4, $algn-itms5, $jstfy-cntnt4) {
+  display: flex;
+  flex-direction: $flx-direction4;
+  align-items: $algn-itms5;
+  justify-content: $jstfy-cntnt4;
 }
