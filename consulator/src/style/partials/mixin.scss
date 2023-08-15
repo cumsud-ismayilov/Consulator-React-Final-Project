@@ -80,3 +80,16 @@
   align-items: $algn-itms7;
   gap: $gap7;
 }
+
+@mixin Login($algn-itms8, $jstfy-cntnt6) {
+  display: flex;
+  align-items: $algn-itms8;
+  justify-content: $jstfy-cntnt6;
+}
+
+@mixin Nothelp($algn-itms9, $jstfy-cntnt7, $gap8) {
+  display: flex;
+  align-items: $algn-itms9;
+  justify-content: $jstfy-cntnt7;
+  gap: $gap8;
+}

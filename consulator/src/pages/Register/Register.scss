@@ -1,137 +1,123 @@
+@import "../../style//partials//varaible.scss";
+@import "../../style/partials/mixin.scss";
 #register-page {
-    background-color: #f9f9f9;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    .register {
-      @media screen and (max-width: 768px){
-        padding: 70px 22px;
-      }
-      width: 500px;
-      max-width: 90%;
-  
-      background: #fff;
-      padding: 70px 50px;
-      border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
-      position: relative;
-      z-index: 1;
-      p {
-        text-align: center;
-        margin-bottom: 20px;
-        color: #232f4b;
-      }
-      h2 {
-        font-size: 13px;
-        margin-bottom: 30px;
-        text-align: center;
-        font-weight: 400;
-        color: #666;
-      }
-      .passwordinputs {
-        margin-top: 22px;
-      }
-      .checkedandpassword {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding-top: 22px;
-        .checked-icons {
-          display: flex;
-          align-items: center;
-         
-          h3 {
-            color: #4f555a;
-            font-size: 14px;
-            font-weight: 400;
-            margin: 0;
-            cursor: pointer;
-          }
-        }
-        .forgot-password {
-          a {
-            text-decoration: none;
-            font-size: 16px;
-            font-weight: 500;
-            color: #246fea;
-            cursor: pointer;
-          }
+  background-color: $back-color8;
+  min-height: $min-height1;
+  @include Login(center, center);
+
+  .register {
+    @media screen and (max-width: 768px) {
+      padding: $padding-random4;
+    }
+    width: $width14;
+    max-width: $max-width1;
+
+    background: $back-color3;
+    padding: $padding-random3;
+    border-radius: $br-radius3;
+    box-shadow: $box-shadow1;
+    position: $position-rela;
+    z-index: $z-index1;
+    p {
+      text-align: $txt-align1;
+      margin-bottom: $margin-btm2;
+      color: $color6;
+    }
+    h2 {
+      font-size: $fn-size15;
+      margin-bottom: $margn-btm3;
+      text-align: $txt-align1;
+      font-weight: $fn-weight2;
+      color: $color13;
+    }
+    .passwordinputs {
+      margin-top: $margin-top2;
+    }
+    .checkedandpassword {
+      @include Login(center, space-between);
+
+      padding-top: $padding-top9;
+      .checked-icons {
+        @include Login(center, center);
+
+        h3 {
+          color: $color7;
+          font-size: $fn-size4;
+          font-weight: $fn-weight2;
+          margin: $margin1;
+          cursor: $cursor;
         }
       }
-      .login-button {
-        background-color: #0a58ca;
-        border: none;
-        width: 100%;
-        border-radius: 5px;
-        height: 36px;
-        color: #fff;
-        text-transform: uppercase;
-        font-size: 14px;
-        font-weight: 400;
-        margin-top: 18px;
-      }
-      .login-social {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-        padding: 26px 0px 26px;
-        .face-bk {
-          margin: 0;
-          background-color: #3b5998;
-          width: 100px;
-          height: 33px;
-          border-radius: 5px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
-        .twitter {
-          margin: 0;
-          background-color: #55acee;
-          width: 100px;
-          height: 33px;
-          border-radius: 5px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
-        .lnkedin {
-          margin: 0;
-          background-color: #0077b5;
-          width: 100px;
-          height: 33px;
-          border-radius: 5px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
+      .forgot-password {
+        a {
+          text-decoration: $txt-decoration2;
+          font-size: $fnt-size1;
+          font-weight: $fn-weight1;
+          color: $color12;
+          cursor: $cursor;
         }
       }
-      .nothelp {
-          display: flex;
-          align-items: baseline;
-          gap: 12px;
-          justify-content: center;
-        .dont-account {
-          margin: 0;
-          color: #4f555a;
-          font-size: 12px;
-          letter-spacing: 0;
-          font-weight: 400;
-        }
-        .toregister {
-          a {
-            text-decoration: none;
-            margin: 0;
-            color: #0077b5;
-            font-size: 12px;
-            letter-spacing: 0;
-            font-weight: 400;
-          }
+    }
+    .login-button {
+      background-color: $back-color12;
+      border: $border3;
+      width: $width2;
+      border-radius: $br-radius4;
+      height: $height3;
+      color: $color1;
+      text-transform: $text-transform1;
+      font-size: $fn-size4;
+      font-weight: $fn-weight2;
+      margin-top: $margin-top;
+    }
+    .login-social {
+      @include Nothelp(center, center, 10px);
+      padding: $padding-random5;
+      .face-bk {
+        margin: $margin1;
+        background-color: $back-color11;
+        width: $width4;
+        height: $height13;
+        border-radius: $br-radius4;
+        @include Login(center, center);
+      }
+      .twitter {
+        margin: $margin1;
+        background-color: $back-color10;
+        width: $width4;
+        height: $height13;
+        border-radius: $br-radius4;
+        @include Login(center, center);
+      }
+      .lnkedin {
+        margin: $margin1;
+        background-color: $back-color9;
+        width: $width4;
+        height: $height13;
+        border-radius: $br-radius4;
+        @include Login(center, center);
+      }
+    }
+    .nothelp {
+      @include Nothelp(baseline, center, 12px);
+
+      .dont-account {
+        margin: $margin1;
+        color: $color7;
+        font-size: $fn-size14;
+        letter-spacing: $letter-spacing1;
+        font-weight: $fn-weight2;
+      }
+      .toregister {
+        a {
+          text-decoration: $txt-decoration2;
+          margin: $margin1;
+          color: $color11;
+          font-size: $fn-size14;
+          letter-spacing: $letter-spacing1;
+          font-weight: $fn-weight2;
         }
       }
     }
   }
-  
+}

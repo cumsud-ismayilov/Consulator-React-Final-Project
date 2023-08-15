@@ -1,6 +1,9 @@
 // Padding
 $padding-random:53px 0;
 $padding-random2: 10px 42px;
+$padding-random3:70px 28px;
+$padding-random4: 70px 50px;
+$padding-random5:26px 0px 26px;
 $padding-top1:90px 0;
 $padding-top2:28px;
 $padding-top3:8px;
@@ -10,12 +13,17 @@ $padding-top5:7px;
 $padding-top6:7rem;
 $padding-top7:4rem;
 $padding-top8:6rem;
+$padding-top9:22px;
 $pd-one:20px 0;
 $pd-bottom1:6rem;
 // Margin
 $margin1:0;
 $margin-btm1:0.8em;
+$margin-btm2:20px;
+$margn-btm3:30px;
 $margin-top1:1rem;
+$margin-top:18px;
+$margin-top2:22px;
 
 // LINE HEIGHT
 $ln-height1:1.9em;
@@ -32,6 +40,11 @@ $back-color4:#141d37;
 $back-color5:#232f4b;
 $back-color6:linear-gradient(270deg, #3757f7, #071e93);
 $back-color7:#3757f7;
+$back-color8:#f9f9f9;
+$back-color9:#0077b5;
+$back-color10:#55acee;
+$back-color11:#3b5998;
+$back-color12:#0a58ca;
 
 // COLOR
 $color1:#fff;
@@ -44,7 +57,11 @@ $color7:#4f555a;
 $color8:#3757f7;
 $color9:#6e6e6e;
 $color10:#071e93;
+$color11:#0077b5;
+$color12:#246fea;
+$color13:#666;
 // WiDTH
+$max-width1: 90%;
 $width1:200px;
 $width2:100%;
 $widht3:36px;
@@ -58,6 +75,7 @@ $width10:80px;
 $width11:50px;
 $width12:442px;
 $width13:264px;
+$width14:500px;
 // HEIHGT
 $height1:42px;
 $height2:100%;
@@ -71,6 +89,8 @@ $height9:65px;
 $height10:106px;
 $height11:80px;
 $height12:50px;
+$height13:33px;
+$min-height1:100vh;
 // PICTURE STYLE
 $object-ft1:cover;
 $object-post1:center;
@@ -82,7 +102,9 @@ $back-size1:cover;
 $position-rela:relative;
 $post-absol:absolute;
 $filter-one:opacity(0.7);
+$box-shadow1: 0 0 15px rgba(0, 0, 0, 0.05);
 $display1:none;
+$z-index1:1;
 $left1:79px;
 $left2:106px;
 $bottom1:-25px;
@@ -101,6 +123,8 @@ $fn-size10:50px;
 $fn-size11:25px;
 $fn-size12:26px;
 $fn-size13:43px;
+$fn-size14:12px;
+$fn-size15:13px;
 
 // FONT WEIGHT
 $fn-weight1:500;
@@ -110,8 +134,11 @@ $fn-weight3:600;
 // BORDER RADIUS
 $br-radius1:50%;
 $br-radius2:6px;
+$br-radius3:10px;
+$br-radius4:5px;
 $border1: 1px solid transparent;
 $border2: 1px solid #b7b7b7;
+$border3:none;
 // TEXT STYLE
 $text-transform1:uppercase;
 $text-transform2:capitalize;
@@ -119,3 +146,4 @@ $list-style1:none;
 $txt-decoration1:underline;
 $txt-decoration2:none;
 $txt-align1:center;
+$letter-spacing1:0;
