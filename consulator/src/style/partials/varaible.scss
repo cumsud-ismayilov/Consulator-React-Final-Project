@@ -22,6 +22,7 @@ $ln-height1:1.9em;
 $ln-height2: 1.8em;
 $ln-height3:28.8px;
 $ln-height4:1em;
+$ln-height5:65px;
 
 // Background Color
 $back-color1:#1e2845;
@@ -30,6 +31,7 @@ $back-color3:#fff;
 $back-color4:#141d37;
 $back-color5:#232f4b;
 $back-color6:linear-gradient(270deg, #3757f7, #071e93);
+$back-color7:#3757f7;
 
 // COLOR
 $color1:#fff;
@@ -40,6 +42,8 @@ $color5:#cbd4fd;
 $color6:#232f4b;
 $color7:#4f555a;
 $color8:#3757f7;
+$color9:#6e6e6e;
+$color10:#071e93;
 // WiDTH
 $width1:200px;
 $width2:100%;
@@ -49,6 +53,11 @@ $width5:326px;
 $width6:444px;
 $width7:300px;
 $width8:900px;
+$width9:106px;
+$width10:80px;
+$width11:50px;
+$width12:442px;
+$width13:264px;
 // HEIHGT
 $height1:42px;
 $height2:100%;
@@ -59,6 +68,9 @@ $height6:380px;
 $height7:161px;
 $height8:222px;
 $height9:65px;
+$height10:106px;
+$height11:80px;
+$height12:50px;
 // PICTURE STYLE
 $object-ft1:cover;
 $object-post1:center;
@@ -68,7 +80,13 @@ $back-post1:center;
 $back-repeat:no-repeat;
 $back-size1:cover;
 $position-rela:relative;
+$post-absol:absolute;
 $filter-one:opacity(0.7);
+$display1:none;
+$left1:79px;
+$left2:106px;
+$bottom1:-25px;
+$bottom2:-64px;
 // FONT SIZE
 $fnt-size1:16px;
 $fn-size2:20px;
@@ -79,6 +97,10 @@ $fn-size6:46px;
 $fn-size7:18px;
 $fn-size8:22px;
 $fn-size9:15px;
+$fn-size10:50px;
+$fn-size11:25px;
+$fn-size12:26px;
+$fn-size13:43px;
 
 // FONT WEIGHT
 $fn-weight1:500;
@@ -89,6 +111,7 @@ $fn-weight3:600;
 $br-radius1:50%;
 $br-radius2:6px;
 $border1: 1px solid transparent;
+$border2: 1px solid #b7b7b7;
 // TEXT STYLE
 $text-transform1:uppercase;
 $text-transform2:capitalize;

@@ -1,63 +1,60 @@
+@import "../../style/partials/varaible.scss";
+@import "../../style/partials/mixin.scss";
 main {
   #testimional-page {
     .back-img {
-      @media screen and (max-width: 768px){
-        height: 260px;
+      @media screen and (max-width: 768px) {
+        height: $height5;
       }
       background-image: url(http://consultar-react.wpocean.com/static/media/page-title.be0e30a3.jpg);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      width: 100%;
-      height: 380px;
-      position: relative;
+      background-position: $back-post1;
+      background-repeat: $back-repeat;
+      background-size: $back-size1;
+      width: $width2;
+      height: $height6;
+      position: $position-rela;
 
       .breadcumb-text {
-        @media screen and (max-width: 768px){
-          height: 260px;
+        @media screen and (max-width: 768px) {
+          height: $height5;
         }
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background-color: #232f4b;
-        filter: opacity(0.7);
-        height: 380px;
+        @include BreadCumb(column, center, center);
+
+        background-color: $back-color5;
+        filter: $filter-one;
+        height: $height6;
         p {
-          @media screen and (max-width: 768px){
-            font-size: 28px;
+          @media screen and (max-width: 768px) {
+            font-size: $fn-size5;
           }
-          color: #fff;
-          font-size: 46px;
-          font-weight: 500;
+          color: $color1;
+          font-size: $fn-size6;
+          font-weight: $fn-weight1;
         }
         .pricing-ul {
-          padding: 0;
-          list-style: none;
-
-          display: flex;
-          align-items: center;
-          gap: 5px;
+          padding: $padding-default;
+          list-style: $list-style1;
+          @include Pricing-UL(center, 5px);
 
           .pricing-li1 {
             a {
-              text-decoration: none;
-              color: #fff;
-              font-size: 18px;
-              font-weight: 500;
-              transition: 0.3s ease-in-out;
+              text-decoration: $txt-decoration2;
+              color: $color1;
+              font-size: $fn-size7;
+              font-weight: $fn-weight1;
+              transition: $transition1;
               &:hover {
-                color: #0d6efd;
-                font-size: 18px;
-                font-weight: 500;
+                color: $color4;
+                font-size: $fn-size7;
+                font-weight: $fn-weight1;
               }
             }
           }
           .pricing-li2 {
-            color: #cbd4fd;
+            color: $color5;
 
-            font-size: 18px;
-            font-weight: 500;
+            font-size: $fn-size7;
+            font-weight: $fn-weight1;
           }
         }
       }
@@ -67,93 +64,85 @@ main {
     .container {
       .row {
         .wpo-testimional-tittle {
-          padding-top: 7rem;
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
+          padding-top: $padding-top6;
+          @include Testimional(center, space-between);
+
           .tittle1 {
-            position: relative;
+            position: $position-rela;
             .queto {
-              background-color: #3757f7;
-              width: 106px;
-              height: 106px;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              margin: 0;
+              background-color: $back-color7;
+              width: $width9;
+              height: $height10;
+              @include Testimional(center, center);
+
+              margin: $margin1;
               @media screen and (max-width: 768px) {
-                width: 80px;
-                height: 80px;
+                width: $width10;
+                height: $height11;
               }
               svg {
-                color: #fff;
-                font-size: 50px;
+                color: $color1;
+                font-size: $fn-size10;
               }
             }
             .our-clients {
-              @media screen and (max-width: 768px){
-                left: 79px;
-                font-size: 26px;
-                bottom: -25px;
-                width: 264px;
+              @media screen and (max-width: 768px) {
+                left: $left1;
+                font-size:$fn-size12;
+                bottom: $bottom1;
+                width:$width13;
               }
-              color: #232f4b;
-              font-size: 43px;
-              font-weight: 600;
-              margin: 0;
-              position: absolute;
-              bottom: -64px;
-              left: 106px;
-              width: 442px;
+              color: $color6;
+              font-size:$fn-size13;
+              font-weight: $fn-weight3;
+              margin: $margin1;
+              position:$post-absol;
+              bottom: $bottom2;
+              left:$left2;
+              width: $width12;
               span {
-                color: #071e93;
+                color:$color10 ;
               }
             }
           }
           .tittle2 {
-          
-            display: flex;
-            align-items: center;
-            gap: 16px;
+            @include OurClients(center, 16px);
+
             .two-arrow {
-              @media screen and (max-width: 768px){
-                display: none;
+              @media screen and (max-width: 768px) {
+                display: $display1;
               }
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              background: #fff;
-              width: 50px;
-              height: 50px;
-              line-height: 65px;
-              border: 1px solid #b7b7b7;
-              color: #6e6e6e;
-              padding: 0;
-              cursor: pointer;
-              position: relative;
-              margin: 0;
+              @include Testimional(center, center);
+              background: $back-color3;
+              width: $width11;
+              height: $height12;
+              line-height: $ln-height5;
+              border: $border2;
+              color: $color9;
+              padding: $padding-default;
+              cursor: $cursor;
+              position: $position-rela;
+              margin: $margin1;
 
               svg {
-                color: #3757f7;
-                font-size: 25px;
+                color: $color8;
+                font-size: $fn-size11;
               }
             }
             h5 {
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              background: #fff;
-              width: 50px;
-              height: 50px;
-              line-height: 65px;
-              cursor: pointer;
-              border: 1px solid #b7b7b7;
-              color: #6e6e6e;
-              padding: 0;
-              margin: 0;
+              @include Testimional(center, center);
+              background: $back-color3;
+              width: $width11;
+              height: $height12;
+              line-height: $ln-height5;
+              cursor: $cursor;
+              border: $border2;
+              color: $color9;
+              padding: $padding-default;
+              margin: $margin1;
               svg {
-                color: #3757f7;
-                font-size: 25px;
+                color: $color8;
+                font-size: $fn-size11;
               }
             }
           }

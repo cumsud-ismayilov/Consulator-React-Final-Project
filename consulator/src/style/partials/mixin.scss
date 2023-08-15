@@ -68,3 +68,15 @@
   align-items: $algn-itms5;
   justify-content: $jstfy-cntnt4;
 }
+
+@mixin Testimional($algn-itms6, $jstfy-cntnt5) {
+  display: flex;
+  align-items: $algn-itms6;
+  justify-content: $jstfy-cntnt5;
+}
+
+@mixin OurClients($algn-itms7, $gap7) {
+  display: flex;
+  align-items: $algn-itms7;
+  gap: $gap7;
+}
