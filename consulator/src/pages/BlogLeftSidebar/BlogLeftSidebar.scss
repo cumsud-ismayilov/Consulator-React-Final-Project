@@ -184,13 +184,13 @@ main {
           .play-video {
             width: 100%;
             height: 500px;
-            background-color: #0d6efd;
-            filter: opacity(0.5);
+
             position: absolute;
             display: flex;
             align-items: center;
             justify-content: center;
             top: 0;
+            z-index: 999;
             h5 {
               background-color: #fff;
               width: 75px;
@@ -199,7 +199,20 @@ main {
               display: flex;
               align-items: center;
               justify-content: center;
+              cursor: pointer;
             }
+          }
+          .blue-hover {
+            @media screen and (max-width: 768px) {
+              height: 206px;
+            }
+            width: 100%;
+            height: 500px;
+            background-color: #0d6efd;
+            z-index: 888;
+            filter: opacity(0.5);
+            position: absolute;
+            top: 0;
           }
         }
         .blog-pagination {
@@ -359,7 +372,7 @@ main {
               content: "";
               height: 4px;
               position: absolute;
-              bottom:-13px;
+              bottom: -13px;
               border-radius: 10px;
               background-color: #3757f7;
               width: 55px;
@@ -420,7 +433,7 @@ main {
               content: "";
               height: 4px;
               position: absolute;
-              bottom:-13px;
+              bottom: -13px;
               border-radius: 10px;
               background-color: #3757f7;
               width: 55px;
@@ -487,7 +500,7 @@ main {
               content: "";
               height: 4px;
               position: absolute;
-              bottom:-13px;
+              bottom: -13px;
               border-radius: 10px;
               background-color: #3757f7;
               width: 55px;
@@ -551,7 +564,7 @@ main {
               content: "";
               height: 4px;
               position: absolute;
-              bottom:-13px;
+              bottom: -13px;
               border-radius: 10px;
               background-color: #3757f7;
               width: 55px;
@@ -584,8 +597,8 @@ main {
                 background: #ecf4fb;
                 border-radius: 5px;
                 cursor: pointer;
-                transition: .3s ease-in-out;
-                &:hover{
+                transition: 0.3s ease-in-out;
+                &:hover {
                   background-color: #3757f7;
                   color: #fff;
                 }
@@ -593,25 +606,25 @@ main {
             }
           }
         }
-        .wpo-contact-widget{
+        .wpo-contact-widget {
           border: 0;
           background-color: #3757f7;
           padding: 30px 40px;
           margin-top: 4rem;
-          h2{
+          h2 {
             font-size: 36px;
             font-weight: 700;
             text-align: left;
             color: #fff;
             margin-bottom: 20px;
           }
-          h4{
+          h4 {
             color: #fff;
             font-size: 17px;
             line-height: 23px;
             font-weight: 400;
           }
-          .contact-loc{
+          .contact-loc {
             text-decoration: none;
             display: inline-block;
             border: 1px solid #fff;
@@ -620,11 +633,10 @@ main {
             padding: 10px 90px 10px 20px;
             margin-top: 20px;
             position: relative;
-            h5{
+            h5 {
               position: absolute;
               top: 10px;
               right: 13px;
-          
             }
           }
         }
