@@ -36,12 +36,11 @@ const Navbar = () => {
     setHideButton(false);
   };
 
+  const [sidebar, setSidebar] = useState(false);
+  const showSidebar = () => setSidebar(!sidebar);
 
-  const [sidebar,setSidebar]=useState(false);
-  const showSidebar =()=>setSidebar(!sidebar)
-
-
-
+  const [open, setOpen] = useState(false);
+  const showOpen =()=>setOpen(!open);
   return (
     <div>
       <nav className={fix ? "desktop-nav actice-nav" : "desktop-nav"}>
@@ -267,20 +266,26 @@ const Navbar = () => {
                 <div className="navbar">
                   <div className="navbar-button">
                     <Link to="#" className="menu-bars">
-                      <FaBars  color="#fff" size="20px" onClick={showSidebar}/>
+                      <FaBars color="#fff" size="20px" onClick={showSidebar} />
                     </Link>
                   </div>
                   <div className={sidebar ? "nav-menu active" : "nav-menu"}>
-                    <ul className="nav-menu-items" >
+                    <ul className="nav-menu-items">
                       <li className="navbar-toggle" onClick={showSidebar}>
-                        <Link to="#"  className="menu-bars" >
+                        <Link to="#" className="menu-bars">
                           <IoCloseOutline color="#fff" size="20px" />
                         </Link>
                       </li>
                       <li className="mobil-home">
                         Home
-                      <RiArrowDownSLine size="16px" />
-                       
+                        <RiArrowDownSLine size="16px" onClick={showOpen}/>
+                        <div className={open ? "mobilehome-click active" : "mobilehome-click"}>
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Eveniet nisi dolores officia aperiam, deserunt
+                            ab cupiditate vero omnis a ipsum?
+                          </p>
+                        </div>
                       </li>
                     </ul>
                   </div>

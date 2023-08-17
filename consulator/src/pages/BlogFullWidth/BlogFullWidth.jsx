@@ -1,14 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 import "../BlogFullWidth/BlogFullWidth.scss";
+import ReactPlayer from "react-player";
 import { BiUser } from "react-icons/bi";
 import { TbPointFilled } from "react-icons/tb";
 import { LuMessageCircle } from "react-icons/lu";
 import { IoCalendarOutline } from "react-icons/io5";
 import { BsFillPlayFill } from "react-icons/bs";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
-
+import { TfiClose } from "react-icons/tfi";
 const BlogFullWidth = () => {
+  const [videos, setVideos] = useState(false);
+  const showVideos = () => setVideos(!videos);
+
   return (
     <main>
       <section id="blog-page2">
@@ -151,8 +156,38 @@ const BlogFullWidth = () => {
                 />
                 <div className="play-video">
                   <h5>
-                    <BsFillPlayFill color="#0d6efd" size="35" />
+                    <BsFillPlayFill
+                      color="#0d6efd"
+                      size="35"
+                      onClick={showVideos}
+                    />
                   </h5>
+                  <div
+                    className={
+                      videos ? "youtube-video active" : "youtube-video"
+                    }
+                  >
+                  
+                    <div className="thisvideo">
+                    <p className="closebutton">
+                      <TfiClose
+                        cursor="pointer"
+                        size="35px"
+                        color="#fff"
+                        onClick={showVideos}
+                      />
+                    </p>
+                      <ReactPlayer
+                        width="100%"
+                        height="100%"
+                        controls
+                        url="https://www.youtube.com/watch?v=7Jv48RQ_2gk"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div className="blue-hover">
+
                 </div>
               </div>
               <div className="entry-meta">
