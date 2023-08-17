@@ -5,11 +5,14 @@ import { pink } from "@mui/material/colors";
 import Checkbox from "@mui/material/Checkbox";
 import { Link } from "react-router-dom";
 import "../Login/Login.scss"
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import Buttonitem from "../../components/ButtonComponent/Buttons"
 import { BiLogoFacebook,BiLogoTwitter} from "react-icons/bi";
 import { FaLinkedinIn } from "react-icons/fa";
 const Login = () => {
   const label = { inputProps: { "aria-label": "Checkbox demo" } };
+  const notify = () => toast.success("You successfully Login on Consultar !");
   return (
     <section id="login-page">
       <div class="login">
@@ -54,7 +57,8 @@ const Login = () => {
         </div>
         <h4 className="forgot-password"><Link>Forgot Password?</Link></h4>
       </div>
-      <Buttonitem type="text" className="login-button" tittle="login"/>
+      <Buttonitem type="text" className="login-button" onClick={notify} tittle="login" />
+      <ToastContainer theme="colored" />
       <div className="login-social">
          <h5 className="face-bk" ><BiLogoFacebook color="#fff" size="18px"/></h5>
          <h5 className="twitter" ><BiLogoTwitter color="#fff" size="16px"/></h5>

@@ -16,7 +16,8 @@ const PackageCard = () => {
             setPackages(data);
           });
       }, []);
-
+      
+  
   return (
     <section id='package'>
       <div className='container'>
@@ -34,7 +35,7 @@ const PackageCard = () => {
                         <li className='same'>{element.tittle3}</li>
                         <li className='different'>{element.tittle4}</li>
                     </ul>
-                    <Buttons type="text" className="plan" tittle="Choose Plan"/>
+                    <Buttons type="text" className="plan plan1 plan2" tittle="Choose Plan"/>
                 </div>
              </div>
           ))}
