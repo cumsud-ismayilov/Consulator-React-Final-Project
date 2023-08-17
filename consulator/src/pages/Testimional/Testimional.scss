@@ -128,6 +128,28 @@ main {
                 color: $color8;
                 font-size: $fn-size11;
               }
+              &:hover{
+                &::after{
+                  opacity: 1;
+                  visibility: visible;
+                }
+              }
+              &::after{
+                content: "";
+                width: 48px;
+                height: 48px;
+                position: absolute;
+                z-index: -1;
+                left: -3px;
+                right: -3px;
+                bottom: -3px;
+                border-right: 0!important;
+                border-left: 3px solid #3757f7;
+                border-bottom: 3px solid #3757f7;
+                opacity: 0;
+                visibility: hidden;
+               
+              }
             }
             h5 {
               @include Testimional(center, center);

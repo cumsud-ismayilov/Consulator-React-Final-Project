@@ -98,7 +98,7 @@ main {
             align-items: center;
             gap: 27px;
             .user {
-              @media screen and (max-width: 768px){
+              @media screen and (max-width: 768px) {
                 font-size: 12px;
               }
               color: #4f555a;
@@ -119,7 +119,7 @@ main {
               }
             }
             .comments {
-              @media screen and (max-width: 768px){
+              @media screen and (max-width: 768px) {
                 font-size: 12px;
               }
               color: #4f555a;
@@ -134,7 +134,7 @@ main {
         }
         .entry-details {
           h1 {
-            @media screen and (max-width: 768px){
+            @media screen and (max-width: 768px) {
               font-size: 18px;
             }
             font-size: 29px;
@@ -166,15 +166,15 @@ main {
           }
         }
         .format-standart {
-          @media screen and (max-width: 768px){
-            padding: 18px ;
+          @media screen and (max-width: 768px) {
+            padding: 18px;
           }
           background-color: #f4f8fc;
           padding: 25px 35px 45px;
           margin: 4rem 0rem;
         }
         .postslider-img {
-          @media screen and (max-width: 768px){
+          @media screen and (max-width: 768px) {
             height: 206px;
           }
           width: 100%;
@@ -188,7 +188,7 @@ main {
           }
         }
         .format-video {
-          @media screen and (max-width: 768px){
+          @media screen and (max-width: 768px) {
             height: 206px;
           }
           width: 100%;
@@ -197,7 +197,7 @@ main {
           position: relative;
           &:hover {
             &::before {
-              @media screen and (max-width: 768px){
+              @media screen and (max-width: 768px) {
                 height: 206px;
               }
               content: "";
@@ -224,7 +224,7 @@ main {
             object-position: center;
           }
           .play-video {
-            @media screen and (max-width: 768px){
+            @media screen and (max-width: 768px) {
               height: 206px;
             }
             width: 100%;
@@ -254,7 +254,7 @@ main {
           padding-top: 3rem;
 
           .pagination1 {
-            @media screen and (max-width: 768px){
+            @media screen and (max-width: 768px) {
               width: 40px;
               height: 40px;
             }
@@ -271,7 +271,7 @@ main {
             }
           }
           .pagination2 {
-            @media screen and (max-width: 768px){
+            @media screen and (max-width: 768px) {
               width: 40px;
               height: 40px;
             }
@@ -347,7 +347,7 @@ main {
             }
           }
           .aw-shape {
-            @media screen and (max-width: 768px){
+            @media screen and (max-width: 768px) {
               right: -68px;
             }
             width: 160px;
@@ -411,6 +411,26 @@ main {
             position: relative;
             text-transform: capitalize;
             font-weight: 600;
+            &::before {
+              content: "";
+              height: 4px;
+              position: absolute;
+              bottom:-13px;
+              border-radius: 10px;
+              background-color: #3757f7;
+              width: 55px;
+              left: 0;
+            }
+            &::after {
+              background-color: #f2f2f2;
+              width: 80%;
+              left: 65px;
+              content: "";
+              height: 4px;
+              position: absolute;
+              bottom: -13px;
+              border-radius: 10px;
+            }
           }
           .category-ul {
             list-style: none;
@@ -419,7 +439,7 @@ main {
             flex-direction: column;
             gap: 28px;
             .category-li {
-              @media screen and (max-width: 768px){
+              @media screen and (max-width: 768px) {
                 font-size: 14px;
               }
               font-size: 17px;
@@ -434,7 +454,7 @@ main {
                 color: rgb(55, 87, 247);
               }
               h1 {
-                @media screen and (max-width: 768px){
+                @media screen and (max-width: 768px) {
                   font-size: 14px;
                 }
                 font-size: 17px;
@@ -458,6 +478,26 @@ main {
             position: relative;
             text-transform: capitalize;
             font-weight: 600;
+            &::before {
+              content: "";
+              height: 4px;
+              position: absolute;
+              bottom:-13px;
+              border-radius: 10px;
+              background-color: #3757f7;
+              width: 55px;
+              left: 0;
+            }
+            &::after {
+              background-color: #f2f2f2;
+              width: 80%;
+              left: 65px;
+              content: "";
+              height: 4px;
+              position: absolute;
+              bottom: -13px;
+              border-radius: 10px;
+            }
           }
           .posts {
             display: flex;
@@ -476,7 +516,7 @@ main {
               }
               h5 {
                 a {
-                  @media screen and (max-width: 768px){
+                  @media screen and (max-width: 768px) {
                     font-size: 14px;
                   }
                   text-decoration: none;
@@ -491,7 +531,7 @@ main {
                 }
               }
               h6 {
-                @media screen and (max-width: 768px){
+                @media screen and (max-width: 768px) {
                   font-size: 12px;
                 }
                 font-size: 14px;
@@ -511,6 +551,26 @@ main {
             position: relative;
             text-transform: capitalize;
             font-weight: 600;
+            &::before {
+              content: "";
+              height: 4px;
+              position: absolute;
+              bottom:-13px;
+              border-radius: 10px;
+              background-color: #3757f7;
+              width: 55px;
+              left: 0;
+            }
+            &::after {
+              background-color: #f2f2f2;
+              width: 80%;
+              left: 65px;
+              content: "";
+              height: 4px;
+              position: absolute;
+              bottom: -13px;
+              border-radius: 10px;
+            }
           }
           .widget-projects1 {
             padding: 0;
@@ -523,7 +583,7 @@ main {
             a {
               text-decoration: none;
               img {
-                @media screen and (max-width: 768px){
+                @media screen and (max-width: 768px) {
                   width: 108px;
                   height: 92px;
                 }
@@ -543,7 +603,7 @@ main {
             a {
               text-decoration: none;
               img {
-                @media screen and (max-width: 768px){
+                @media screen and (max-width: 768px) {
                   width: 108px;
                   height: 92px;
                 }
@@ -563,6 +623,26 @@ main {
             position: relative;
             text-transform: capitalize;
             font-weight: 600;
+            &::before {
+              content: "";
+              height: 4px;
+              position: absolute;
+              bottom:-13px;
+              border-radius: 10px;
+              background-color: #3757f7;
+              width: 55px;
+              left: 0;
+            }
+            &::after {
+              background-color: #f2f2f2;
+              width: 80%;
+              left: 65px;
+              content: "";
+              height: 4px;
+              position: absolute;
+              bottom: -13px;
+              border-radius: 10px;
+            }
           }
           .tag-ul {
             list-style: none;
