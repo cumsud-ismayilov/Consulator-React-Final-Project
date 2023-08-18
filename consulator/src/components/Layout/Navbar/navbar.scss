@@ -61,20 +61,9 @@
               padding: 20px 0;
               z-index: 9999;
 
-              .mond {
-                position: relative;
-                &::after {
-                  position: absolute;
-                  left: 20px;
-                  bottom: 4px;
-                  width: 0;
-                  height: 2px;
-                  content: "";
-                  background: #3757f7;
-                  transition: all 0.3s;
-                  // opacity: 0;
-                  // visibility: hidden;
-                }
+              li {
+                // position: relative;
+
                 .hover-li6 {
                   text-decoration: none;
                   font-size: 18px;
@@ -82,8 +71,27 @@
                   padding: 10px 20px;
                   color: #232f4b;
                   font-weight: 500;
-                  
-                
+                  position: relative;
+                  &::after {
+                    position: absolute;
+                    left: 20px;
+                    bottom: 4px;
+                    width: 0;
+                    height: 2px;
+                    content: "";
+                    background: #3757f7;
+                    -webkit-transition: all 0.3s;
+                    transition: all 0.3s;
+                    opacity: 0;
+                    visibility: hidden;
+                  }
+                  &:hover {
+                    &::after {
+                      width: 40px;
+                      opacity: 1;
+                      visibility: visible;
+                    }
+                  }
                 }
               }
             }
@@ -156,20 +164,6 @@
               z-index: 9999;
 
               li {
-                position: relative;
-                &:hover {
-                  &:after {
-                    position: absolute;
-                    content: "";
-                    bottom: 0;
-                    width: 40px;
-                    height: 2px;
-                    left: 20px;
-                    background: #3757f7;
-
-                    transition: 0.3s ease-in-out;
-                  }
-                }
                 .hover-li2 {
                   text-decoration: none;
                   font-size: 18px;
@@ -177,6 +171,27 @@
                   padding: 10px 20px;
                   color: #232f4b;
                   font-weight: 500;
+                  position: relative;
+                  &::after {
+                    position: absolute;
+                    left: 20px;
+                    bottom: 4px;
+                    width: 0;
+                    height: 2px;
+                    content: "";
+                    background: #3757f7;
+                    -webkit-transition: all 0.3s;
+                    transition: all 0.3s;
+                    opacity: 0;
+                    visibility: hidden;
+                  }
+                  &:hover {
+                    &::after {
+                      width: 40px;
+                      opacity: 1;
+                      visibility: visible;
+                    }
+                  }
                 }
               }
             }
@@ -223,20 +238,6 @@
               z-index: 9999;
 
               li {
-                position: relative;
-                &:hover {
-                  &:after {
-                    position: absolute;
-                    content: "";
-                    bottom: 0;
-                    width: 40px;
-                    height: 2px;
-                    left: 20px;
-                    background: #3757f7;
-
-                    transition: 0.3s ease-in-out;
-                  }
-                }
                 .hover-li1 {
                   text-decoration: none;
                   font-size: 18px;
@@ -244,6 +245,27 @@
                   padding: 10px 20px;
                   color: #232f4b;
                   font-weight: 500;
+                  position: relative;
+                  &::after {
+                    position: absolute;
+                    left: 20px;
+                    bottom: 4px;
+                    width: 0;
+                    height: 2px;
+                    content: "";
+                    background: #3757f7;
+                    -webkit-transition: all 0.3s;
+                    transition: all 0.3s;
+                    opacity: 0;
+                    visibility: hidden;
+                  }
+                  &:hover {
+                    &::after {
+                      width: 40px;
+                      opacity: 1;
+                      visibility: visible;
+                    }
+                  }
                 }
               }
             }
@@ -290,20 +312,6 @@
               z-index: 9999;
 
               li {
-                position: relative;
-                &:hover {
-                  &:after {
-                    position: absolute;
-                    content: "";
-                    bottom: 0;
-                    width: 40px;
-                    height: 2px;
-                    left: 20px;
-                    background: #3757f7;
-
-                    transition: 0.3s ease-in-out;
-                  }
-                }
                 .hover-li {
                   text-decoration: none;
                   font-size: 18px;
@@ -311,6 +319,27 @@
                   padding: 10px 20px;
                   color: #232f4b;
                   font-weight: 500;
+                  position: relative;
+                  &::after {
+                    position: absolute;
+                    left: 20px;
+                    bottom: 4px;
+                    width: 0;
+                    height: 2px;
+                    content: "";
+                    background: #3757f7;
+                    -webkit-transition: all 0.3s;
+                    transition: all 0.3s;
+                    opacity: 0;
+                    visibility: hidden;
+                  }
+                  &:hover {
+                    &::after {
+                      width: 40px;
+                      opacity: 1;
+                      visibility: visible;
+                    }
+                  }
                 }
               }
             }
@@ -357,20 +386,6 @@
               z-index: 9999;
 
               .hover-li3 {
-                position: relative;
-                &:hover {
-                  &:after {
-                    position: absolute;
-                    content: "";
-                    bottom: 0;
-                    width: 40px;
-                    height: 2px;
-                    left: 20px;
-                    background: #3757f7;
-
-                    transition: 0.3s ease-in-out;
-                  }
-                }
                 .hover-a3 {
                   text-decoration: none;
                   font-size: 18px;
@@ -378,23 +393,30 @@
                   padding: 10px 20px;
                   color: #232f4b;
                   font-weight: 500;
+                  position: relative;
+                  &::after {
+                    position: absolute;
+                    left: 20px;
+                    bottom: 4px;
+                    width: 0;
+                    height: 2px;
+                    content: "";
+                    background: #3757f7;
+                    -webkit-transition: all 0.3s;
+                    transition: all 0.3s;
+                    opacity: 0;
+                    visibility: hidden;
+                  }
+                  &:hover {
+                    &::after {
+                      width: 40px;
+                      opacity: 1;
+                      visibility: visible;
+                    }
+                  }
                 }
               }
               .hover-li4 {
-                position: relative;
-                &:hover {
-                  &:after {
-                    position: absolute;
-                    content: "";
-                    bottom: 0;
-                    width: 40px;
-                    height: 2px;
-                    left: 20px;
-                    background: #3757f7;
-
-                    transition: 0.3s ease-in-out;
-                  }
-                }
                 .hover-a4 {
                   text-decoration: none;
                   font-size: 18px;
@@ -405,9 +427,29 @@
                   position: relative;
                   cursor: pointer;
                   transition: 0.3s ease-in-out;
+                  position: relative;
+                  &::after {
+                    position: absolute;
+                    left: 20px;
+                    bottom: 4px;
+                    width: 0;
+                    height: 2px;
+                    content: "";
+                    background: #3757f7;
+                    -webkit-transition: all 0.3s;
+                    transition: all 0.3s;
+                    opacity: 0;
+                    visibility: hidden;
+                  }
+
                   &:hover {
                     .blog-hover2 {
                       display: block;
+                    }
+                    &::after {
+                      width: 40px;
+                      opacity: 1;
+                      visibility: visible;
                     }
                   }
                   .blog-hover2 {
@@ -423,20 +465,6 @@
                     padding: 20px 0;
                     z-index: 9999;
                     .hover-li5 {
-                      position: relative;
-                      &:hover {
-                        &:after {
-                          position: absolute;
-                          content: "";
-                          bottom: 0;
-                          width: 40px;
-                          height: 2px;
-                          left: 20px;
-                          background: #3757f7;
-
-                          transition: 0.3s ease-in-out;
-                        }
-                      }
                       .hover-a5 {
                         text-decoration: none;
                         font-size: 18px;
@@ -444,6 +472,27 @@
                         padding: 10px 20px;
                         color: #232f4b;
                         font-weight: 500;
+                        position: relative;
+                        &::after {
+                          position: absolute;
+                          left: 20px;
+                          bottom: 4px;
+                          width: 0;
+                          height: 2px;
+                          content: "";
+                          background: #3757f7;
+                          -webkit-transition: all 0.3s;
+                          transition: all 0.3s;
+                          opacity: 0;
+                          visibility: hidden;
+                        }
+                        &:hover {
+                          &::after {
+                            width: 40px;
+                            opacity: 1;
+                            visibility: visible;
+                          }
+                        }
                       }
                     }
                   }
@@ -720,20 +769,7 @@
               z-index: 9999;
 
               li {
-                position: relative;
-                &:hover {
-                  &:after {
-                    position: absolute;
-                    content: "";
-                    bottom: 0;
-                    width: 40px;
-                    height: 2px;
-                    left: 20px;
-                    background: #3757f7;
-
-                    transition: 0.3s ease-in-out;
-                  }
-                }
+    
                 .hover-li6 {
                   text-decoration: none;
                   font-size: 18px;
@@ -741,6 +777,27 @@
                   padding: 10px 20px;
                   color: #232f4b;
                   font-weight: 500;
+                  position: relative;
+                  &::after {
+                    position: absolute;
+                    left: 20px;
+                    bottom: 4px;
+                    width: 0;
+                    height: 2px;
+                    content: "";
+                    background: #3757f7;
+                    -webkit-transition: all 0.3s;
+                    transition: all 0.3s;
+                    opacity: 0;
+                    visibility: hidden;
+                  }
+                  &:hover {
+                    &::after {
+                      width: 40px;
+                      opacity: 1;
+                      visibility: visible;
+                    }
+                  }
                 }
               }
             }
@@ -812,20 +869,7 @@
                 z-index: 9999;
 
                 li {
-                  position: relative;
-                  &:hover {
-                    &:after {
-                      position: absolute;
-                      content: "";
-                      bottom: 0;
-                      width: 40px;
-                      height: 2px;
-                      left: 20px;
-                      background: #3757f7;
 
-                      transition: 0.3s ease-in-out;
-                    }
-                  }
                   .hover-li2 {
                     text-decoration: none;
                     font-size: 18px;
@@ -833,6 +877,27 @@
                     padding: 10px 20px;
                     color: #232f4b;
                     font-weight: 500;
+                    position: relative;
+                    &::after {
+                      position: absolute;
+                      left: 20px;
+                      bottom: 4px;
+                      width: 0;
+                      height: 2px;
+                      content: "";
+                      background: #3757f7;
+                      -webkit-transition: all 0.3s;
+                      transition: all 0.3s;
+                      opacity: 0;
+                      visibility: hidden;
+                    }
+                    &:hover {
+                      &::after {
+                        width: 40px;
+                        opacity: 1;
+                        visibility: visible;
+                      }
+                    }
                   }
                 }
               }
@@ -879,20 +944,7 @@
                 z-index: 9999;
 
                 li {
-                  position: relative;
-                  &:hover {
-                    &:after {
-                      position: absolute;
-                      content: "";
-                      bottom: 0;
-                      width: 40px;
-                      height: 2px;
-                      left: 20px;
-                      background: #3757f7;
 
-                      transition: 0.3s ease-in-out;
-                    }
-                  }
                   .hover-li1 {
                     text-decoration: none;
                     font-size: 18px;
@@ -900,6 +952,27 @@
                     padding: 10px 20px;
                     color: #232f4b;
                     font-weight: 500;
+                    position: relative;
+                    &::after {
+                      position: absolute;
+                      left: 20px;
+                      bottom: 4px;
+                      width: 0;
+                      height: 2px;
+                      content: "";
+                      background: #3757f7;
+                      -webkit-transition: all 0.3s;
+                      transition: all 0.3s;
+                      opacity: 0;
+                      visibility: hidden;
+                    }
+                    &:hover {
+                      &::after {
+                        width: 40px;
+                        opacity: 1;
+                        visibility: visible;
+                      }
+                    }
                   }
                 }
               }
@@ -946,20 +1019,7 @@
                 z-index: 9999;
 
                 li {
-                  position: relative;
-                  &:hover {
-                    &:after {
-                      position: absolute;
-                      content: "";
-                      bottom: 0;
-                      width: 40px;
-                      height: 2px;
-                      left: 20px;
-                      background: #3757f7;
 
-                      transition: 0.3s ease-in-out;
-                    }
-                  }
                   .hover-li {
                     text-decoration: none;
                     font-size: 18px;
@@ -967,6 +1027,27 @@
                     padding: 10px 20px;
                     color: #232f4b;
                     font-weight: 500;
+                    position: relative;
+                    &::after {
+                      position: absolute;
+                      left: 20px;
+                      bottom: 4px;
+                      width: 0;
+                      height: 2px;
+                      content: "";
+                      background: #3757f7;
+                      -webkit-transition: all 0.3s;
+                      transition: all 0.3s;
+                      opacity: 0;
+                      visibility: hidden;
+                    }
+                    &:hover {
+                      &::after {
+                        width: 40px;
+                        opacity: 1;
+                        visibility: visible;
+                      }
+                    }
                   }
                 }
               }
@@ -1013,20 +1094,7 @@
                 z-index: 9999;
 
                 .hover-li3 {
-                  position: relative;
-                  &:hover {
-                    &:after {
-                      position: absolute;
-                      content: "";
-                      bottom: 0;
-                      width: 40px;
-                      height: 2px;
-                      left: 20px;
-                      background: #3757f7;
-
-                      transition: 0.3s ease-in-out;
-                    }
-                  }
+  
                   .hover-a3 {
                     text-decoration: none;
                     font-size: 18px;
@@ -1034,6 +1102,27 @@
                     padding: 10px 20px;
                     color: #232f4b;
                     font-weight: 500;
+                    position: relative;
+                    &::after {
+                      position: absolute;
+                      left: 20px;
+                      bottom: 4px;
+                      width: 0;
+                      height: 2px;
+                      content: "";
+                      background: #3757f7;
+                      -webkit-transition: all 0.3s;
+                      transition: all 0.3s;
+                      opacity: 0;
+                      visibility: hidden;
+                    }
+                    &:hover {
+                      &::after {
+                        width: 40px;
+                        opacity: 1;
+                        visibility: visible;
+                      }
+                    }
                   }
                 }
                 .hover-li4 {
@@ -1079,20 +1168,7 @@
                       padding: 20px 0;
                       z-index: 9999;
                       .hover-li5 {
-                        position: relative;
-                        &:hover {
-                          &:after {
-                            position: absolute;
-                            content: "";
-                            bottom: 0;
-                            width: 40px;
-                            height: 2px;
-                            left: 20px;
-                            background: #3757f7;
-
-                            transition: 0.3s ease-in-out;
-                          }
-                        }
+                    
                         .hover-a5 {
                           text-decoration: none;
                           font-size: 18px;
@@ -1100,6 +1176,27 @@
                           padding: 10px 20px;
                           color: #232f4b;
                           font-weight: 500;
+                          position: relative;
+                          &::after {
+                            position: absolute;
+                            left: 20px;
+                            bottom: 4px;
+                            width: 0;
+                            height: 2px;
+                            content: "";
+                            background: #3757f7;
+                            -webkit-transition: all 0.3s;
+                            transition: all 0.3s;
+                            opacity: 0;
+                            visibility: hidden;
+                          }
+                          &:hover {
+                            &::after {
+                              width: 40px;
+                              opacity: 1;
+                              visibility: visible;
+                            }
+                          }
                         }
                       }
                     }

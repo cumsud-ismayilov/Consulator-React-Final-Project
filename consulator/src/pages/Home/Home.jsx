@@ -109,7 +109,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
       <Featured />
       <section id="about-section">
         <div className="container">

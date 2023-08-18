@@ -122,7 +122,6 @@ main {
               justify-content: center;
               position: relative;
               cursor: pointer;
-          
             }
           }
         }
@@ -295,6 +294,28 @@ main {
             text-transform: uppercase;
             font-size: 20px;
             color: #3757f7;
+            position: relative;
+            cursor: pointer;
+            &::after {
+              position: absolute;
+              left: 2px;
+              bottom: 4px;
+              width: 0;
+              height: 2px;
+              content: "";
+              background: #3757f7;
+              -webkit-transition: all 0.3s;
+              transition: all 0.3s;
+              opacity: 0;
+              visibility: hidden;
+            }
+            &:hover {
+              &::after {
+                width: 40px;
+                opacity: 1;
+                visibility: visible;
+              }
+            }
           }
           h2 {
             @media screen and (max-width: 768px) {
@@ -679,13 +700,13 @@ main {
                 color: #3757f7;
                 font-size: 25px;
               }
-              &:hover{
-                &::after{
+              &:hover {
+                &::after {
                   opacity: 1;
                   visibility: visible;
                 }
               }
-              &::after{
+              &::after {
                 content: "";
                 width: 48px;
                 height: 48px;
@@ -694,12 +715,11 @@ main {
                 left: -3px;
                 right: -3px;
                 bottom: -3px;
-                border-right: 0!important;
+                border-right: 0 !important;
                 border-left: 3px solid #3757f7;
                 border-bottom: 3px solid #3757f7;
                 opacity: 0;
                 visibility: hidden;
-               
               }
             }
             h5 {

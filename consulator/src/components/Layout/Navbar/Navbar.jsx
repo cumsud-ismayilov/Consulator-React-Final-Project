@@ -60,17 +60,17 @@ const Navbar = () => {
                   <Link className="home-li" to="/">
                     Home
                     <ul className="home-hover">
-                      <li className="mond">
+                      <li>
                         <Link className="hover-li6" to="/homestyle1">
                           Home style 1
                         </Link>
                       </li>
-                      <li className="mond">
+                      <li>
                         <Link className="hover-li6" to="/homestyle2">
                           Home style 2
                         </Link>
                       </li>
-                      <li className="mond">
+                      <li>
                         <Link className="hover-li6" to="/homestyle3">
                           Home style 3
                         </Link>
