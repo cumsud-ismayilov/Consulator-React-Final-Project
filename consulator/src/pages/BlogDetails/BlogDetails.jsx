@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import Buttons from "../../components/ButtonComponent/Buttons";
 import Featured from "../../components/FeaturedCards/Featured";
 import ServicesCards from "../../components/ServicesCards/Servicescards";
@@ -8,8 +8,12 @@ import Projectgallery from "../../components/Projectgallery/Projectgallery";
 import "../BlogDetails/BlogDetails.scss";
 import { FaPlay } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import ReactPlayer from "react-player";
+import { TfiClose } from "react-icons/tfi";
 
 const Home = () => {
+  const [modals, setModals] = useState(false);
+  const showModals = () => setModals(!modals);
   return (
     <main>
       <section id="problems8">
@@ -58,8 +62,21 @@ const Home = () => {
                 </div>
                 <div className="video-btn">
                   <h1>
-                    <FaPlay color="#3757f7" size="28px" />
+                    <FaPlay color="#3757f7" size="28px" onClick={showModals} />
                   </h1>
+                  <div className={modals ? "modal-video active" : "modal-video"}>
+                    <div className="thisvideo">
+                      <p className="closebutton">
+                        <TfiClose cursor="pointer" size="35px" color="#fff" onClick={showModals}/>
+                      </p>
+                      <ReactPlayer
+                        width="100%"
+                        height="100%"
+                        controls
+                        url="https://www.youtube.com/watch?v=7Jv48RQ_2gk"
+                      />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

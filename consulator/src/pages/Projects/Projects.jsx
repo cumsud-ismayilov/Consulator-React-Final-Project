@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Buttons from "../../components/ButtonComponent/Buttons";
 import Featured from "../../components/FeaturedCards/Featured";
 import ServicesCards from "../../components/ServicesCards/Servicescards";
@@ -6,12 +6,15 @@ import PackageCards from "../../components/PackageCards/PackageCard";
 import BlogData from "../../components/BlogData/BlogData";
 import Projectgallery from "../../components/Projectgallery/Projectgallery";
 import TestimionalCards from "../../components/TestimionalSlide/TestimionalSlide";
-import "../Projects/Projects.scss"
-import { FaPlay ,FaQuoteLeft} from "react-icons/fa";
+import "../Projects/Projects.scss";
+import { FaPlay, FaQuoteLeft } from "react-icons/fa";
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 import { Link } from "react-router-dom";
-
+import ReactPlayer from "react-player";
+import { TfiClose } from "react-icons/tfi";
 const Projects = () => {
+  const [modals, setModals] = useState(false);
+  const showModals = () => setModals(!modals);
   return (
     <main>
       <section id="problems3">
@@ -60,8 +63,28 @@ const Projects = () => {
                 </div>
                 <div className="video-btn">
                   <h1>
-                    <FaPlay color="#3757f7" size="28px" />
+                    <FaPlay color="#3757f7" size="28px" onClick={showModals} />
                   </h1>
+                  <div
+                    className={modals ? "modal-video active" : "modal-video"}
+                  >
+                    <div className="thisvideo">
+                      <p className="closebutton">
+                        <TfiClose
+                          cursor="pointer"
+                          size="35px"
+                          color="#fff"
+                          onClick={showModals}
+                        />
+                      </p>
+                      <ReactPlayer
+                        width="100%"
+                        height="100%"
+                        controls
+                        url="https://www.youtube.com/watch?v=7Jv48RQ_2gk"
+                      />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -125,55 +148,55 @@ const Projects = () => {
         </div>
       </section>
       <section id="our-services3">
-         <div className="container">
-           <div className="row">
-              <div className="col-xl-12">
-                 <div className="ourservices-tittle">
-                    <p>Our Services</p>
-                    <h2>Explore Our Services</h2>
-                 </div>
+        <div className="container">
+          <div className="row">
+            <div className="col-xl-12">
+              <div className="ourservices-tittle">
+                <p>Our Services</p>
+                <h2>Explore Our Services</h2>
               </div>
-           </div>
-         </div>
-      </section>
-      <ServicesCards/>
-      <section id="banner3">
-         <div className="container">
-          <div className="row g-3">
-             <div className="col-xl-12">
-                <div className="banner-text">
-                   <p>Pricing</p>
-                   <h5>Our Pricing Packages</h5>
-                </div>
-             </div>
+            </div>
           </div>
-         </div>
+        </div>
       </section>
-      <PackageCards/>
+      <ServicesCards />
+      <section id="banner3">
+        <div className="container">
+          <div className="row g-3">
+            <div className="col-xl-12">
+              <div className="banner-text">
+                <p>Pricing</p>
+                <h5>Our Pricing Packages</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <PackageCards />
       <section id="facts3">
         <div className="container">
-           <div className="row">
-             <div className="col-xl-12">
-                <div className="facts-tittle">
-                    <div className="tittle1">
-                       <p>500+</p>
-                       <h2>Strategy and Planning</h2>
-                    </div>
-                    <div className="tittle2">
-                       <p>25+</p>
-                       <h2>Expert Consultants</h2>
-                    </div>
-                    <div className="tittle3">
-                       <p>95%</p>
-                       <h2>Client Satisfaction</h2>
-                    </div>
-                    <div className="tittle4">
-                       <p>30+</p>
-                       <h2>Award Winning</h2>
-                    </div>
+          <div className="row">
+            <div className="col-xl-12">
+              <div className="facts-tittle">
+                <div className="tittle1">
+                  <p>500+</p>
+                  <h2>Strategy and Planning</h2>
                 </div>
-             </div>
-           </div>
+                <div className="tittle2">
+                  <p>25+</p>
+                  <h2>Expert Consultants</h2>
+                </div>
+                <div className="tittle3">
+                  <p>95%</p>
+                  <h2>Client Satisfaction</h2>
+                </div>
+                <div className="tittle4">
+                  <p>30+</p>
+                  <h2>Award Winning</h2>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <section id="projects-galery3">
@@ -181,17 +204,19 @@ const Projects = () => {
           <div className="row">
             <div className="col-xl-12">
               <div className="projectgalery-text">
-                 <div className="text1">
-                   <p>Projects</p>
-                   <h2>Our Project Gallery</h2>
-                 </div>
-                 <h4><Link to="/projects">More Projects</Link></h4>
+                <div className="text1">
+                  <p>Projects</p>
+                  <h2>Our Project Gallery</h2>
+                </div>
+                <h4>
+                  <Link to="/projects">More Projects</Link>
+                </h4>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <Projectgallery/>
+      <Projectgallery />
       <section id="testimional-tittle">
         <div className="container">
           <div className="row">
@@ -199,7 +224,7 @@ const Projects = () => {
               <div className="wpo-testimional-tittle">
                 <div className="tittle1">
                   <p className="queto">
-                    <FaQuoteLeft size="34px"/>
+                    <FaQuoteLeft size="34px" />
                   </p>
                   <h2 className="our-clients">
                     {" "}
@@ -225,29 +250,34 @@ const Projects = () => {
           <div className="row">
             <div className="col-xl-12">
               <div className="questions-line">
-                 <div className="questions-text">
-                   <p>Have You a Different Question?</p>
-                   <h2>Please create a ticket to our support forum,a great place to learn, share, and troubleshoot. Get started.</h2>
-                 </div>
-                 <h4 className="support"><Link to="/contact">Ask Support Ticket</Link></h4>
+                <div className="questions-text">
+                  <p>Have You a Different Question?</p>
+                  <h2>
+                    Please create a ticket to our support forum,a great place to
+                    learn, share, and troubleshoot. Get started.
+                  </h2>
+                </div>
+                <h4 className="support">
+                  <Link to="/contact">Ask Support Ticket</Link>
+                </h4>
               </div>
             </div>
           </div>
         </div>
       </section>
       <section id="blog3">
-          <div className="container">
-            <div className="row">
-              <div className="col-xl-12">
-                <div className="blog-text">
-                  <p>Blog</p>
-                  <h2>Our blog Packages</h2>
-                </div>
+        <div className="container">
+          <div className="row">
+            <div className="col-xl-12">
+              <div className="blog-text">
+                <p>Blog</p>
+                <h2>Our blog Packages</h2>
               </div>
             </div>
           </div>
+        </div>
       </section>
-      <BlogData/>
+      <BlogData />
     </main>
   );
 };

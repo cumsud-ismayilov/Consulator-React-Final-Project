@@ -276,7 +276,7 @@
 
 // PLAY VIDEO HOME
 .video-btn {
-  .video-home {
+  .modal-video {
     position: fixed;
     top: 0;
     left: 0;
@@ -289,17 +289,22 @@
     align-items: center;
     justify-content: center;
     z-index: 1000000;
-    .player-video {
+    .closebutton {
+      text-align: end;
+      margin: 0;
+      position: absolute;
+      top: -23px;
+      right: -43px;
+    }
+    .thisvideo {
       width: 950px;
       height: 520px;
       position: relative;
-      .close-video {
-      }
     }
   }
 }
 
-.video-home.active {
+.modal-video.active {
   opacity: 1;
   visibility: visible;
 }

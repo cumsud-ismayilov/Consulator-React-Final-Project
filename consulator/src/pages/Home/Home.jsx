@@ -11,11 +11,11 @@ import TestimionalCards from "../../components/TestimionalSlide/TestimionalSlide
 import { FaPlay, FaQuoteLeft } from "react-icons/fa";
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 import ReactPlayer from "react-player";
+import { TfiClose } from "react-icons/tfi";
 import { Link } from "react-router-dom";
-import { GrClose } from "react-icons/gr";
 const Home = () => {
-  const [players ,setPlayers] = useState(false);
-  const showPlayer = () => setPlayers(!players);
+  const [modals, setModals] = useState(false);
+  const showModals = () => setModals(!modals);
   return (
     <main>
       <section id="problems">
@@ -64,12 +64,12 @@ const Home = () => {
                 </div>
                 <div className="video-btn">
                   <h1>
-                    <FaPlay color="#3757f7" size="28px" onClick={showPlayer} />
+                    <FaPlay color="#3757f7" size="28px" onClick={showModals} />
                   </h1>
-                  <div className={players ? "video-home active" : "video-home"}>
-                    <div className="player-video">
-                      <p className="close-video">
-                        <GrClose  onClick={showPlayer}/>
+                  <div className={modals ? "modal-video active" : "modal-video"}>
+                    <div className="thisvideo">
+                      <p className="closebutton">
+                        <TfiClose cursor="pointer" size="35px" color="#fff" onClick={showModals}/>
                       </p>
                       <ReactPlayer
                         width="100%"

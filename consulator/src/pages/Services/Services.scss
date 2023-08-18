@@ -121,21 +121,7 @@ main {
               align-items: center;
               justify-content: center;
               position: relative;
-              &::before {
-                content: " ";
-                width: 130%;
-                height: 130%;
-                background: hsla(0, 0%, 100%, 0.3);
-                border-radius: 50%;
-                position: absolute;
-                left: -12px;
-                top: -12px;
-                animation: pulse 1s infinite;
-                z-index: 1;
-                
-
-               
-              }
+              cursor: pointer;
             }
             .play-video {
               width: 100%;
@@ -699,13 +685,13 @@ main {
                 color: #3757f7;
                 font-size: 25px;
               }
-              &:hover{
-                &::after{
+              &:hover {
+                &::after {
                   opacity: 1;
                   visibility: visible;
                 }
               }
-              &::after{
+              &::after {
                 content: "";
                 width: 48px;
                 height: 48px;
@@ -714,12 +700,11 @@ main {
                 left: -3px;
                 right: -3px;
                 bottom: -3px;
-                border-right: 0!important;
+                border-right: 0 !important;
                 border-left: 3px solid #3757f7;
                 border-bottom: 3px solid #3757f7;
                 opacity: 0;
                 visibility: hidden;
-               
               }
             }
             h5 {
