@@ -294,28 +294,6 @@ main {
             text-transform: uppercase;
             font-size: 20px;
             color: #3757f7;
-            position: relative;
-            cursor: pointer;
-            &::after {
-              position: absolute;
-              left: 2px;
-              bottom: 4px;
-              width: 0;
-              height: 2px;
-              content: "";
-              background: #3757f7;
-              -webkit-transition: all 0.3s;
-              transition: all 0.3s;
-              opacity: 0;
-              visibility: hidden;
-            }
-            &:hover {
-              &::after {
-                width: 40px;
-                opacity: 1;
-                visibility: visible;
-              }
-            }
           }
           h2 {
             @media screen and (max-width: 768px) {

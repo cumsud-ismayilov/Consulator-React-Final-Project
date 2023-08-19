@@ -1,46 +1,44 @@
+@import "../../style//partials/varaible.scss";
+@import "../../style/partials/mixin.scss";
+
 #contactinfo-cards {
-  padding: 5rem 0rem;
+  padding: $padding-random15;
   .container {
     .row {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      @include Person-line(center,center);
+   
 
       .contact-cards {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        box-shadow: 0 5px 15px 0 rgba(62, 65, 159, 0.1);
-        padding: 40px;
+        @include CardHover(center,center,column);
+        text-align: $txt-align1;
+        box-shadow: $box-shadow2;
+        padding:$padding-random16 ;
         h4 {
-          width: 85px;
-          height: 85px;
-          background-color: #f5f5f5;
-          border-radius: 50%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
+          width: $width18;
+          height: $hgt5;
+          background-color: $back-color15;
+          border-radius:$br-radius1;
+          @include Person-line(center,center);
+   
           img {
-            width: 50px;
-            height: 50px;
-            object-fit: cover;
-            object-position: center;
+            width: $width11;
+            height: $height12;
+            object-fit: $object-ft1;
+            object-position: $object-post1;
           }
         }
         .contact-text {
           p {
-            font-size: 24px;
-            font-weight: 500;
-            margin: 20px 0;
-            color: #232f4b;
+            font-size:$fn-size17;
+            font-weight: $fn-weight1;
+            margin: $margin4;
+            color:$color6;
           }
           h2 {
-            font-size: 15px;
-            color: #4f555a;
-            font-weight: 400;
-            line-height: 28.8px;
+            font-size: $fn-size9;
+            color: $color7;
+            font-weight: $fn-weight2;
+            line-height: $ln-height3;
           }
         }
       }

@@ -93,3 +93,25 @@
   justify-content: $jstfy-cntnt7;
   gap: $gap8;
 }
+
+@mixin Person($algn-itms10, $gap9) {
+  display: flex;
+  align-items: $algn-itms10;
+  gap: $gap9;
+}
+
+@mixin Person-line($jstfy-cntnt8, $algn-itms11) {
+  display: flex;
+  justify-content: $jstfy-cntnt8;
+  align-items: $algn-itms11;
+}
+
+@mixin CardHover($algn-itms12, $jstfy-cntnt9, $flx-direction5) {
+  display: flex;
+  align-items: $algn-itms12;
+  justify-content: $jstfy-cntnt9;
+  flex-direction: $flx-direction5;
+}
+
+
+

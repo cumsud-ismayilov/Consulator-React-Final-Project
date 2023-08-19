@@ -1,103 +1,102 @@
+@import "../../style/partials/varaible.scss";
+@import "../../style/partials/mixin.scss";
+
 #blog-packages {
-  padding: 3rem 0rem 6rem;
-  @media screen and (max-width: 768px){
-    padding: 3rem 0rem 4rem;
+  padding: $padding-random7;
+  @media screen and (max-width: 768px) {
+    padding: $padding-random8;
   }
   .container {
     .row {
       .blog-cards {
         .blog-img {
-          width: 100%;
-          height: 280px;
+          width: $width2;
+          height: $height14;
           img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center;
-            border-top-left-radius: 6px;
-            border-top-right-radius: 6px;
+            width: $width2;
+            height: $height2;
+            object-fit: $object-ft1;
+            object-position: $object-post1;
+            border-top-left-radius: $border-top-left-radius1;
+            border-top-right-radius: $border-top-right-radius1;
           }
         }
         .cards-bottom {
-          box-shadow: 0 2px 20px 0 rgba(62, 65, 159, 0.09);
-          border-bottom-left-radius: 6px;
-          border-bottom-right-radius: 6px;
+          box-shadow: $box-shadow1;
+          border-bottom-left-radius: $border-bottom-left-radius1;
+          border-bottom-right-radius: $border-bottom-right-radius1;
           .blog-tittle {
-            padding: 30px 22px;
+            padding: $padding-random9;
             p {
-              color: #3757f7;
-              font-weight: 600;
-              background: #f3f3fb;
-              border-radius: 3px;
-              padding: 5px 20px;
-              font-size: 15px;
-              display: inline-block;
-              margin: 0;
+              color: $color8;
+              font-weight: $fn-weight3;
+              background: $back-color13;
+              border-radius: $br-radius5;
+              padding: $padding-random10;
+              font-size: $fn-size9;
+              display: $display2;
+              margin: $margin1;
             }
             h2 {
-              color: #232f4b;
-              line-height: 36px;
-              font-size: 19px;
-              font-weight: 600;
-              margin: 20px 0 0;
-              cursor: pointer;
-              transition: 0.3s ease-in-out;
+              color: $back-color5;
+              line-height: $ln-height6;
+              font-size: $fn-size16;
+              font-weight: $fn-weight3;
+              margin:$margin3;
+              cursor: $cursor;
+              transition:$transition1;
               &:hover {
-                color: #0d6efd;
+                color: $color4;
               }
             }
           }
           .person-line {
-            @media screen and (max-width: 768px){
-              padding: 17px 12px;
+            @media screen and (max-width: 768px) {
+              padding: $padding-random12;
             }
-            border-top: 1px solid #f3f3fb;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 30px;
+            border-top: $border-top1;
+            @include Person-line(space-between, center);
+            padding: $padding-random11;
 
             .person-about {
-              display: flex;
-              align-items: center;
-              gap: 19px;
+              @include Person(center, 19px);
+
               img {
-                width: 45px;
-                height: 45px;
-                object-fit: contain;
-                object-position: center;
-                border-radius: 50%;
+                width: $width15;
+                height: $height15;
+                object-fit: $object-ft2;
+                object-position: $object-post1;
+                border-radius: $br-radius1;
               }
               .person-name {
                 h4 {
-                  margin: 0;
-                  font-size: 18px;
-                  color: #232f4b;
-                  font-weight: 500;
-                  cursor: pointer;
-                  transition: 0.3s ease-in-out;
+                  margin: $margin1;
+                  font-size: $fn-size7;
+                  color: $back-color5;
+                  font-weight: $fn-weight1;
+                  cursor: $cursor;
+                  transition: $transition1;
                   &:hover {
-                    color: #0d6efd;
+                    color: $color4;
                   }
                 }
                 h5 {
-                  @media screen and (max-width: 768px){
-                    
+                  @media screen and (max-width: 768px) {
                   }
-                  margin: 0;
-                  font-size: 15px;
-                  color: #848892;
-                  font-weight: 400;
-                  padding-top: 9px;
+                  margin: $margin1;
+                  font-size: $fn-size9;
+                  color: $color14;
+                  font-weight: $fn-weight2;
+                  padding-top: $padding-top10;
                 }
               }
             }
             h6 {
-              font-size: 14px;
-              color: #848892;
-              text-transform: uppercase;
-              letter-spacing: 2px;
-              font-weight: 600;
+              font-size: $fn-size4;
+              color: $color14;
+              text-transform: $text-transform1;
+              letter-spacing: $letter-spacing2;
+              font-weight: $fn-weight3;
             }
           }
         }

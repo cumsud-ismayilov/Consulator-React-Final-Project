@@ -1,57 +1,59 @@
+@import "../../style/partials/varaible.scss";
+@import "../../style/partials/mixin.scss";
+
 .comments-item {
   .comment-cards {
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 768px) {
       flex-wrap: wrap;
     }
     display: flex;
     gap: 21px;
-    border-bottom: 1px solid #e4effb;
-    padding: 35px;
+    border-bottom: $border-bottom1;
+    padding: $padding-random14;
     img {
-      width: 85px;
-      height: 85px;
-      border-radius: 50%;
-      object-fit: cover;
-      object-position: center;
+      width: $width18;
+      height: $hgt5;
+      border-radius: $br-radius1;
+      object-fit: $object-ft1;
+      object-position: $object-post1;
     }
     .commentstext {
       .nameanddate {
-        @media screen and (max-width: 768px){
+        @media screen and (max-width: 768px) {
           flex-wrap: wrap;
         }
-        display: flex;
-        align-items: baseline;
-        gap: 9px;
+        @include Person(baseline,9px);
+    
 
         p {
-          font-size: 18px;
-          color: #232f4b;
-          font-weight: 700;
+          font-size: $fn-size7;
+          color: $color6;
+          font-weight: $fn-weight4;
         }
         h3 {
-          font-size: 15px;
-          color: #6e6e6e;
-          font-weight: 400;
-          text-transform: none;
+          font-size: $fn-size9;
+          color: $color9;
+          font-weight: $fn-weight2;
+          text-transform: $text-transform3;
         }
       }
       h4 {
-        font-size: 15px;
-        color: #4f555a;
-        font-weight: 400;
-        line-height: 28.8px;
+        font-size: $fn-size9;
+        color: $color7;
+        font-weight: $fn-weight2;
+        line-height: $ln-height3;
       }
       h5 {
-        font-size: 19px;
-        color: #4f555a;
-        padding-top: 8px;
-        font-weight: 400;
-        line-height: 28.8px;
-        text-decoration: underline;
-        cursor: pointer;
-        transition: 0.3s ease-in-out;
+        font-size: $fn-size16;
+        color: $color7;
+        padding-top: $padding-top3;
+        font-weight: $fn-weight2;
+        line-height: $ln-height3;
+        text-decoration: $txt-decoration1;
+        cursor: $cursor;
+        transition: $transition1;
         &:hover {
-          color: #0d6efd;
+          color: $color4;
         }
       }
     }
