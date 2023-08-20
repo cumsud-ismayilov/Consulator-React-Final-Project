@@ -1,55 +1,50 @@
-
+@import "../../style/partials/varaible.scss";
+@import "../../style/partials/mixin.scss";
   #serviceslide {
-    background: #f4f8fc;
-    padding: 3rem 0rem 3rem;
+    background: $back-color16;
+    padding: $padding-random17;
     .container {
       .row {
         .explore-card {
-          padding: 50px 40px;
-          background-color: #fff;
-          display: flex;
-          flex-direction: column;
-          width: 100%;
-          align-items: center;
-          justify-content: center;
-          position: relative;
+          padding:$padding-random18;
+          background-color: $back-color3;
+          @include CardHover(center,center,column);
+        
+          width: $width2;
+          position:$position-rela;
     
         }
         h3 {
-          width: 60px;
-          height: 60px;
-          background-color: #a5e2f3;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          border-radius: 50%;
-          position: relative;
-          top: -26px;
+          width: $width-def7;
+          height: $hgt14;
+          background-color:$back-color19 ;
+          @include Person-line(center,center);
+
+          border-radius: $br-radius1;
+          position: $position-rela;
+          top: $top2;
           img {
-            width: 55px;
-            height: 55px;
-            object-fit: contain;
-            object-position: center;
-            position: absolute;
-            bottom: -20px;
-            right: -10px;
+            width: $width20;
+            height: $hgt7;
+            object-fit: $object-ft2;
+            object-position: $object-post1;
+            position: $post-absol;
+            bottom: $bottom3;
+            right: $right2;
           }
         }
         .card-text {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-direction: column;
+          @include CardHover(center,center,column);
           p {
-            color: #232f4b;
-            font-size: 20px;
-            font-weight: 500;
+            color: $color6;
+            font-size: $fn-size2;
+            font-weight: $fn-weight1;
           }
           h2 {
-            font-size: 16px;
-            color: #4f555a;
-            line-height: 29px;
-            text-align: center;
+            font-size: $fnt-size1;
+            color: $color7;
+            line-height:$ln-height7;
+            text-align: $txt-align1;
           }
         }
       }

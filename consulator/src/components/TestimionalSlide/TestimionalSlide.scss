@@ -1,50 +1,52 @@
+@import "../../style/partials/varaible.scss";
+@import "../../style/partials/mixin.scss";
+
 #testimionalslide {
-  padding: 4rem 0rem 7rem;
-  @media screen and (max-width: 768px){
-   
+  padding:$pd-default8;
+  @media screen and (max-width: 768px) {
   }
   .container {
     .row {
-       .swiper{
-        height: 422px;
+      .swiper {
+        height: $hgt13;
         .testimional-card {
-            padding: 50px 40px;
-            box-shadow: 0 3px 12px 0 rgba(62, 65, 159, 0.08);
-    
-            h6 {
-              text-align: end;
-              svg {
-                color: #eaedfd;
-                font-size: 46px;
-              }
-            }
-            img {
-              width: 60px;
-              height: 60px;
-              border-radius: 50%;
-            }
-            h4 {
-              font-size: 15px;
-              color: #4f555a;
-              font-weight: 400;
-              line-height: 28.8px;
-              margin: 0;
-              padding: 20px 0px 17px;
-            }
-            h5 {
-              margin: 0;
-              color: #071e93;
-              font-weight: 600;
-            }
-            h3 {
-              font-size: 15px;
-              color: #4f555a;
-              font-weight: 400;
-              line-height: 28.8px;
-              margin: 0;
+          padding:$pd-default9 ;
+          box-shadow:$box-shadow5 ;
+
+          h6 {
+            text-align:$txt-align2;
+            svg {
+              color:$color15 ;
+              font-size:$fn-size6;
             }
           }
-       }
+          img {
+            width: $width-def7;
+            height:$hgt14;
+            border-radius: $br-radius1;
+          }
+          h4 {
+            font-size: $fn-size9;
+            color: $color7;
+            font-weight: $fn-weight2;
+            line-height:$ln-height3;
+            margin:$margin1;
+            padding: $pd-default10;
+          }
+          h5 {
+            margin: $margin1;
+            color: $color10;
+            font-weight:$fn-weight3;
+          }
+          h3 {
+            font-size: $fn-size9;
+            color: $color7;
+            font-weight: $fn-weight2;
+            line-height: $ln-height3;
+            margin: $margin1;
+          }
+        }
+      }
     }
   }
 }

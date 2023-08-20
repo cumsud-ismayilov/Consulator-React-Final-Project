@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "../Contact/Contact.scss"
 import ContactCards from '../../components/ContactCards/ContactCards';
 import Buttons from "../../components/ButtonComponent/Buttons";
-
+import MapComponent from '../../components/MapComponent/MapComponent';
 
 
 const Contact = () => {
@@ -71,7 +71,7 @@ const Contact = () => {
           </div>
         </div>
      </section>
-    
+    <MapComponent/>
    
     </main>
   )

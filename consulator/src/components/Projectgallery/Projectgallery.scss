@@ -1,65 +1,63 @@
+@import "../../style/partials/varaible.scss";
+@import "../../style/partials/mixin.scss";
+
 #gallery {
-    padding: 3rem 0rem 4rem;
+    padding: $padding-random8;
 
   .container {
     .row {
       @media screen and (max-width: 768px){
-        display: flex;
-        align-items: center;
-        gap: 15px;
+        @include  OurClients(center,15px);
+
     
       }
       .gallery-cards {
-        position: relative;
-        overflow: hidden;
+        position:$position-rela;
+        overflow: $overflow1;
         &:hover{
             .card-hover{
-                transform: translateY(0px);
+                transform: $transform1;
             }
         }
         .cards-img {
-          width: 100%;
-          height: 374px;
+          width: $width2;
+          height:$hgt11;
           img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center;
+            width:$width2;
+            height:$height2;
+            object-fit: $object-ft1;
+            object-position: $object-post1;
           }
         }
         .card-hover {
-          background-color: #0d6efd;
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          width: 100%;
-          height: 374px;
-          filter: opacity(0.7);
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          transform: translateY(-400px);
-          transition: .3s ease-in-out;
+          background-color: $back-color14;
+          position: $post-absol;
+          top: $top1;
+          left: $left3;
+          right: $right1;
+          width: $width2;
+          height:$hgt11;
+          filter: $filter-one;
+          @include CardHover(center,center,column);
+          transform:$transform3;
+          transition: $transition1;
           p {
-            font-size: 25px;
-            color: #fff;
-            font-weight: 600;
+            font-size: $fn-size11;
+            color: $color1;
+            font-weight: $fn-weight3;
           }
           h3 {
-            width: 30px;
-            height: 30px;
-            border: 1px solid #fff;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            width: $width16;
+            height: $hgt3;
+            border:$border4;
+            border-radius: $br-radius1;
+            @include Person-line(center,center);
+ 
             img {
-              width: 20px;
-              height: 20px;
-              object-fit: contain;
-              object-position: center;
+              width: $width17;
+              height: $hgt4;
+              object-fit:$object-ft2;
+              object-position: $object-post1;
             }
           }
         }

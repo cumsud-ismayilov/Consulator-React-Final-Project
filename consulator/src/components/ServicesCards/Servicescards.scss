@@ -1,44 +1,45 @@
+@import "../../style/partials/varaible.scss";
+@import "../../style/partials/mixin.scss";
+
 #inner {
-  background: #f4f8fc;
-  padding: 3rem 0rem 7rem;
+  background: $back-color16;
+  padding:$pd-default5;
   .container {
     .row {
       .services-cards {
-        background: #fff;
-        padding: 50px;
+        background: $back-color3;
+        padding:$pd-default6;
         .services-image {
-          background-color: #f3f6fe;
-          width: 76px;
-          height: 76px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          border-radius: 5px;
+          background-color: $back-color18;
+          width:$width-def6;
+          height:$hgt12;
+          @include Person-line (center,center);
+          border-radius:$br-radius4;
           img {
-            width: 50px;
-            height: 50px;
-            object-fit: contain;
-            object-position: center;
+            width:$width11;
+            height: $height12;
+            object-fit: $object-ft2;
+            object-position: $object-post1;
           }
         }
         .cards-tittle {
           p {
-            color: #232f4b;
-            font-size: 25px;
-            font-weight: 500;
-            margin: 20px 0;
-            cursor: pointer;
-            transition: 0.3s ease-in-out;
+            color: $color6;
+            font-size:$fn-size11;
+            font-weight: $fn-weight1;
+            margin: $margin4;
+            cursor: $cursor;
+            transition:$transition1;
             &:hover{
-                color: #3757f7;
+                color: $color8;
             }
           }
           h4 {
-            margin-bottom: 0;
-            font-size: 14px;
-            font-weight: 400;
-            color: #4f555a;
-            line-height: 26px;
+            margin-bottom: $margin1;
+            font-size: $fn-size4;
+            font-weight: $fn-weight2;
+            color: $color7;
+            line-height: $ln-height9;
           }
         }
       }
