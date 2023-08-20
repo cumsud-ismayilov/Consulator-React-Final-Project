@@ -1,53 +1,53 @@
+@import "../../style/partials/varaible.scss";
+@import "../../style/partials/mixin.scss";
+
 #featured {
-  padding: 6rem 0rem;
+  padding: $padding-random19;
   .container {
     .row {
       .featured-item {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        @include CardHover(center, center, column);
+
         .featured-img {
-          width: 80px;
-          height: 80px;
-          background-color: #f3f6fe;
-          display: flex;
-          align-items: center;
-          justify-content: center;
+          width: $width10;
+          height: $height11;
+          background-color: $back-color18;
+          @include Person-line(center, center);
+
           border-radius: 5px;
           img {
-            width: 53px;
-            height: 53px;
-            object-fit: contain;
-            object-position: center;
+            width: $width-def1;
+            height: $hgt8;
+            object-fit: $object-ft2;
+            object-position: $object-post1;
           }
         }
         .featured-text {
-          text-align: center;
+          text-align: $txt-align1;
           p {
-            @media screen and (max-width: 768px){
-              font-size: 21px;
+            @media screen and (max-width: 768px) {
+              font-size: $fn-size18;
             }
-            color: #232f4b;
-            font-size: 25px;
-            font-weight: 500;
-            margin: 20px 0;
-            cursor: pointer;
-            transition: .3s ease-in-out;
-            &:hover{
-              color: #3757f7;
+            color: $color6;
+            font-size: $fn-size11;
+            font-weight: $fn-weight1;
+            margin: $margin4;
+            cursor:$cursor;
+            transition:$transition1;
+            &:hover {
+              color: $color8;
             }
           }
           h2 {
-            @media screen and (max-width: 768px){
-              width: 327px;
+            @media screen and (max-width: 768px) {
+              width:$width-def2;
             }
-            margin-bottom: 0;
-            font-size: 14px;
-            font-weight: 400;
-            color: #4f555a;
-            line-height: 23px;
-            width: 425px;
+            margin-bottom: $margin1;
+            font-size: $fn-size4;
+            font-weight: $fn-weight2;
+            color:$color7;
+            line-height: $ln-height8;
+            width:$width-def3;
           }
         }
       }
