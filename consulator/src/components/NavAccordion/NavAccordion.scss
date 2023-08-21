@@ -1,0 +1,39 @@
+.accordion {
+  .accordion-heading {
+    padding: 6px 0px;
+    .accordion-main1 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      p {
+        color: #fff;
+        margin: 0;
+        font-size: 16px;
+      }
+    }
+  }
+  .accordion-content {
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 600ms ease-in-out;
+    .accordion-main2 {
+      padding: 8px 13px;
+      p {
+        a {
+          text-decoration: none;
+          color: #fff;
+          margin: 0;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+
+.accordion-content.show{
+    height: 120px;
+    opacity: 1;
+}

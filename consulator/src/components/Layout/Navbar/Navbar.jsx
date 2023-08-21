@@ -7,7 +7,7 @@ import { GoSearch, GoChevronRight } from "react-icons/go";
 import { AiOutlineClose, AiOutlineSearch } from "react-icons/ai";
 import { FaBars } from "react-icons/fa";
 import { IoCloseOutline } from "react-icons/io5";
-import { RiArrowDownSLine } from "react-icons/ri";
+import NavAccordion from "../../NavAccordion/NavAccordion";
 const Navbar = () => {
   const [fix, setFix] = useState(false);
 
@@ -38,9 +38,9 @@ const Navbar = () => {
 
   const [sidebar, setSidebar] = useState(false);
   const showSidebar = () => setSidebar(!sidebar);
+  
+  const  [actives ,setActives] = useState("tittle")
 
-  const [open, setOpen] = useState(false);
-  const showOpen =()=>setOpen(!open);
   return (
     <div>
       <nav className={fix ? "desktop-nav actice-nav" : "desktop-nav"}>
@@ -276,18 +276,13 @@ const Navbar = () => {
                           <IoCloseOutline color="#fff" size="20px" />
                         </Link>
                       </li>
-                      <li className="mobil-home">
-                        Home
-                        <RiArrowDownSLine size="16px" onClick={showOpen}/>
-                        <div className={open ? "mobilehome-click active" : "mobilehome-click"}>
-                          <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing
-                            elit. Eveniet nisi dolores officia aperiam, deserunt
-                            ab cupiditate vero omnis a ipsum?
-                          </p>
-                        </div>
-                      </li>
+                      <NavAccordion tittle="Home" desc1="Home Style 1"  desc2="Home Style 2" desc3="Home Style 3" actives={actives} setActives={setActives}/>
+                      <NavAccordion tittle="Services" actives={actives} setActives={setActives}/>
+                      <NavAccordion tittle="Projects" actives={actives} setActives={setActives}/>
+                      <NavAccordion tittle="Pages" actives={actives} setActives={setActives}/>
+                      <NavAccordion tittle="Blog" actives={actives} setActives={setActives}/>
                     </ul>
+                    
                   </div>
                 </div>
                 <div className="mobilenav-img">

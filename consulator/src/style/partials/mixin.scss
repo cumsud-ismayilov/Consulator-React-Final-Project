@@ -113,5 +113,21 @@
   flex-direction: $flx-direction5;
 }
 
+@mixin Questions($algn-itms13, $flx-direction6, $gap10) {
+  display: flex;
+  align-items: $algn-itms13;
+  flex-direction: $flx-direction6;
+  gap: $gap10;
+}
 
+@mixin Project($flx-direction7,$algn-itms14){
+   display: flex;
+   align-items: $algn-itms14;
+   flex-direction: $flx-direction7;
+}
 
+@mixin Facts-tittle($flx-direction8,$gap11){
+   display: flex;
+   flex-direction:$flx-direction8 ;
+   gap:$gap11 ;
+}
