@@ -1,66 +1,66 @@
 @import "../../style/partials/varaible.scss";
 @import "../../style/partials/mixin.scss";
 #featured2 {
-  @media screen and (max-width: 768px){
-    margin-top:$margin1;
+  @media screen and (max-width: 768px) {
+    margin-top: $margin1;
   }
-    padding:$padding-random20;
-    margin-top:$margin-top3;
-    z-index: $z-index2;
-   
-    border: 0;
-    .container {
-      .row {
-        .featured-item {
-          @media screen and (max-width: 768px){
-            box-shadow: $box-shadow3;
-          }
-          @include CardHover(center,center,column);
+  padding: $padding-random20;
+  margin-top: $margin-top3;
+  z-index: $z-index2;
+  position: $position-rela;
+  border: 0;
+  .container {
+    .row {
+      .featured-item {
+        @media screen and (max-width: 768px) {
+          box-shadow: $box-shadow3;
+        }
+        @include CardHover(center, center, column);
 
-          background-color:$back-color3;
-          padding:$pd-default1 ;
-          box-shadow: $box-shadow2;
-          .featured-img {
-            width: $width10;
-            height: $hgt9;
-            background-color: $back-color18;
-            @include Person-line(center,center);
+        background-color: $back-color3;
+        padding: $pd-default1;
+        box-shadow: $box-shadow2;
+        .featured-img {
+          width: $width10;
+          height: $hgt9;
+          background-color: $back-color18;
+          @include Person-line(center, center);
 
-            border-radius: $br-radius4;
-            img {
-              width: $width-def1;
-              height:$hgt8;
-              object-fit: $object-ft2;
-              object-position: $object-post1;
+          border-radius: $br-radius4;
+          img {
+            width: $width-def1;
+            height: $hgt8;
+            object-fit: $object-ft2;
+            object-position: $object-post1;
+          }
+        }
+        .featured-text {
+          text-align: $txt-align1;
+          p {
+            color: $color6;
+            font-size: $fn-size11;
+            font-weight: $fn-weight1;
+            margin: $margin4;
+            cursor: $cursor;
+            transition: $transition1;
+            &:hover {
+              color: $color8;
             }
           }
-          .featured-text {
-            text-align: $txt-align1;
-            p {
-              color: $color6;
-              font-size: $fn-size11;
-              font-weight: $fn-weight1;
-              margin: $margin4;
-              cursor: $cursor;
-              transition: $transition1;
-              &:hover{
-                color: $color8;
-              }
+          h2 {
+            @media screen and (max-width: 768px) {
+              width: $width-def4;
+              font-size: $fn-size15;
             }
-            h2 {
-              @media screen and (max-width: 768px){
-                width: $width-def4;
-                font-size: $fn-size15;
-              }
-              margin-bottom: $margin1;
-              font-size:$fn-size4;
-              font-weight:$fn-weight2;
-              color: $color7;
-              line-height:$ln-height8;
-              width: $width-def3;
-            }
+            margin-bottom: $margin1;
+            font-size: $fn-size4;
+            font-weight: $fn-weight2;
+            color: $color7;
+            line-height: $ln-height8;
+            width: $width-def3;
           }
         }
       }
     }
   }
+}

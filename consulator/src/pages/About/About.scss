@@ -1,327 +1,307 @@
+@import "../../style/partials/varaible.scss";
+@import "../../style/partials/mixin.scss";
 main {
   #about-us {
     .back-img {
       @media screen and (max-width: 768px){
-        height: 260px;
+        height: $height5;
       }
       background-image: url(http://consultar-react.wpocean.com/static/media/page-title.be0e30a3.jpg);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      width: 100%;
-      height: 380px;
-      position: relative;
+      background-position: $back-post1;
+      background-repeat: $back-repeat;
+      background-size:$back-size1;
+      width:$width2;
+      height:$height6;
+      position:$position-rela;
 
       .breadcumb-text {
         @media screen and (max-width: 768px){
-          height: 260px;
+          height: $height5;
         }
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background-color: #232f4b;
-        filter: opacity(0.7);
-        height: 380px;
+        @include CardHover(center,center,column);
+        background-color: $back-color5;
+        filter: $filter-one;
+        height: $height6;
         p {
           @media screen and (max-width: 768px){
-            font-size: 28px;
+            font-size: $fn-size5;
           }
-          color: #fff;
-          font-size: 46px;
-          font-weight: 500;
+          color: $color1;
+          font-size:$fn-size6;
+          font-weight:$fn-weight1;
         }
         .pricing-ul {
-          padding: 0;
-          list-style: none;
+          padding: $padding-default;
+          list-style: $list-style1;
+          @include Person(center,5px);
 
-          display: flex;
-          align-items: center;
-          gap: 5px;
 
           .pricing-li1 {
             a {
-              text-decoration: none;
-              color: #fff;
-              font-size: 18px;
-              font-weight: 500;
-              transition: 0.3s ease-in-out;
+              text-decoration: $txt-decoration2;
+              color: $color1;
+              font-size: $fn-size7;
+              font-weight: $fn-weight1;
+              transition: $transition1;
               &:hover {
-                color: #0d6efd;
-                font-size: 18px;
-                font-weight: 500;
+                color: $color4;
+                font-size:$fn-size7;
+                font-weight: $fn-weight1;
               }
             }
           }
           .pricing-li2 {
-            color: #cbd4fd;
+            color: $color5;
 
-            font-size: 18px;
-            font-weight: 500;
+            font-size: $fn-size7;
+            font-weight: $fn-weight1;
           }
         }
       }
     }
   }
   #about-section1 {
-    padding: 4rem 0rem 9rem;
+    padding: $pd-dft4;
     .container {
       .row {
         .about-img {
           @media screen and (max-width: 768px) {
-            width: 340px;
+            width: $width-def12;
           }
-          position: relative;
-          height: 650px;
-          width: 520px;
+          position:$position-rela;
+          height:$hgt17;
+          width:$width-def13;
 
           .imgs1 {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center;
-            position: static;
+            width: $width2;
+            height: $height2;
+            object-fit:$object-ft1;
+            object-position: $object-post1;
+            position:$post-sta;
           }
 
           .imgs2 {
-            position: absolute;
-            top: -59px;
-            left: -39px;
-            z-index: -1;
-            width: 198px;
-            height: 200px;
-            object-fit: cover;
-            object-position: center;
+            position:$post-absol;
+            top: $top4;
+            left:$left7;
+            z-index:$z-index3;
+            width: $width-def14;
+            height: $hgt18;
+            object-fit:$object-ft1;
+            object-position: $object-post1;
           }
           .imgs3 {
             @media screen and (max-width: 768px) {
-              right: 1px;
+              right: $right5;
             }
-            position: absolute;
-            bottom: -36px;
-            right: -36px;
-            width: 114px;
-            height: 114px;
-            object-fit: cover;
-            object-position: center;
+            position: $post-absol;
+            bottom: $bottom6;
+            right: $right6;
+            width: $width-def17;
+            height: $hgt19;
+            object-fit: $object-ft1;
+            object-position: $object-post1;
           }
         }
         .professional {
           .prof-img {
-            width: 50px;
-            height: 50px;
-            background-color: #f3f6fe;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 5px;
+            width: $width11;
+            height:$height12;
+            background-color: $back-color18;
+            @include Person-line(center,center);
+            border-radius: $br-radius4;
             img {
-              width: 36px;
-              height: 36px;
-              object-fit: contain;
-              object-position: center;
+              width: $widht3;
+              height: $height3;
+              object-fit:$object-ft2;
+              object-position: $object-post1;
             }
           }
           h2 {
             @media screen and (max-width: 768px) {
-              font-size: 30px;
+              font-size: $fn-size5;
             }
-            color: #232f4b;
-            margin: 30px 0;
-            font-size: 44px;
-            font-weight: 600;
+            color: $color6;
+            margin:$margin5 ;
+            font-size: $fn-size6;
+            font-weight:$fn-weight3;
             span {
-              color: #3757f7;
+              color: $color8;
             }
           }
           p {
             @media screen and (max-width: 768px) {
-              font-size: 14px;
-              width: 331px;
+              font-size: $fn-size4;
+              width: $width-def16;
             }
-            font-size: 16px;
-            color: #4f555a;
-            line-height: 29px;
-            width: 676px;
+            font-size: $fnt-size1;
+            color: $color7;
+            line-height: $ln-height7;
+            width: $width-def15;
           }
           .prof-img2 {
-            width: 100px;
-            height: 45px;
-            margin-top: 35px;
+            width: $width4;
+            height: $height15;
+            margin-top: $margin-top4;
 
             img {
-              width: 100%;
-              height: 100%;
-              object-fit: contain;
-              object-position: center;
+              width:$width2;
+              height: $height2;
+              object-fit:$object-ft2;
+              object-position:$object-post1;
             }
           }
           h4 {
-            font-size: 16px;
-            color: #4f555a;
-            padding-top: 18px;
+            font-size: $fnt-size1;
+            color: $color7;
+            padding-top: $padding-top14;
           }
           .more {
-            padding: 14px 43px;
-            margin-top: 22px;
-            cursor: pointer;
-            text-transform: capitalize;
-            border-radius: 6px;
-            color: #fff;
-            height: 58px;
-            font-weight: 500;
-            background: linear-gradient(270deg, #3757f7, #071e93);
-            border: 1px solid transparent;
+            padding: $pd-default13;
+            margin-top: $margin-top2;
+            cursor: $cursor;
+            text-transform: $text-transform2;
+            border-radius: $br-radius2;
+            color: $color1;
+            height: $hgt15;
+            font-weight: $fn-weight1;
+            background:$back-color6;
+            border:$border1;
           }
         }
       }
     }
   }
   #banner1 {
-    padding-top: 6rem;
+    padding-top: $padding-top8;
     .container {
       .row {
         .banner-text {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
+          @include CardHover(center,center,column);
+
           p {
-            text-transform: uppercase;
-            font-size: 20px;
-            color: #3757f7;
+            text-transform: $text-transform1;
+            font-size: $fn-size2;
+            color: $color8;
           }
-          h5 {
-            font-size: 47px;
-            line-height: 1em;
-            text-transform: capitalize;
-            color: #232f4b;
-            font-weight: 600;
+          .pricing-packages {
+            @media screen and (max-width: 768px) {
+              font-size: $fn-size5;
+            }
+            font-size: $fnt-sz4;
+            line-height: $ln-height4;
+            text-transform: $text-transform2;
+            color: $color6;
+            font-weight:$fn-weight3;
           }
         }
       }
     }
   }
   #facts1 {
-    background-color: #f4f8fc;
-    padding: 0rem 0rem 1rem;
+    padding:$pd-dft1 ;
     .container {
       .row {
         .facts-tittle {
-          @media screen and (max-width: 768px){
-            padding: 34px 7px;
-            display: flex;
-            flex-wrap: wrap;
+          @media screen and (max-width: 768px) {
+            width:$width-def19 ;
+            padding:$pd-dft2;
+            @include Facts-tittle(column,18px);
           }
-          padding: 90px 70px;
-          border-radius: 20px;
-          
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-
+          padding:$pd-dft3;
+          border-radius:$br-radius7;
+          box-shadow: $box-shadow4;
+          @include Person-line(space-between,center);
           .tittle1 {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+            @include CardHover(center,center,column);
             p {
-              @media screen and (max-width: 768px){
-                font-size: 32px;
+              @media screen and (max-width: 768px) {
+                font-size:$fn-size5;
               }
-              -webkit-text-stroke-color: #f28c8c;
-              -webkit-text-fill-color: #fff;
-              -webkit-text-stroke-width: 2px;
-              font-weight: 800;
-              color: #3757f7;
-              font-size: 81px;
-              margin: 0;
+              -webkit-text-stroke-color: $back-plan1;
+              -webkit-text-fill-color: $color1;
+              -webkit-text-stroke-width: $width-def18;
+              font-weight:$fn-weight5;
+              color: $color8;
+              font-size: $fn-sz8;
+              margin: $margin1;
             }
             h2 {
-              @media screen and (max-width: 768px){
-                font-size: 13px;
+              @media screen and (max-width: 768px) {
+                font-size: $fn-size4;
               }
-              margin: 0;
-              color: #232f4b;
-              font-size: 26px;
+              margin: $margin1;
+              color: $color6;
+              font-size: $fn-size12;
             }
           }
           .tittle2 {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+            @include CardHover(center,center,column);
             p {
-              @media screen and (max-width: 768px){
-                font-size: 32px;
+              @media screen and (max-width: 768px) {
+                font-size:$fn-size5;
               }
-              -webkit-text-stroke-color: #01c2a9;
-              -webkit-text-fill-color: #fff;
-              -webkit-text-stroke-width: 2px;
-              font-weight: 800;
-              color: #3757f7;
-              font-size: 81px;
-              margin: 0;
+              -webkit-text-stroke-color: $back-plan2;
+              -webkit-text-fill-color: $color1;
+              -webkit-text-stroke-width:$width-def18;
+              font-weight: $fn-weight5;
+              color: $color8;
+              font-size: $fn-sz8;
+              margin:$margin1;
             }
             h2 {
-              @media screen and (max-width: 768px){
-                font-size: 13px;
+              @media screen and (max-width: 768px) {
+                font-size: $fn-size4;
               }
-              margin: 0;
-              color: #232f4b;
-              font-size: 26px;
+              margin:$margin1;
+              color: $color6;
+              font-size:$fn-size12;
             }
           }
           .tittle3 {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+            @include CardHover(center,center,column);
             p {
-              @media screen and (max-width: 768px){
-                font-size: 32px;
+              @media screen and (max-width: 768px) {
+                font-size:$fn-size5;
               }
-              -webkit-text-stroke-color: #ffcd40;
-              -webkit-text-fill-color: #fff;
-              -webkit-text-stroke-width: 2px;
-              font-weight: 800;
-              color: #3757f7;
-              font-size: 81px;
-              margin: 0;
+              -webkit-text-stroke-color: $back-plan4;
+              -webkit-text-fill-color: $color1;
+              -webkit-text-stroke-width:$width-def18;
+              font-weight:$fn-weight5;
+              color: $color8;
+              font-size:$fn-sz8;
+              margin: $margin1;
             }
             h2 {
-              @media screen and (max-width: 768px){
-                font-size: 13px;
+              @media screen and (max-width: 768px) {
+                font-size: $fn-size4;
               }
-              margin: 0;
-              color: #232f4b;
-              font-size: 26px;
+              margin: $margin1;
+              color: $color6;
+              font-size: $fn-size12;
             }
           }
           .tittle4 {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+            @include CardHover(center,center,column);
             p {
-              @media screen and (max-width: 768px){
-                font-size: 32px;
+              @media screen and (max-width: 768px) {
+                font-size:$fn-size5;
               }
-              -webkit-text-stroke-color: #3757f7;
-              -webkit-text-fill-color: #fff;
-              -webkit-text-stroke-width: 2px;
-              font-weight: 800;
-              color: #3757f7;
-              font-size: 81px;
-              margin: 0;
+              -webkit-text-stroke-color: $color8;
+              -webkit-text-fill-color: $color1;
+              -webkit-text-stroke-width: $width-def18;
+              font-weight:$fn-weight5;
+              color: $color8;
+              font-size:$fn-sz8;
+              margin:$margin1;
             }
             h2 {
-              @media screen and (max-width: 768px){
-                font-size: 13px;
+              @media screen and (max-width: 768px) {
+                font-size: $fn-size4;
               }
-              margin: 0;
-              color: #232f4b;
-              font-size: 26px;
+              margin: $margin1;
+              color: $color6;
+              font-size:$fn-size12;
             }
           }
         }
@@ -329,27 +309,24 @@ main {
     }
   }
    #our-services1 {
-   background: #f4f8fc;
-    padding-top: 6rem;
+   background: $back-color16;
+    padding-top: $padding-top8;
 
     .container {
       .row {
         .ourservices-tittle {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
+          @include CardHover(center,center,column);
           p {
-            text-transform: uppercase;
-            font-size: 20px;
-            color: #3757f7;
+            text-transform:$text-transform1;
+            font-size:$fn-size2;
+            color: $color8;
           }
           h2 {
-            font-size: 47px;
-            line-height: 1em;
-            text-transform: capitalize;
-            color: #232f4b;
-            font-weight: 600;
+            font-size: $fnt-sz4;
+            line-height: $ln-height4;
+            text-transform: $text-transform2;
+            color: $color6;
+            font-weight: $fn-weight3;
           }
         }
       }

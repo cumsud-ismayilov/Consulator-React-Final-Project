@@ -1,110 +1,104 @@
+@import "../../style/partials/varaible.scss";
+@import "../../style/partials/mixin.scss";
 main {
   #projectstyle2 {
     .back-img {
       @media screen and (max-width: 768px){
-        height: 260px;
+        height: $height5;
       }
       background-image: url(http://consultar-react.wpocean.com/static/media/page-title.be0e30a3.jpg);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      width: 100%;
-      height: 380px;
-      position: relative;
+      background-position: $back-post1;
+      background-repeat: $back-repeat;
+      background-size:$back-size1;
+      width:$width2;
+      height:$height6;
+      position:$position-rela;
 
       .breadcumb-text {
         @media screen and (max-width: 768px){
-          height: 260px;
+          height: $height5;
         }
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background-color: #232f4b;
-        filter: opacity(0.7);
-        height: 380px;
+        @include CardHover(center,center,column);
+        background-color: $back-color5;
+        filter: $filter-one;
+        height: $height6;
         p {
           @media screen and (max-width: 768px){
-            font-size: 28px;
+            font-size: $fn-size5;
           }
-          color: #fff;
-          font-size: 46px;
-          font-weight: 500;
+          color: $color1;
+          font-size:$fn-size6;
+          font-weight:$fn-weight1;
         }
         .pricing-ul {
-          padding: 0;
-          list-style: none;
+          padding: $padding-default;
+          list-style: $list-style1;
+          @include Person(center,5px);
 
-          display: flex;
-          align-items: center;
-          gap: 5px;
 
           .pricing-li1 {
             a {
-              text-decoration: none;
-              color: #fff;
-              font-size: 18px;
-              font-weight: 500;
-              transition: 0.3s ease-in-out;
+              text-decoration: $txt-decoration2;
+              color: $color1;
+              font-size: $fn-size7;
+              font-weight: $fn-weight1;
+              transition: $transition1;
               &:hover {
-                color: #0d6efd;
-                font-size: 18px;
-                font-weight: 500;
+                color: $color4;
+                font-size:$fn-size7;
+                font-weight: $fn-weight1;
               }
             }
           }
           .pricing-li2 {
-            color: #cbd4fd;
+            color: $color5;
 
-            font-size: 18px;
-            font-weight: 500;
+            font-size: $fn-size7;
+            font-weight: $fn-weight1;
           }
         }
       }
     }
   }
-  #projects-galery2 {
-    padding-top: 3rem;
+  #projects-galery2s {
+    padding-top:$pd-bottom1;
     .container {
       .row {
         .projectgalery-text {
           @media screen and (max-width: 768px) {
-            flex-direction: column;
-            align-items: baseline;
+            @include Project(column, baseline);
           }
-          display: flex;
-          align-items: flex-end;
-          justify-content: space-between;
+          @include Person-line(space-between, flex-end);
           .text1 {
             p {
-              text-transform: uppercase;
-              font-size: 20px;
-              color: #3757f7;
+              text-transform: $text-transform1;
+              font-size: $fn-size2;
+              color: $color8;
             }
             h2 {
               @media screen and (max-width: 768px) {
-                font-size: 28px;
-                padding-bottom: 14px;
+                font-size: $fn-size5;
+                padding-bottom: $padding-top13;
               }
-              font-size: 47px;
-              line-height: 1em;
-              text-transform: capitalize;
-              color: #232f4b;
-              font-weight: 600;
+              font-size: $fnt-sz4;
+              line-height: $ln-height4;
+              text-transform: $text-transform2;
+              color: $color6;
+              font-weight: $fn-weight3;
             }
           }
           h4 {
             a {
-              text-decoration: none;
-              padding: 17px 35px;
-              display: inline-block;
-              border: 1px solid #3757f7;
-              border-radius: 5px;
-              color: #fff;
-              background: #3757f7;
-              font-size: 14px;
-              text-transform: uppercase;
-              font-weight: 400;
+              text-decoration: $txt-decoration2;
+              padding: $pd-default19;
+              display: $display2;
+              border: $border5;
+              border-radius: $br-radius4;
+              color: $color1;
+              background: $back-color7;
+              font-size: $fn-size4;
+              text-transform: $text-transform1;
+              font-weight: $fn-weight2;
             }
           }
         }

@@ -5,7 +5,7 @@ import ServicesCards from "../../components/ServicesCards/Servicescards";
 const Service = () => {
   return (
     <main>
-      <section id="service-page2">
+      <section id="service-page22">
         <div className="back-img">
           <div className="breadcumb-text">
             <p>Services</p>

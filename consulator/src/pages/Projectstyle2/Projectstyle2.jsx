@@ -16,7 +16,7 @@ const Projectstyle2 = () => {
             </div>
          </div>
       </section>
-      <section id="projects-galery2">
+      <section id="projects-galery2s">
         <div className="container">
           <div className="row">
             <div className="col-xl-12">
