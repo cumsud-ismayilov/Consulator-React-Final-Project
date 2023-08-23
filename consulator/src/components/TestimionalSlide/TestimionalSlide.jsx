@@ -24,7 +24,20 @@ const TestimionalSlide = () => {
           <Swiper
             slidesPerView={3}
             spaceBetween={20}
-
+            breakpoints={{
+              340: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 40,
+              },
+              1024: {
+                slidesPerView: 5,
+                spaceBetween: 50,
+              },
+            }}
             autoplay={{
               delay: 1500,
               disableOnInteraction: false,
@@ -35,7 +48,7 @@ const TestimionalSlide = () => {
             {testimional.length > 0 &&
               testimional.map((element, index) => (
                 <SwiperSlide>
-                  <div key={index} className="testimional-card">
+                  <div key={`tesimonial ${index}`} className="testimional-card">
                     <h6>
                       <FaQuoteLeft />
                     </h6>
