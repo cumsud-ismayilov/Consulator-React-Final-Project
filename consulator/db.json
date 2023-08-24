@@ -363,5 +363,27 @@
       "tittle1": "I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, ",
       "tittle2": "Reply"
     }
+  ],
+  "factsdata":[
+    {
+      "id":1,
+      "tittle":"500+",
+      "desc":"Strategy and Planning"
+    },
+    {
+      "id":2,
+      "tittle":"25+",
+      "desc":"Expert Consultants"
+    },
+    {
+      "id":3,
+      "tittle":"95%",
+      "desc":"Client Satisfaction"
+    },
+    {
+      "id":4,
+      "tittle":"30+",
+      "desc":"Award Winning"
+    }
   ]
 }

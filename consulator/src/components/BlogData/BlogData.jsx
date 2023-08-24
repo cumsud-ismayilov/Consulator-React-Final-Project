@@ -1,15 +1,18 @@
 import React from "react";
 import { useEffect, useState } from "react";
-import { getBlogApi } from "../../utils/api";
+
 import "../BlogData/BlogData.scss";
 
 const BlogData = () => {
   const [blogs, setBlogs] = useState([]);
+  const BASE_URL = "http://localhost:3001/";
 
   useEffect(() => {
-    getBlogApi("blogitem").then((res) => {
-      setBlogs(res.data);
-    });
+    fetch(`${BASE_URL}blogitem`)
+      .then((response) => response.json())
+      .then((data) => {
+        setBlogs(data);
+      });
   }, []);
 
   return (

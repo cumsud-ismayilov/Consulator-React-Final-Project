@@ -2,7 +2,7 @@ import React from "react";
 import { useEffect, useState } from "react";
 import "../../components/PackageCards/PackageCard.scss";
 import Buttons from "../ButtonComponent/Buttons";
-import MedalImages from "../../images/badge.png";
+
 
 const PackageCard = () => {
   const [packages, setPackages] = useState([]);
@@ -18,14 +18,27 @@ const PackageCard = () => {
   const getButtonColor = (id) => {
     switch (id) {
       case 1:
-        return "btn btn-danger";
+        return "plan";
       case 2:
-        return "btn btn-success";
+        return "plan1";
       case 3:
-        return "btn btn-warning";
+        return "plan2";
 
       default:
-        return "btn";
+        return "plan";
+    }
+  };
+  const getIMg = (id) => {
+    switch (id) {
+      case 1:
+        return "https://cdn-icons-png.flaticon.com/512/969/969088.png";
+      case 2:
+        return "https://cdn-icons-png.flaticon.com/512/4778/4778417.png";
+      case 3:
+        return "https://cdn-icons-png.flaticon.com/256/2618/2618179.png";
+
+      default:
+        return "https://cdn-icons-png.flaticon.com/512/969/969088.png";
     }
   };
 
@@ -39,7 +52,7 @@ const PackageCard = () => {
                 <div className="package-cards">
                   <p>{element.description}</p>
                   <div className="package-img">
-                    <img src={MedalImages} alt="packageimg" />
+                    <img src={getIMg(element.id)} alt="packageimg" />
                   </div>
                   <ul className="package-ul">
                     <li className="same">{element.tittle1}</li>

@@ -4,6 +4,7 @@ import "../About/About.scss";
 import Buttons from "../../components/ButtonComponent/Buttons";
 import PackageCards from "../../components/PackageCards/PackageCard";
 import ExploreSlide from "../../components/ExploreSlide/ExploreSlide";
+import FactsSection from "../../components/FactsSection/FactsSection";
 const About = () => {
   return (
     <main>
@@ -20,7 +21,6 @@ const About = () => {
           </div>
         </div>
       </section>
-
       <section id="about-section1">
         <div className="container">
           <div className="row g-3">
@@ -102,32 +102,7 @@ const About = () => {
         </div>
       </section>
       <PackageCards />
-      <section id="facts1">
-        <div className="container">
-          <div className="row">
-            <div className="col-xl-12">
-              <div className="facts-tittle">
-                <div className="tittle1">
-                  <p>500+</p>
-                  <h2>Strategy and Planning</h2>
-                </div>
-                <div className="tittle2">
-                  <p>25+</p>
-                  <h2>Expert Consultants</h2>
-                </div>
-                <div className="tittle3">
-                  <p>95%</p>
-                  <h2>Client Satisfaction</h2>
-                </div>
-                <div className="tittle4">
-                  <p>30+</p>
-                  <h2>Award Winning</h2>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <FactsSection/>
     </main>
   );
 };

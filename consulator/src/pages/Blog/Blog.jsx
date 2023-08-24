@@ -281,6 +281,7 @@ const Blog = () => {
                   </h3>
                 </div>
               </div>
+              
               <div className="search-widget">
                 <form>
                   <input

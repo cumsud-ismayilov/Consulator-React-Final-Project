@@ -214,10 +214,10 @@ main {
           padding-bottom: 18px;
           span {
             @media screen and (max-width: 768px) {
-              font-size: 13px;
+              font-size: $fn-weight3
             }
-            color: #232f4b;
-            font-weight: 600;
+            color: $color6;
+            font-weight: $fn-weight3;
             display: inline-block;
             text-transform: $text-transform1;
           }
@@ -231,7 +231,7 @@ main {
             align-items: center;
             gap: 8px;
             .plan-li {
-              color: #232f4b;
+              color: $color6;
               background: #ecf4fb;
               border-radius: 5px;
               text-transform: $text-transform1;
@@ -248,15 +248,15 @@ main {
         .tag-share-s3 {
           display: flex;
           align-items: baseline;
-          gap: 13px;
-          padding-top: 2rem;
+          gap: $fn-weight3;
+          padding-top:2rem;
 
           span {
             @media screen and (max-width: 768px) {
-              font-size: 13px;
+              font-size: $fn-weight3
             }
-            color: #232f4b;
-            font-weight: 600;
+            color: $color6;
+            font-weight: $fn-weight3;
             display: inline-block;
             text-transform: $text-transform1;
           }
@@ -269,13 +269,13 @@ main {
 
             .plan-li1 {
               @media screen and (max-width: 768px) {
-                font-size: 13px;
+                font-size: $fn-weight3
               }
               font-size: $fnt-size1;
-              text-transform: capitalize;
+              text-transform:$text-transform2;
               background: none;
-              text-decoration: underline;
-              color: #6e6e6e;
+              text-decoration: u$txt-decoration1;
+              color: $color9;
               cursor: pointer;
               transition:$transition1;
               &:hover {
@@ -284,6 +284,7 @@ main {
             }
           }
         }
+      
         .author-box {
           @media screen and (max-width: 768px) {
             flex-wrap: wrap;
@@ -330,12 +331,12 @@ main {
             flex-wrap: wrap;
           }
           overflow: $overflow1;
-          border: 1px solid #d8e0f1;
-          padding: 0 25px;
+          border:$border-top2;
+          padding:$pd-df24;
+          margin: $pd-df10;
           display: flex;
-          margin: 2rem 0rem;
           .previos-text {
-            padding: 40px 0;
+            padding: $pd-df23;
 
             h3 {
               a {
@@ -356,20 +357,20 @@ main {
             h4 {
               font-size: $fnt-size1;
               color: $color6;
-              padding-top: 8px;
+              padding-top: $padding-top3;
             }
           }
           .next-text {
             @media screen and (max-width: 768px) {
               border-left:$txt-decoration2;
-              border-top: 1px solid #d8e0f1;
-              text-align: left;
+              border-top:$border-top2 ;
+              text-align: $text-align3;
             }
-            padding: 40px 0;
-            text-align: right;
-            border-left: 1px solid #d8e0f1;
+            padding: $pd-df23;
+            text-align:$text-align4;
+            border-left:$border-top2;
             padding-left: $fn-size9;
-            padding-right: 5px;
+            padding-right: $pd-df22;
             h3 {
               a {
                 @media screen and (max-width: 768px) {
@@ -429,9 +430,7 @@ main {
               @media screen and (max-width: 768px) {
                 flex-wrap: wrap;
               }
-              display: flex;
-              align-items: center;
-              justify-content: space-between;
+              @include Testimional(center,space-between);
               .website-input {
                 background-color: $back-color3;
                 height: $hgt7;
@@ -493,7 +492,7 @@ main {
             width: $width-def31;
             height: $height-random3;
             position: $position-rela;
-            z-index: $z-index8;
+            z-index: $z-index6;
             img {
               width: $width2;
               height: $height2;

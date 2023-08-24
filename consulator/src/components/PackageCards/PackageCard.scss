@@ -54,6 +54,34 @@
             filter: $filter-two;
           }
         }
+        .plan1 {
+          background: $back-plan2;
+          color:$color1;
+          font-weight: $fn-weight1;
+          padding: $pd-default4;
+          border: $br-radius6;
+          border-radius:$br-radius2;
+          text-transform: $text-transform2;
+          cursor: $cursor;
+          transition: $transition1;
+          &:hover{
+            filter: $filter-two;
+          }
+        }
+        .plan2 {
+          background: $back-plan3;
+          color:$color1;
+          font-weight: $fn-weight1;
+          padding: $pd-default4;
+          border: $br-radius6;
+          border-radius:$br-radius2;
+          text-transform: $text-transform2;
+          cursor: $cursor;
+          transition: $transition1;
+          &:hover{
+            filter: $filter-two;
+          }
+        }
       }
     }
   }

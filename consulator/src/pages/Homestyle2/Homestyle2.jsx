@@ -1,7 +1,7 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import Buttons from "../../components/ButtonComponent/Buttons";
 import Featured from "../../components/FeaturedCards/Featured";
-
+import FactsSection from "../../components/FactsSection/FactsSection";
 import PackageCards from "../../components/PackageCards/PackageCard";
 import BlogData from "../../components/BlogData/BlogData";
 import Projectgallery from "../../components/Projectgallery/Projectgallery";
@@ -44,12 +44,19 @@ const Homestyle2 = () => {
                 />
                 <div className="video-btn">
                   <h1>
-                    <FaPlay color="#3757f7" size="28px" onClick={showModals}/>
+                    <FaPlay color="#3757f7" size="28px" onClick={showModals} />
                   </h1>
-                  <div className={modals ? "modal-video active" : "modal-video"}>
+                  <div
+                    className={modals ? "modal-video active" : "modal-video"}
+                  >
                     <div className="thisvideo">
                       <p className="closebutton">
-                        <TfiClose cursor="pointer" size="35px" color="#fff" onClick={showModals}/>
+                        <TfiClose
+                          cursor="pointer"
+                          size="35px"
+                          color="#fff"
+                          onClick={showModals}
+                        />
                       </p>
                       <ReactPlayer
                         width="100%"
@@ -148,32 +155,7 @@ const Homestyle2 = () => {
         </div>
       </section>
       <PackageCards />
-      <section id="facts6">
-        <div className="container">
-          <div className="row">
-            <div className="col-xl-12">
-              <div className="facts-tittle">
-                <div className="tittle1">
-                  <p>500+</p>
-                  <h2>Strategy and Planning</h2>
-                </div>
-                <div className="tittle2">
-                  <p>25+</p>
-                  <h2>Expert Consultants</h2>
-                </div>
-                <div className="tittle3">
-                  <p>95%</p>
-                  <h2>Client Satisfaction</h2>
-                </div>
-                <div className="tittle4">
-                  <p>30+</p>
-                  <h2>Award Winning</h2>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <FactsSection />
       <section id="projects-galery6">
         <div className="container">
           <div className="row">
