@@ -1,40 +1,57 @@
 import React from "react";
 import "../NavAccordion/NavAccordion.scss";
-import { FiChevronRight } from "react-icons/fi";
-import { Link } from "react-router-dom";
-const NavAccordion = ({ tittle, desc1, desc2, desc3, actives, setActives }) => {
-  return (
-    <div className="accordion">
-      <div className="accordion-heading">
-        <div className="accordion-main1">
-          <p>{tittle}</p>
-          <FiChevronRight
-            color="#fff"
-            size="16px"
-            onClick={() => setActives(tittle)}
-          />
-        </div>
-      </div>
+import { useEffect,useState } from "react";
 
-      <div
-        className={
-          actives === tittle ? "accordion-content show" : "accordion-content"
-        }
-      >
-        <div className="accordion-main2">
-          <p>
-            <Link to="/homestyle1">{desc1}</Link>
-          </p>
-          <p>
-            <Link to="/homestyle2">{desc2}</Link>
-          </p>
-          <p>
-            <Link to="/homestyle3">{desc3}</Link>
-          </p>
-        </div>
-      </div>
-    </div>
-  );
+const NavAccordion = ({items, keepOthersOpen}) => {
+ const [accordionItems, setAccordionItems] =useState(null)
+
+ useEffect(() => {
+   if (items) {
+    setAccordionItems([
+      ...items.map(item =>({
+        ...item,
+        toggled: false
+      }))
+    ])
+   }
+ }, [items])
+ 
+ function handleAccordionToggle(clickedItem) {
+  setAccordionItems([
+    ...accordionItems.map((item) => {
+       let toggled = item.toggled
+
+       if (clickedItem.id === item.id) {
+         toggled = !item.toggled
+       } else if (!keepOthersOpen) {
+        toggled = false
+       }
+
+       return{
+        ...item,
+        toggled
+       }
+    })
+  ])
+ }
+
+
+  return <div className="accordion-parent">
+    {
+      accordionItems?.map((listItem, key) =>{
+        return (
+          <div className={`accordion ${listItem.toggled ? 'toggled' : ''}`}  key={key}>
+              <button className="toggle" onClick={() => handleAccordionToggle(listItem)}>
+                 <p>{listItem.label}</p>
+                 <div className="direction-indicator">{listItem.toggled ? '-' : '+'}</div>
+              </button>
+              <div className="content-parent">
+                <div className="content">{listItem.renderContent()}</div>
+              </div>
+          </div>
+        )
+      })}
+  </div>;
 };
 
 export default NavAccordion;

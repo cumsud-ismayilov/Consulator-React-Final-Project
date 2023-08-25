@@ -76,30 +76,30 @@ main {
             position: $post-absol;
             bottom: $bottom4;
             left: $left4;
-            padding:$pd-default14;
+            padding: $pd-default14;
             background: $back-color3;
             border-radius: $br-radius7;
             box-shadow: $box-shadow6;
-            @include Person-line(center,baseline);
+            @include Person-line(center, baseline);
             .clients-text {
               p {
-                font-size:$fnt-sz2;
+                font-size: $fnt-sz2;
                 color: $color6;
                 margin: $margin1;
-                font-weight:$fn-weight3;
+                font-weight: $fn-weight3;
               }
               h3 {
-                margin-bottom:$margin1;
+                margin-bottom: $margin1;
                 font-size: $fn-size18;
-                color:$color18 ;
+                color: $color18;
                 font-weight: $fn-weight3;
               }
             }
             .clients-img {
               img {
-                width:$width-def7;
+                width: $width-def7;
                 height: $hgt14;
-                object-fit:$object-ft2;
+                object-fit: $object-ft2;
                 object-position: $object-post1;
                 border-radius: $br-radius1;
               }
@@ -111,14 +111,14 @@ main {
             }
             position: $post-absol;
             top: $top3;
-            right:$right3;
+            right: $right3;
             h1 {
               background-color: #fff;
-              width:$width18;
-              height:$hgt5;
+              width: $width18;
+              height: $hgt5;
               border-radius: $br-radius1;
-              @include Person-line(center,center);
-              position:$position-rela;
+              @include Person-line(center, center);
+              position: $position-rela;
               cursor: $cursor;
             }
           }
@@ -127,9 +127,9 @@ main {
       .happy-clients2 {
         margin: $margin-top2;
         @media screen and (max-width: 768px) {
-          display:$display3;
+          display: $display3;
         }
-        display:$display1;
+        display: $display1;
         padding: $padding-top12;
         background: $back-color3;
         text-align: $txt-align1;
@@ -138,9 +138,9 @@ main {
 
         .clients-text {
           p {
-            font-size:$fnt-sz2;
+            font-size: $fnt-sz2;
             color: $color6;
-            margin:$margin1;
+            margin: $margin1;
             font-weight: $fn-weight3;
           }
           h3 {
@@ -151,11 +151,11 @@ main {
           }
         }
         .clients-img {
-          padding-top:$padding-top13;
+          padding-top: $padding-top13;
           img {
-            width:$width11;
-            height:$height12;
-            object-fit:$object-ft2;
+            width: $width11;
+            height: $height12;
+            object-fit: $object-ft2;
             object-position: $object-post1;
             border-radius: $br-radius1;
           }
@@ -170,28 +170,28 @@ main {
         .about-img {
           @media screen and (max-width: 768px) {
             width: $width-def12;
-            margin: 0 auto;
+            margin: $margin12;
           }
-          position:$position-rela;
-          height:$hgt17;
-          width:$width-def13;
+          position: $position-rela;
+          height: $hgt17;
+          width: $width-def13;
 
           .imgs1 {
             width: $width2;
             height: $height2;
-            object-fit:$object-ft1;
+            object-fit: $object-ft1;
             object-position: $object-post1;
-            position:$post-sta;
+            position: $post-sta;
           }
 
           .imgs2 {
-            position:$post-absol;
+            position: $post-absol;
             top: $top4;
-            left:$left7;
-            z-index:$z-index3;
+            left: $left7;
+            z-index: $z-index3;
             width: $width-def14;
             height: $hgt18;
-            object-fit:$object-ft1;
+            object-fit: $object-ft1;
             object-position: $object-post1;
           }
           .imgs3 {
@@ -210,14 +210,14 @@ main {
         .professional {
           .prof-img {
             width: $width11;
-            height:$height12;
+            height: $height12;
             background-color: $back-color18;
-            @include Person-line(center,center);
+            @include Person-line(center, center);
             border-radius: $br-radius4;
             img {
               width: $widht3;
               height: $height3;
-              object-fit:$object-ft2;
+              object-fit: $object-ft2;
               object-position: $object-post1;
             }
           }
@@ -226,9 +226,9 @@ main {
               font-size: $fn-size5;
             }
             color: $color6;
-            margin:$margin5 ;
+            margin: $margin5;
             font-size: $fn-size6;
-            font-weight:$fn-weight3;
+            font-weight: $fn-weight3;
             span {
               color: $color8;
             }
@@ -249,10 +249,10 @@ main {
             margin-top: $margin-top4;
 
             img {
-              width:$width2;
+              width: $width2;
               height: $height2;
-              object-fit:$object-ft2;
-              object-position:$object-post1;
+              object-fit: $object-ft2;
+              object-position: $object-post1;
             }
           }
           h4 {
@@ -269,8 +269,8 @@ main {
             color: $color1;
             height: $hgt15;
             font-weight: $fn-weight1;
-            background:$back-color6;
-            border:$border1;
+            background: $back-color6;
+            border: $border1;
           }
         }
       }
@@ -283,10 +283,10 @@ main {
     .container {
       .row {
         .ourservices-tittle {
-          @include CardHover(center,center,column);
-           p {
-            text-transform:$text-transform1;
-            font-size:$fn-size2;
+          @include CardHover(center, center, column);
+          p {
+            text-transform: $text-transform1;
+            font-size: $fn-size2;
             color: $color8;
           }
           h2 {
@@ -308,7 +308,7 @@ main {
     .container {
       .row {
         .banner-text {
-          @include CardHover(center,center,column);
+          @include CardHover(center, center, column);
 
           p {
             text-transform: $text-transform1;
@@ -323,7 +323,7 @@ main {
             line-height: $ln-height4;
             text-transform: $text-transform2;
             color: $color6;
-            font-weight:$fn-weight3;
+            font-weight: $fn-weight3;
           }
         }
       }
@@ -334,10 +334,10 @@ main {
     .container {
       .row {
         .blog-text {
-          @include CardHover(center,center,column);
+          @include CardHover(center, center, column);
 
           p {
-            text-transform:$text-transform1;
+            text-transform: $text-transform1;
             font-size: $fn-size2;
             color: $color8;
           }
@@ -347,7 +347,7 @@ main {
             }
             font-size: $fnt-sz4;
             line-height: $ln-height4;
-            text-transform:$text-transform2;
+            text-transform: $text-transform2;
             color: $color6;
             font-weight: $fn-weight3;
           }
@@ -362,12 +362,12 @@ main {
         .questions-line {
           @media screen and (max-width: 768px) {
             padding: $pd-default15;
-            @include Questions(baseline,column,23px);
+            @include Questions(baseline, column, 23px);
           }
           padding: $pd-default16;
           border-radius: $br-radius8;
           background: $color8;
-          @include Person-line(space-between,center);
+          @include Person-line(space-between, center);
           .questions-text {
             @media screen and (max-width: 768px) {
               width: $width-def9;
@@ -386,27 +386,27 @@ main {
                 width: $width-def9;
               }
               color: $color19;
-              margin-bottom:$margin1;
+              margin-bottom: $margin1;
               font-size: $fnt-size1;
-              width:$width-def10;
+              width: $width-def10;
             }
           }
           .support {
             a {
-              text-decoration:$txt-decoration2;
-              padding:$pd-default17;
+              text-decoration: $txt-decoration2;
+              padding: $pd-default17;
               background: $back-color3;
-              display:$display2;
+              display: $display2;
               color: $color8;
               font-size: $fn-size7;
-              text-transform:$text-transform1;
+              text-transform: $text-transform1;
               border-radius: $br-radius2;
               cursor: $cursor;
               border: $border1;
               font-weight: $fn-weight3;
               transition: $transition1;
               &:hover {
-                background:$bck-color1 ;
+                background: $bck-color1;
                 color: $color1;
               }
             }
@@ -415,125 +415,16 @@ main {
       }
     }
   }
-  #facts {
-    padding:$pd-dft1 ;
-    .container {
-      .row {
-        .facts-tittle {
-          @media screen and (max-width: 768px) {
-            width:$width-def19 ;
-            padding:$pd-dft2;
-            @include Facts-tittle(column,18px);
-          }
-          padding:$pd-dft3;
-          border-radius:$br-radius7;
-          box-shadow: $box-shadow4;
-          @include Person-line(space-between,center);
-          .tittle1 {
-            @include CardHover(center,center,column);
-            p {
-              @media screen and (max-width: 768px) {
-                font-size:$fn-size5;
-              }
-              -webkit-text-stroke-color: $back-plan1;
-              -webkit-text-fill-color: $color1;
-              -webkit-text-stroke-width: $width-def18;
-              font-weight:$fn-weight5;
-              color: $color8;
-              font-size: $fn-sz8;
-              margin: $margin1;
-            }
-            h2 {
-              @media screen and (max-width: 768px) {
-                font-size: $fn-size4;
-              }
-              margin: $margin1;
-              color: $color6;
-              font-size: $fn-size12;
-            }
-          }
-          .tittle2 {
-            @include CardHover(center,center,column);
-            p {
-              @media screen and (max-width: 768px) {
-                font-size:$fn-size5;
-              }
-              -webkit-text-stroke-color: $back-plan2;
-              -webkit-text-fill-color: $color1;
-              -webkit-text-stroke-width:$width-def18;
-              font-weight: $fn-weight5;
-              color: $color8;
-              font-size: $fn-sz8;
-              margin:$margin1;
-            }
-            h2 {
-              @media screen and (max-width: 768px) {
-                font-size: $fn-size4;
-              }
-              margin:$margin1;
-              color: $color6;
-              font-size:$fn-size12;
-            }
-          }
-          .tittle3 {
-            @include CardHover(center,center,column);
-            p {
-              @media screen and (max-width: 768px) {
-                font-size:$fn-size5;
-              }
-              -webkit-text-stroke-color: $back-plan4;
-              -webkit-text-fill-color: $color1;
-              -webkit-text-stroke-width:$width-def18;
-              font-weight:$fn-weight5;
-              color: $color8;
-              font-size:$fn-sz8;
-              margin: $margin1;
-            }
-            h2 {
-              @media screen and (max-width: 768px) {
-                font-size: $fn-size4;
-              }
-              margin: $margin1;
-              color: $color6;
-              font-size: $fn-size12;
-            }
-          }
-          .tittle4 {
-            @include CardHover(center,center,column);
-            p {
-              @media screen and (max-width: 768px) {
-                font-size:$fn-size5;
-              }
-              -webkit-text-stroke-color: $color8;
-              -webkit-text-fill-color: $color1;
-              -webkit-text-stroke-width: $width-def18;
-              font-weight:$fn-weight5;
-              color: $color8;
-              font-size:$fn-sz8;
-              margin:$margin1;
-            }
-            h2 {
-              @media screen and (max-width: 768px) {
-                font-size: $fn-size4;
-              }
-              margin: $margin1;
-              color: $color6;
-              font-size:$fn-size12;
-            }
-          }
-        }
-      }
-    }
-  }
+
   #projects-galery {
     padding-top: $pd-default18;
     .container {
       .row {
         .projectgalery-text {
           @media screen and (max-width: 768px) {
-            @include Project(column,baseline);
+            @include Project(column, baseline);
           }
-          @include Person-line(space-between,flex-end);
+          @include Person-line(space-between, flex-end);
           .text1 {
             p {
               text-transform: $text-transform1;
@@ -543,11 +434,11 @@ main {
             h2 {
               @media screen and (max-width: 768px) {
                 font-size: $fn-size5;
-                padding-bottom:$padding-top13;
+                padding-bottom: $padding-top13;
               }
-              font-size:$fnt-sz4;
+              font-size: $fnt-sz4;
               line-height: $ln-height4;
-              text-transform:$text-transform2;
+              text-transform: $text-transform2;
               color: $color6;
               font-weight: $fn-weight3;
             }
@@ -555,15 +446,15 @@ main {
           h4 {
             a {
               text-decoration: $txt-decoration2;
-              padding:$pd-default19;
+              padding: $pd-default19;
               display: $display2;
-              border:$border5;
-              border-radius:$br-radius4;
+              border: $border5;
+              border-radius: $br-radius4;
               color: $color1;
               background: $back-color7;
               font-size: $fn-size4;
               text-transform: $text-transform1;
-              font-weight:$fn-weight2;
+              font-weight: $fn-weight2;
             }
           }
         }
@@ -574,24 +465,24 @@ main {
     .container {
       .row {
         .wpo-testimional-tittle {
-          padding-top:$padding-top6;
-          @include Person-line(space-between,center);
+          padding-top: $padding-top6;
+          @include Person-line(space-between, center);
           .tittle1 {
             position: relative;
             .queto {
               background-color: $back-color7;
-              width:$width9;
+              width: $width9;
               height: $height10;
-              @include Person-line(center,center);
+              @include Person-line(center, center);
 
               margin: $margin1;
               @media screen and (max-width: 768px) {
-                width:$width10;
+                width: $width10;
                 height: $hgt9;
               }
               svg {
                 color: $color1;
-                font-size:$fn-size10;
+                font-size: $fn-size10;
               }
             }
             .our-clients {
@@ -599,15 +490,15 @@ main {
                 left: $left5;
                 font-size: $fn-size12;
                 bottom: $bottom1;
-                width:$width13;
+                width: $width13;
               }
               color: $color6;
-              font-size:$fn-size13;
+              font-size: $fn-size13;
               font-weight: $fn-weight3;
               margin: $margin1;
               position: $post-absol;
               bottom: $bottom2;
-              left:$left2;
+              left: $left2;
               width: $width12;
               span {
                 color: $color10;
@@ -615,22 +506,22 @@ main {
             }
           }
           .tittle2 {
-            @include Person(center,16px);
+            @include Person(center, 16px);
             .two-arrow {
               @media screen and (max-width: 768px) {
                 display: $display1;
               }
-              @include Person-line(center,center);
+              @include Person-line(center, center);
               background: $back-color3;
-              width:$width11;
+              width: $width11;
               height: $height12;
-              line-height:$ln-height5;
+              line-height: $ln-height5;
               border: $border2;
               color: $color9;
               padding: $padding-default;
               cursor: $cursor;
               position: $position-rela;
-              margin:$margin1;
+              margin: $margin1;
 
               svg {
                 color: $color8;
@@ -639,7 +530,7 @@ main {
               &:hover {
                 &::after {
                   opacity: $opacity2;
-                  visibility:$visiblty2;
+                  visibility: $visiblty2;
                 }
               }
               &::after {
@@ -647,25 +538,25 @@ main {
                 width: $width-def11;
                 height: $hgt16;
                 position: $post-absol;
-                z-index:$z-index3;
+                z-index: $z-index3;
                 left: $left6;
                 right: $righ4;
                 bottom: $bottom5;
-                border-right:$br-radius6 !important;
-                border-left:$border-left2;
-                border-bottom:$border-bottom4 ;
+                border-right: $br-radius6 !important;
+                border-left: $border-left2;
+                border-bottom: $border-bottom4;
                 opacity: $opacity1;
                 visibility: $visiblty1;
               }
             }
             h5 {
-              @include Person-line(center,center);
+              @include Person-line(center, center);
               background: $back-color3;
               width: $width11;
-              height:$height12;
+              height: $height12;
               line-height: $ln-height5;
-              cursor:$cursor;
-              border:$border2;
+              cursor: $cursor;
+              border: $border2;
               color: $color9;
               padding: $padding-default;
               margin: $margin1;

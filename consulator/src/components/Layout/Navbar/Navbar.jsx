@@ -38,8 +38,104 @@ const Navbar = () => {
 
   const [sidebar, setSidebar] = useState(false);
   const showSidebar = () => setSidebar(!sidebar);
+
+  const faqList = [
+    {
+      id: 0,
+      label: "Home",
+      renderContent: () => (
+        <ul>
+          <li>
+            <Link to="/homestyle1">Home Style 1</Link>
+          </li>
+          <li>
+            <Link to="/homestyle2">Home Style 2</Link>
+          </li>
+          <li>
+            <Link to="/homestyle3">Home Style 3</Link>
+          </li>
+        </ul>
+      ),
+    },
   
-  const  [actives ,setActives] = useState("tittle")
+    {
+      id: 2,
+      label: "Services",
+      renderContent: () => (
+        <ul>
+         <li><Link to="/service">Service</Link></li>
+         <li><Link to="/servicesstyle2">Services Style 2</Link></li>
+         <li><Link to="/servicessingle">Service Single</Link></li>
+        </ul>
+      ),
+    },
+    {
+      id: 3,
+      label: "Projects",
+      renderContent: () => (
+        <ul>
+          <li>
+            <Link to="/project">Project</Link>
+          </li>
+          <li>
+            <Link to="/projectstyle2">Projects Style 2</Link>
+          </li>
+          <li>
+            <Link to="/projectsingle">Projects Single</Link>
+          </li>
+        </ul>
+      ),
+    },
+    {
+      id: 4,
+      label: "Pages",
+      renderContent: () => (
+        <ul>
+          <li>
+            <Link to="/pricing">Pricing</Link>
+          </li>
+          <li>
+            <Link to="/testimional">Testimonial</Link>
+          </li>
+          <li>
+            <Link to="/error404">Error 404</Link>
+          </li>
+          <li>
+            <Link to="/login">Login</Link>
+          </li>
+          <li>
+            <Link to="/register">Register</Link>
+          </li>
+        </ul>
+      ),
+    },
+    {
+      id: 5,
+      label: "Blog",
+      renderContent: () => (
+        <ul>
+          <li>
+            <Link to='/blogrightsidebar'>Blog Right SideBar</Link>
+          </li>
+          <li>
+            <Link to="/blogleftsidebar">Blog Left SideBar</Link>
+          </li>
+          <li>
+            <Link to='/blogfullwidth'>Blog Full Width</Link>
+          </li>
+          <li>
+            <Link to="/blogdetailsrightsidebar">Blog Details Right SideBar</Link>
+          </li>
+          <li>
+            <Link to="/blogdetailsleftsidebar">Blog Details Left SideBar</Link>
+          </li>
+          <li>
+            <Link to="/blogdetailsfullwidth">Blog Details Full Width</Link>
+          </li>
+        </ul>
+      ),
+    },
+  ];
 
   return (
     <div>
@@ -276,13 +372,8 @@ const Navbar = () => {
                           <IoCloseOutline color="#fff" size="20px" />
                         </Link>
                       </li>
-                      <NavAccordion tittle="Home" desc1="Home Style 1"  desc2="Home Style 2" desc3="Home Style 3" actives={actives} setActives={setActives}/>
-                      <NavAccordion tittle="Services" actives={actives} setActives={setActives}/>
-                      <NavAccordion tittle="Projects" actives={actives} setActives={setActives}/>
-                      <NavAccordion tittle="Pages" actives={actives} setActives={setActives}/>
-                      <NavAccordion tittle="Blog" actives={actives} setActives={setActives}/>
+                      <NavAccordion items={faqList} keepOthersOpen={false} />
                     </ul>
-                    
                   </div>
                 </div>
                 <div className="mobilenav-img">

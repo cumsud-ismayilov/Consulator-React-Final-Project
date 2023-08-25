@@ -1,6 +1,9 @@
 @import "../../style/partials/varaible.scss";
 @import "../../style/partials/mixin.scss";
 #facts {
+  @media screen and (max-width: 768px){
+    padding:$pd-df26 ;
+  }
     padding:$pd-dft1 ;
     .container {
       .row {

@@ -3,7 +3,7 @@
 main {
   #wpo-hero-section {
     @media screen and (max-width: 768px) {
-     
+     height: 600px;
     }
     position: $position-rela;
     height: $hgt20;
@@ -27,12 +27,21 @@ main {
           position:$position-rela;
           .wpo-hero-title-top {
             span {
+              @media screen and (max-width: 768px){
+                font-size: 14px;
+              }
               font-size: $fn-size8;
               color: $color16;
             }
           }
           .wpo-hero-title {
             h2 {
+              @media screen and (max-width: 768px){
+                font-size: 33px;
+                font-weight: 600;
+                line-height: 38px;
+                width: 300px;
+              }
               font-size: $fn-sz9;
               font-weight: $fn-weight6;
               line-height: $ln-height11;
@@ -66,6 +75,9 @@ main {
             border:$border1;
           }
           .video-btn {
+            @media screen and (max-width: 768px){
+              display: none;
+            }
             position: $post-absol;
             top:$top5;
             right:$right7;
@@ -83,6 +95,9 @@ main {
       }
     }
     .right-img {
+      @media screen and (max-width: 768px){
+        display: none;
+      }
       position:$post-absol;
       right:$right1;
       top: $top1;
@@ -343,116 +358,7 @@ main {
       }
     }
   }
-  #facts6 {
-    padding: $pd-dft1;
-    .container {
-      .row {
-        .facts-tittle {
-          @media screen and (max-width: 768px) {
-            width: $width-def19;
-            padding: $pd-dft2;
-            @include Facts-tittle(column, 18px);
-          }
-          padding: $pd-dft3;
-          border-radius: $br-radius7;
-          box-shadow: $box-shadow4;
-          @include Person-line(space-between, center);
-          .tittle1 {
-            @include CardHover(center, center, column);
-            p {
-              @media screen and (max-width: 768px) {
-                font-size: $fn-size5;
-              }
-              -webkit-text-stroke-color: $back-plan1;
-              -webkit-text-fill-color: $color1;
-              -webkit-text-stroke-width: $width-def18;
-              font-weight: $fn-weight5;
-              color: $color8;
-              font-size: $fn-sz8;
-              margin: $margin1;
-            }
-            h2 {
-              @media screen and (max-width: 768px) {
-                font-size: $fn-size4;
-              }
-              margin: $margin1;
-              color: $color6;
-              font-size: $fn-size12;
-            }
-          }
-          .tittle2 {
-            @include CardHover(center, center, column);
-            p {
-              @media screen and (max-width: 768px) {
-                font-size: $fn-size5;
-              }
-              -webkit-text-stroke-color: $back-plan2;
-              -webkit-text-fill-color: $color1;
-              -webkit-text-stroke-width: $width-def18;
-              font-weight: $fn-weight5;
-              color: $color8;
-              font-size: $fn-sz8;
-              margin: $margin1;
-            }
-            h2 {
-              @media screen and (max-width: 768px) {
-                font-size: $fn-size4;
-              }
-              margin: $margin1;
-              color: $color6;
-              font-size: $fn-size12;
-            }
-          }
-          .tittle3 {
-            @include CardHover(center, center, column);
-            p {
-              @media screen and (max-width: 768px) {
-                font-size: $fn-size5;
-              }
-              -webkit-text-stroke-color: $back-plan4;
-              -webkit-text-fill-color: $color1;
-              -webkit-text-stroke-width: $width-def18;
-              font-weight: $fn-weight5;
-              color: $color8;
-              font-size: $fn-sz8;
-              margin: $margin1;
-            }
-            h2 {
-              @media screen and (max-width: 768px) {
-                font-size: $fn-size4;
-              }
-              margin: $margin1;
-              color: $color6;
-              font-size: $fn-size12;
-            }
-          }
-          .tittle4 {
-            @include CardHover(center, center, column);
-            p {
-              @media screen and (max-width: 768px) {
-                font-size: $fn-size5;
-              }
-              -webkit-text-stroke-color: $color8;
-              -webkit-text-fill-color: $color1;
-              -webkit-text-stroke-width: $width-def18;
-              font-weight: $fn-weight5;
-              color: $color8;
-              font-size: $fn-sz8;
-              margin: $margin1;
-            }
-            h2 {
-              @media screen and (max-width: 768px) {
-                font-size: $fn-size4;
-              }
-              margin: $margin1;
-              color: $color6;
-              font-size: $fn-size12;
-            }
-          }
-        }
-      }
-    }
-  }
+
   #projects-galery6 {
     padding-top: $pd-default18;
     .container {
