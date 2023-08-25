@@ -170,6 +170,7 @@ main {
         .about-img {
           @media screen and (max-width: 768px) {
             width: $width-def12;
+            margin: 0 auto;
           }
           position:$position-rela;
           height:$hgt17;

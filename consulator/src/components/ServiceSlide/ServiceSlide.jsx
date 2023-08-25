@@ -30,6 +30,20 @@ const ServiceSlide = () => {
               delay: 1000,
               disableOnInteraction: false,
             }}
+            breakpoints={{
+              340: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 40,
+              },
+              1024: {
+                slidesPerView: 4,
+                spaceBetween: 20,
+              },
+            }}
             modules={[Pagination, Autoplay]}
             className="mySwiper"
           >

@@ -30,6 +30,20 @@ const ExploreSlide = () => {
               pagination={{
                 clickable: true,
               }}
+              breakpoints={{
+                340: {
+                  slidesPerView: 1,
+                  spaceBetween: 20,
+                },
+                768: {
+                  slidesPerView: 2,
+                  spaceBetween: 40,
+                },
+                1024: {
+                  slidesPerView: 4,
+                  spaceBetween: 20,
+                },
+              }}
               autoplay={{
                 delay: 1000,
                 disableOnInteraction: false,

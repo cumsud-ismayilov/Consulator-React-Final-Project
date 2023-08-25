@@ -206,19 +206,17 @@ main {
           }
         }
         .tag-share-s2 {
-          display: flex;
-          align-items: baseline;
-          gap: 12px;
-          padding-top: 5rem;
-          border-bottom: 1px solid #e1e1e1;
-          padding-bottom: 18px;
+          @include FootProjects(baseline,12px);
+          padding-top: $pd-df25;
+          border-bottom: $border-bottom5;
+          padding-bottom: $padding-top14;
           span {
             @media screen and (max-width: 768px) {
               font-size: $fn-weight3
             }
             color: $color6;
             font-weight: $fn-weight3;
-            display: inline-block;
+            display: $display2;
             text-transform: $text-transform1;
           }
           .plan-ul {
@@ -226,18 +224,16 @@ main {
               flex-wrap: wrap;
             }
             list-style:$txt-decoration2;
-            padding: 0;
-            display: flex;
-            align-items: center;
-            gap: 8px;
+            padding:$padding-default;
+            @include FootProjects(center,8px);
             .plan-li {
               color: $color6;
-              background: #ecf4fb;
-              border-radius: 5px;
+              background: $bck-color5;
+              border-radius: $br-radius4;
               text-transform: $text-transform1;
-              font-size: 12px;
-              padding: 5px 18px;
-              cursor: pointer;
+              font-size: $fn-size14;
+              padding: $pd-df14;
+              cursor:$cursor;
               transition:$transition1;
               &:hover {
                 color: $color4;
@@ -246,10 +242,8 @@ main {
           }
         }
         .tag-share-s3 {
-          display: flex;
-          align-items: baseline;
-          gap: $fn-weight3;
-          padding-top:2rem;
+          @include FootProjects(baseline,18px);
+          padding-top:$pd-df19;
 
           span {
             @media screen and (max-width: 768px) {
@@ -257,34 +251,30 @@ main {
             }
             color: $color6;
             font-weight: $fn-weight3;
-            display: inline-block;
+            display:$display2;
             text-transform: $text-transform1;
           }
           .plan-ul1 {
-            list-style: none;
+            list-style: $list-style1;
             padding: 0;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-
+            @include FootProjects(center,12px);
             .plan-li1 {
               @media screen and (max-width: 768px) {
                 font-size: $fn-weight3
               }
               font-size: $fnt-size1;
               text-transform:$text-transform2;
-              background: none;
+              background:$bck-color9;
               text-decoration: u$txt-decoration1;
               color: $color9;
-              cursor: pointer;
+              cursor: $cursor;
               transition:$transition1;
               &:hover {
                 color: $color4;
               }
             }
           }
-        }
-      
+        }     
         .author-box {
           @media screen and (max-width: 768px) {
             flex-wrap: wrap;
