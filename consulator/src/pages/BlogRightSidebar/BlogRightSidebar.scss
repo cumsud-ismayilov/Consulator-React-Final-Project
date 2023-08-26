@@ -1,64 +1,6 @@
 @import "../../style/partials/varaible.scss";
 @import "../../style/partials/mixin.scss";
 main {
-  #blogrightsidebar {
-    .back-img {
-      @media screen and (max-width: 768px) {
-        height: $height5;
-      }
-      background-image: url(http://consultar-react.wpocean.com/static/media/page-title.be0e30a3.jpg);
-      background-position: $back-post1;
-      background-repeat: $back-repeat;
-      background-size: $back-size1;
-      width: $width2;
-      height: $height6;
-      position: $position-rela;
-
-      .breadcumb-text {
-        @media screen and (max-width: 768px) {
-          height: $height5;
-        }
-        @include CardHover(center, center, column);
-        background-color: $back-color5;
-        filter: $filter-one;
-        height: $height6;
-        p {
-          @media screen and (max-width: 768px) {
-            font-size: $fn-size5;
-          }
-          color: $color1;
-          font-size: $fn-size6;
-          font-weight: $fn-weight1;
-        }
-        .pricing-ul {
-          padding: $padding-default;
-          list-style: $list-style1;
-          @include Person(center, 5px);
-
-          .pricing-li1 {
-            a {
-              text-decoration: $txt-decoration2;
-              color: $color1;
-              font-size: $fn-size7;
-              font-weight: $fn-weight1;
-              transition: $transition1;
-              &:hover {
-                color: $color4;
-                font-size: $fn-size7;
-                font-weight: $fn-weight1;
-              }
-            }
-          }
-          .pricing-li2 {
-            color: $color5;
-
-            font-size: $fn-size7;
-            font-weight: $fn-weight1;
-          }
-        }
-      }
-    }
-  }
   #blogrightsidebar2 {
     @media screen and (max-width: 768px) {
       padding: $pd-df8;

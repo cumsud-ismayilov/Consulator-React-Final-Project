@@ -1,26 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "../About/About.scss";
 import Buttons from "../../components/ButtonComponent/Buttons";
 import PackageCards from "../../components/PackageCards/PackageCard";
 import ExploreSlide from "../../components/ExploreSlide/ExploreSlide";
 import FactsSection from "../../components/FactsSection/FactsSection";
+import BreadCumbArea from "../../components/BreadCumbArea/BreadCumbArea";
 const About = () => {
   return (
     <main>
-      <section id="about-us">
-        <div className="back-img">
-          <div className="breadcumb-text">
-            <p>About Us</p>
-            <ul className="pricing-ul">
-              <li className="pricing-li1">
-                <Link to="/">Home /</Link>
-              </li>
-              <li className="pricing-li2">About</li>
-            </ul>
-          </div>
-        </div>
-      </section>
+     <BreadCumbArea header="About Us" tittle1="Home /" tittle2="About" />
       <section id="about-section1">
         <div className="container">
           <div className="row g-3">

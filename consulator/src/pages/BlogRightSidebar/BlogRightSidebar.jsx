@@ -16,24 +16,13 @@ import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import { HiSearch, HiArrowRight } from "react-icons/hi";
 import { TfiClose } from "react-icons/tfi";
 import ReactPlayer from "react-player";
+import BreadCumbArea from "../../components/BreadCumbArea/BreadCumbArea";
 const BlogRightSidebar = () => {
   const [modals, setModals] = useState(false);
   const showModals = () => setModals(!modals);
   return (
     <main>
-      <section id="blogrightsidebar">
-        <div className="back-img">
-          <div className="breadcumb-text">
-            <p>Latest News</p>
-            <ul className="pricing-ul">
-              <li className="pricing-li1">
-                <Link to="/">Home /</Link>
-              </li>
-              <li className="pricing-li2">Blog</li>
-            </ul>
-          </div>
-        </div>
-      </section>
+<BreadCumbArea header="Latest News" tittle1="Home /" tittle2="Blog" />
       <section id="blogrightsidebar2">
         <div className="container">
           <div className="row">

@@ -1,23 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import BreadCumbArea from "../../components/BreadCumbArea/BreadCumbArea";
 import "../Service/Service.scss";
 import ServicesCards from "../../components/ServicesCards/Servicescards";
 const Service = () => {
   return (
     <main>
-      <section id="service-page22">
-        <div className="back-img">
-          <div className="breadcumb-text">
-            <p>Services</p>
-            <ul className="pricing-ul">
-              <li className="pricing-li1">
-                <Link to="/">Home /</Link>
-              </li>
-              <li className="pricing-li2">Services</li>
-            </ul>
-          </div>
-        </div>
-      </section>
+ <BreadCumbArea header="Services" tittle1="Home /" tittle2="Services" />
       <section id="our-services22">
          <div className="container">
            <div className="row">

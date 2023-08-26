@@ -5,22 +5,11 @@ import { BsChevronRight } from "react-icons/bs";
 import SignUPButton from "../../components/ButtonComponent/Buttons";
 import AccordionItem from "../../components/AccordionItem/Accordion";
 import ServiceSingleCards from "../../components/ServiceSingleCards/ServiceSingleCards.";
+import BreadCumbArea from "../../components/BreadCumbArea/BreadCumbArea";
 const Servicesingle = () => {
   return (
     <main>
-      <section id="servicesingle">
-        <div className="back-img">
-          <div className="breadcumb-text">
-            <p>Services</p>
-            <ul className="pricing-ul">
-              <li className="pricing-li1">
-                <Link to="/">Home /</Link>
-              </li>
-              <li className="pricing-li2">Services</li>
-            </ul>
-          </div>
-        </div>
-      </section>
+      <BreadCumbArea header="Services" tittle1="Home /" tittle2="Services" />
       <section id="single-sec1">
         <div className="container">
           <div className="row">

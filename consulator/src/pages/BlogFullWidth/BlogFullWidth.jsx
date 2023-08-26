@@ -10,25 +10,14 @@ import { IoCalendarOutline } from "react-icons/io5";
 import { BsFillPlayFill } from "react-icons/bs";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import { TfiClose } from "react-icons/tfi";
+import BreadCumbArea from "../../components/BreadCumbArea/BreadCumbArea";
 const BlogFullWidth = () => {
   const [videos, setVideos] = useState(false);
   const showVideos = () => setVideos(!videos);
 
   return (
     <main>
-      <section id="blog-page2">
-        <div className="back-img">
-          <div className="breadcumb-text">
-            <p>Latest News</p>
-            <ul className="pricing-ul">
-              <li className="pricing-li1">
-                <Link to="/">Home /</Link>
-              </li>
-              <li className="pricing-li2">Blog</li>
-            </ul>
-          </div>
-        </div>
-      </section>
+<BreadCumbArea header="Latest News" tittle1="Home /" tittle2="Blog" />
       <section id="blogfullwidth">
         <div className="container">
           <div className="row">

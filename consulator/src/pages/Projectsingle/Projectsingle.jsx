@@ -8,22 +8,11 @@ import {
   BiLogoInstagram,
 } from "react-icons/bi";
 import BenefitsCards from "../../components/BenefitsCards/BenefitsCards";
+import BreadCumbArea from "../../components/BreadCumbArea/BreadCumbArea";
 const Projectsingle = () => {
   return (
     <main>
-      <section id="projectsingle">
-        <div className="back-img">
-          <div className="breadcumb-text">
-            <p>Project Single</p>
-            <ul className="pricing-ul">
-              <li className="pricing-li1">
-                <Link to="/">Home /</Link>
-              </li>
-              <li className="pricing-li2">Project</li>
-            </ul>
-          </div>
-        </div>
-      </section>
+<BreadCumbArea header="Project Single" tittle1="Home /" tittle2="Projects" />
       <section id="project-content">
         <div className="container">
           <div className="row">

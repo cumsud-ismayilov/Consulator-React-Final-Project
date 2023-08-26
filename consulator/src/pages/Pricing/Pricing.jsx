@@ -1,21 +1,11 @@
 import React from 'react'
-import { Link } from "react-router-dom";
+import BreadCumbArea from '../../components/BreadCumbArea/BreadCumbArea';
 import "../Pricing/Pricing.scss"
 import PackageCards from "../../components/PackageCards/PackageCard";
 const Pricing = () => {
   return (
     <main>
-      <section id='breadcumb-area'>
-         <div className='back-img'>
-            <div className='breadcumb-text'>
-               <p>Pricing</p>
-               <ul className='pricing-ul'>
-                <li className='pricing-li1'><Link to="/">Home /</Link></li>
-                <li className='pricing-li2'>Pricing</li>
-               </ul>
-            </div>
-         </div>
-      </section>
+<BreadCumbArea header="Pricing" tittle1="Home /" tittle2="Pricing" />
       <section id="banner99">
          <div className="container">
           <div className="row g-3">

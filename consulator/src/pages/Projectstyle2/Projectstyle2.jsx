@@ -2,20 +2,11 @@ import React from 'react'
 import { Link } from "react-router-dom";
 import "../Projectstyle2/Projectstyle2.scss"
 import Projectgallery from "../../components/Projectgallery/Projectgallery";
+import BreadCumbArea from '../../components/BreadCumbArea/BreadCumbArea';
 const Projectstyle2 = () => {
   return (
     <main>
-       <section id='projectstyle2'>
-         <div className='back-img'>
-            <div className='breadcumb-text'>
-               <p>Projects</p>
-               <ul className='pricing-ul'>
-                <li className='pricing-li1'><Link to="/">Home /</Link></li>
-                <li className='pricing-li2'>Projects</li>
-               </ul>
-            </div>
-         </div>
-      </section>
+ <BreadCumbArea header="Projects" tittle1="Home /" tittle2="Projects" />
       <section id="projects-galery2s">
         <div className="container">
           <div className="row">
