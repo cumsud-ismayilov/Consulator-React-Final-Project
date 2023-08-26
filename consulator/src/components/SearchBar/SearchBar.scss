@@ -1,0 +1,40 @@
+@import "../../style/partials/varaible.scss";
+@import "../../style/partials/mixin.scss";
+.searchbar-comp {
+  padding-top: $padding-top7;
+  form {
+    position: relative;
+    .formcontrol {
+      background-color: $bck-color6;
+      height: $hgt26;
+      font-size: $fnt-size1;
+      padding: $pd-df15;
+      border: $br-radius6;
+      border-radius: $br-radius4;
+      box-shadow: $box-shadow3;
+      transition: $transition2;
+      width: $width2;
+    }
+    h3 {
+      position: absolute;
+      top: 11px;
+      right: 17px;
+      background-color: #3757f7;
+      width: 50px;
+      height: 50px;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      svg {
+        color: #fff;
+        font-size: 30px;
+      }
+    }
+  }
+  .searchshow {
+  box-shadow: $box-shadow7;
+    p {
+    }
+  }
+}

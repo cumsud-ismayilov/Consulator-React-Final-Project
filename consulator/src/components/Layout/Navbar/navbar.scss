@@ -1271,7 +1271,39 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            position: relative;
             cursor: pointer;
+            position: relative;
+            .search-bar {
+              position: absolute;
+              top: 80px;
+              left: -277px;
+              box-shadow: -2px 18px 40px -9px #999;
+              background: #fff;
+              padding: 30px;
+              border-radius: 6px;
+              width: 350px;
+              z-index: 99;
+              form {
+                position: relative;
+                .searchs {
+                  width: 100%;
+                  height: 50px;
+                  padding: 6px 20px;
+                  border-radius: 0;
+                  box-shadow: none;
+                  border: 1px solid #e1e1e1;
+                  font-size: 16px;
+                  font-weight: 400;
+                  color: #212529;
+                }
+                .gosearch {
+                  position: absolute;
+                  top: 14px;
+                  right: 15px;
+                }
+              }
+            }
           }
         }
       }

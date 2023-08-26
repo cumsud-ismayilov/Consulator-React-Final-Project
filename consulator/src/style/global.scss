@@ -218,14 +218,15 @@
           border: 1px solid #fff;
         }
       }
-      .mobil-home {
-        color: #fff;
-        font-size: 16px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
-        cursor: pointer;
+      .about-and-contact{
+        padding-top: 11px;
+        a{
+          text-decoration: none;
+          font-size: 14px;
+          font-weight: 400;
+          color: #fff;
+          
+        }
       }
     }
   }
@@ -263,6 +264,10 @@
       right: -43px;
     }
     .thisvideo {
+      @media screen and (max-width: 768px){
+        width: 300px;
+        height: 210px;
+      }
       width: 950px;
       height: 520px;
       position: relative;
@@ -354,6 +359,10 @@
       right: -43px;
     }
     .thisvideo {
+      @media screen and (max-width: 768px){
+        width: 300px;
+        height: 210px;
+      }
       width: 950px;
       height: 520px;
       position: relative;

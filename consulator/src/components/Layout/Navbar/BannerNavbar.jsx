@@ -9,6 +9,8 @@ import Buttons from "../../ButtonComponent/Buttons";
 import { GoSearch, GoChevronRight } from "react-icons/go";
 import { FaBars } from "react-icons/fa";
 import { IoCloseOutline } from "react-icons/io5";
+import { AiOutlineClose, AiOutlineSearch } from "react-icons/ai";
+import NavAccordion from "../../NavAccordion/NavAccordion";
 const BannerNavbar = () => {
   const [fix, setFix] = useState(false);
 
@@ -22,8 +24,129 @@ const BannerNavbar = () => {
 
   window.addEventListener("scroll", setFixed);
 
+  const [isItemVisible, setIsItemVisible] = useState(false);
+  const [showButton, setShowButton] = useState(true);
+  const [hideButton, setHideButton] = useState(false);
+  const showItem = () => {
+    setIsItemVisible(true);
+    setShowButton(false);
+    setHideButton(true);
+  };
+
+  const hideItem = () => {
+    setIsItemVisible(false);
+    setShowButton(true);
+    setHideButton(false);
+  };
+
   const [sidebar, setSidebar] = useState(false);
   const showSidebar = () => setSidebar(!sidebar);
+
+  const faqList = [
+    {
+      id: 0,
+      label: "Home",
+      renderContent: () => (
+        <ul>
+          <li>
+            <Link to="/homestyle1">Home Style 1</Link>
+          </li>
+          <li>
+            <Link to="/homestyle2">Home Style 2</Link>
+          </li>
+          <li>
+            <Link to="/homestyle3">Home Style 3</Link>
+          </li>
+        </ul>
+      ),
+    },
+
+    {
+      id: 2,
+      label: "Services",
+      renderContent: () => (
+        <ul>
+          <li>
+            <Link to="/service">Service</Link>
+          </li>
+          <li>
+            <Link to="/servicesstyle2">Services Style 2</Link>
+          </li>
+          <li>
+            <Link to="/servicessingle">Service Single</Link>
+          </li>
+        </ul>
+      ),
+    },
+    {
+      id: 3,
+      label: "Projects",
+      renderContent: () => (
+        <ul>
+          <li>
+            <Link to="/project">Project</Link>
+          </li>
+          <li>
+            <Link to="/projectstyle2">Projects Style 2</Link>
+          </li>
+          <li>
+            <Link to="/projectsingle">Projects Single</Link>
+          </li>
+        </ul>
+      ),
+    },
+    {
+      id: 4,
+      label: "Pages",
+      renderContent: () => (
+        <ul>
+          <li>
+            <Link to="/pricing">Pricing</Link>
+          </li>
+          <li>
+            <Link to="/testimional">Testimonial</Link>
+          </li>
+          <li>
+            <Link to="/error404">Error 404</Link>
+          </li>
+          <li>
+            <Link to="/login">Login</Link>
+          </li>
+          <li>
+            <Link to="/register">Register</Link>
+          </li>
+        </ul>
+      ),
+    },
+    {
+      id: 5,
+      label: "Blog",
+      renderContent: () => (
+        <ul>
+          <li>
+            <Link to="/blogrightsidebar">Blog Right SideBar</Link>
+          </li>
+          <li>
+            <Link to="/blogleftsidebar">Blog Left SideBar</Link>
+          </li>
+          <li>
+            <Link to="/blogfullwidth">Blog Full Width</Link>
+          </li>
+          <li>
+            <Link to="/blogdetailsrightsidebar">
+              Blog Details Right SideBar
+            </Link>
+          </li>
+          <li>
+            <Link to="/blogdetailsleftsidebar">Blog Details Left SideBar</Link>
+          </li>
+          <li>
+            <Link to="/blogdetailsfullwidth">Blog Details Full Width</Link>
+          </li>
+        </ul>
+      ),
+    },
+  ];
   return (
     <div>
       <nav className="banner-nav">
@@ -233,7 +356,34 @@ const BannerNavbar = () => {
                     className="consulting"
                   />
                   <p className="search">
-                    <GoSearch size={20} />
+                    {showButton && (
+                      <GoSearch
+                        onClick={showItem}
+                        size={20}
+                        className="opensearch"
+                      />
+                    )}
+                    {hideButton && (
+                      <AiOutlineClose
+                        onClick={hideItem}
+                        size={20}
+                        className="closesearch"
+                      />
+                    )}
+                    {isItemVisible && (
+                      <div className="search-bar">
+                        <form>
+                          <input
+                            type="search"
+                            name="search"
+                            id="searchs"
+                            className="searchs"
+                            placeholder="Search here..."
+                          />
+                          <AiOutlineSearch className="gosearch" size="23px" />
+                        </form>
+                      </div>
+                    )}
                   </p>
                 </div>
               </div>
@@ -278,19 +428,18 @@ const BannerNavbar = () => {
                     </Link>
                   </div>
                   <div className={sidebar ? "nav-menu active" : "nav-menu"}>
-                    <ul className="nav-menu-items" onClick={showSidebar}>
-                      <li className="navbar-toggle">
+                    <ul className="nav-menu-items">
+                      <li className="navbar-toggle" onClick={showSidebar}>
                         <Link to="#" className="menu-bars">
                           <IoCloseOutline color="#fff" size="20px" />
                         </Link>
                       </li>
-                      <li className="lorem">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing
-                        elit. Vitae eveniet sequi nisi fuga voluptatibus
-                        perspiciatis aliquam! Aperiam, reprehenderit nostrum
-                        beatae sed animi, nobis earum ipsam sit, impedit ipsum
-                        deserunt necessitatibus? Veniam numquam perspiciatis
-                        itaque, mollitia inventore in fugit odit reiciendis
+                      <NavAccordion items={faqList} keepOthersOpen={false} />
+                      <li className="about-and-contact">
+                        <Link to="/about">About</Link>
+                      </li>
+                      <li className="about-and-contact">
+                        <Link to="/contact">Contact</Link>
                       </li>
                     </ul>
                   </div>

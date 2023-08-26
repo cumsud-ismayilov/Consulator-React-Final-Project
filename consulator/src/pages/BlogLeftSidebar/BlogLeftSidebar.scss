@@ -147,7 +147,7 @@ main {
           }
           .play-video {
             @media screen and (max-width: 768px) {
-              height: $z-index6;
+              height:  $height-random1;
             }
             width: $width2;
             height: $height-random2;

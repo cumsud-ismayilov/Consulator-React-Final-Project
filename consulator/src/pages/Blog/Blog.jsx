@@ -13,10 +13,11 @@ import { LuMessageCircle } from "react-icons/lu";
 import { IoCalendarOutline } from "react-icons/io5";
 import { BsFillPlayFill } from "react-icons/bs";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
-import { HiOutlineSearch, HiOutlineArrowRight } from "react-icons/hi";
+import {  HiOutlineArrowRight } from "react-icons/hi";
 import { TfiClose } from "react-icons/tfi";
 import ReactPlayer from "react-player";
 import BreadCumbArea from "../../components/BreadCumbArea/BreadCumbArea";
+import SearchBar from "../../components/SearchBar/SearchBar";
 const Blog = () => {
   const [modals, setModals] = useState(false);
   const showModals = () => setModals(!modals);
@@ -269,21 +270,8 @@ const Blog = () => {
                   </h3>
                 </div>
               </div>
-              
-              <div className="search-widget">
-                <form>
-                  <input
-                    type="search"
-                    name="form-controls"
-                    id="form-controls"
-                    className="form-controls"
-                    placeholder="Search Post.."
-                  />
-                  <p className="search-icon">
-                    <HiOutlineSearch size="25px" />
-                  </p>
-                </form>
-              </div>
+              <SearchBar/>
+
               <div className="category-widget">
                 <h3>Categories</h3>
                 <ul className="category-ul">

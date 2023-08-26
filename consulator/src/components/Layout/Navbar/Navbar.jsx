@@ -373,6 +373,8 @@ const Navbar = () => {
                         </Link>
                       </li>
                       <NavAccordion items={faqList} keepOthersOpen={false} />
+                      <li className="about-and-contact"><Link to='/about'>About</Link></li>
+                      <li className="about-and-contact"><Link to='/contact'>Contact</Link></li>
                     </ul>
                   </div>
                 </div>

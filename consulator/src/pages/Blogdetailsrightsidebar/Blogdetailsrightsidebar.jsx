@@ -13,11 +13,12 @@ import { TbPointFilled } from "react-icons/tb";
 import { LuMessageCircle } from "react-icons/lu";
 import { IoCalendarOutline } from "react-icons/io5";
 import { AiOutlineInstagram } from "react-icons/ai";
-import { HiSearch, HiArrowRight } from "react-icons/hi";
+import {  HiArrowRight } from "react-icons/hi";
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 import  CommentsCards from "../../components/CommentItem/CommentItem"
 import Buttons from "../../components/ButtonComponent/Buttons";
 import BreadCumbArea from "../../components/BreadCumbArea/BreadCumbArea";
+import SearchBar from "../../components/SearchBar/SearchBar";
 const Blogdetailsrightsidebar = () => {
   return (
     <main>
@@ -211,20 +212,7 @@ const Blogdetailsrightsidebar = () => {
                   </h3>
                 </div>
               </div>
-              <div className="search-widget">
-                <form>
-                  <input
-                    type=""
-                    name="form-controls"
-                    id="form-controls"
-                    className="form-controls"
-                    placeholder=" Post.."
-                  />
-                  <p className="search-icon">
-                    <HiSearch size="25px" />
-                  </p>
-                </form>
-              </div>
+              <SearchBar/>
               <div className="category-widget">
                 <h3>Categories</h3>
                 <ul className="category-ul">

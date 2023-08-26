@@ -17,7 +17,7 @@ const BlogFullWidth = () => {
 
   return (
     <main>
-<BreadCumbArea header="Latest News" tittle1="Home /" tittle2="Blog" />
+      <BreadCumbArea header="Latest News" tittle1="Home /" tittle2="Blog" />
       <section id="blogfullwidth">
         <div className="container">
           <div className="row">
@@ -156,16 +156,15 @@ const BlogFullWidth = () => {
                       videos ? "youtube-video active" : "youtube-video"
                     }
                   >
-                  
                     <div className="thisvideo">
-                    <p className="closebutton">
-                      <TfiClose
-                        cursor="pointer"
-                        size="35px"
-                        color="#fff"
-                        onClick={showVideos}
-                      />
-                    </p>
+                      <p className="closebutton">
+                        <TfiClose
+                          cursor="pointer"
+                          size="35px"
+                          color="#fff"
+                          onClick={showVideos}
+                        />
+                      </p>
                       <ReactPlayer
                         width="100%"
                         height="100%"
@@ -175,9 +174,7 @@ const BlogFullWidth = () => {
                     </div>
                   </div>
                 </div>
-                <div className="blue-hover">
-
-                </div>
+                <div className="blue-hover"></div>
               </div>
               <div className="entry-meta">
                 <ul>

@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../BlogRightSidebar/BlogRightSidebar.scss";
 import {
@@ -13,16 +13,17 @@ import { LuMessageCircle } from "react-icons/lu";
 import { IoCalendarOutline } from "react-icons/io5";
 import { BsFillPlayFill } from "react-icons/bs";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
-import { HiSearch, HiArrowRight } from "react-icons/hi";
+import {  HiArrowRight } from "react-icons/hi";
 import { TfiClose } from "react-icons/tfi";
 import ReactPlayer from "react-player";
 import BreadCumbArea from "../../components/BreadCumbArea/BreadCumbArea";
+import SearchBar from "../../components/SearchBar/SearchBar";
 const BlogRightSidebar = () => {
   const [modals, setModals] = useState(false);
   const showModals = () => setModals(!modals);
   return (
     <main>
-<BreadCumbArea header="Latest News" tittle1="Home /" tittle2="Blog" />
+      <BreadCumbArea header="Latest News" tittle1="Home /" tittle2="Blog" />
       <section id="blogrightsidebar2">
         <div className="container">
           <div className="row">
@@ -269,20 +270,7 @@ const BlogRightSidebar = () => {
                   </h3>
                 </div>
               </div>
-              <div className="search-widget">
-                <form>
-                  <input
-                    type="search"
-                    name="form-controls"
-                    id="form-controls"
-                    className="form-controls"
-                    placeholder="Search Post.."
-                  />
-                  <p className="search-icon">
-                    <HiSearch size="25px" />
-                  </p>
-                </form>
-              </div>
+              <SearchBar/>
               <div className="category-widget">
                 <h3>Categories</h3>
                 <ul className="category-ul">
