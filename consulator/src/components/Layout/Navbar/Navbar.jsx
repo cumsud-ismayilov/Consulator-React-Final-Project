@@ -344,6 +344,7 @@ const Navbar = () => {
                           className="searchs"
                           placeholder="Search here..."
                         />
+                        
                         <AiOutlineSearch className="gosearch" size="23px" />
                       </form>
                     </div>
@@ -384,8 +385,36 @@ const Navbar = () => {
                     alt="img"
                   />
                 </div>
-                <p className="mobile-p">
-                  <GoSearch className="mobile-search" size="20px" />
+                <p className="search">
+                  {showButton && (
+                    <GoSearch
+                      onClick={showItem}
+                      size={20}
+                      className="opensearch"
+                    />
+                  )}
+                  {hideButton && (
+                    <AiOutlineClose
+                      onClick={hideItem}
+                      size={20}
+                      className="closesearch"
+                    />
+                  )}
+                  {isItemVisible && (
+                    <div className="search-bar">
+                      <form>
+                        <input
+                          type="search"
+                          name="search"
+                          id="searchs"
+                          className="searchs"
+                          placeholder="Search here..."
+                        />
+                        
+                        <AiOutlineSearch className="gosearch" size="23px" />
+                      </form>
+                    </div>
+                  )}
                 </p>
               </div>
             </div>

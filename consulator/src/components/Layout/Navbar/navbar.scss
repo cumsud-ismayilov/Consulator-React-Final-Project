@@ -560,6 +560,7 @@
         .search {
           background-color: #dadffb;
           line-height: 0.66em;
+          
           color: #232f4b;
           width: 55px;
           height: 50px;
@@ -617,12 +618,12 @@
     .row {
       .mobilenav-item {
         display: flex;
-        align-items: center;
+        align-items: baseline;
         justify-content: center;
         .mobilenav-img {
           width: 180px;
           height: 35px;
-          margin-left: 53px;
+          margin-left: 30px;
           img {
             width: 100%;
             height: 100%;
@@ -630,16 +631,49 @@
             object-position: center;
           }
         }
-        .mobile-p {
-          width: 40px;
-          height: 35px;
-          margin: 9px;
-          margin-left: 30px;
+        .search {
           background-color: #dadffb;
+          line-height: 0.66em;
+          color: #232f4b;
+          width: 55px;
+          margin-left: 30px;
+          height: 50px;
           border-radius: 5px;
           display: flex;
           align-items: center;
           justify-content: center;
+          position: relative;
+          cursor: pointer;
+          position: relative;
+          .search-bar {
+            position: absolute;
+            top: 80px;
+            left: -277px;
+            box-shadow: -2px 18px 40px -9px #999;
+            background: #fff;
+            padding: 30px;
+            border-radius: 6px;
+            width: 350px;
+            form {
+              position: relative;
+              .searchs {
+                width: 100%;
+                height: 50px;
+                padding: 6px 20px;
+                border-radius: 0;
+                box-shadow: none;
+                border: 1px solid #e1e1e1;
+                font-size: 16px;
+                font-weight: 400;
+                color: #212529;
+              }
+              .gosearch {
+                position: absolute;
+                top: 14px;
+                right: 15px;
+              }
+            }
+          }
         }
       }
     }
@@ -1399,12 +1433,12 @@
     .row {
       .mobilenav-bottom {
         display: flex;
-        align-items: center;
+        align-items: baseline;
         justify-content: center;
         .mobilenav-img {
           width: 180px;
           height: 35px;
-          margin-left: 53px;
+          margin-left: 30px;
           img {
             width: 100%;
             height: 100%;
@@ -1412,16 +1446,51 @@
             object-position: center;
           }
         }
-        .mobile-p {
-          width: 40px;
-          height: 35px;
-          margin: 9px;
-          margin-left: 30px;
+        .search {
           background-color: #dadffb;
+          line-height: 0.66em;
+          color: #232f4b;
+          width: 55px;
+          margin-left: 30px;
+          height: 50px;
           border-radius: 5px;
           display: flex;
           align-items: center;
           justify-content: center;
+          position: relative;
+          cursor: pointer;
+          margin-top: 8px;
+          z-index: 99;
+          position: relative;
+          .search-bar {
+            position: absolute;
+            top: 80px;
+            left: -277px;
+            box-shadow: -2px 18px 40px -9px #999;
+            background: #fff;
+            padding: 30px;
+            border-radius: 6px;
+            width: 350px;
+            form {
+              position: relative;
+              .searchs {
+                width: 100%;
+                height: 50px;
+                padding: 6px 20px;
+                border-radius: 0;
+                box-shadow: none;
+                border: 1px solid #e1e1e1;
+                font-size: 16px;
+                font-weight: 400;
+                color: #212529;
+              }
+              .gosearch {
+                position: absolute;
+                top: 14px;
+                right: 15px;
+              }
+            }
+          }
         }
       }
     }
