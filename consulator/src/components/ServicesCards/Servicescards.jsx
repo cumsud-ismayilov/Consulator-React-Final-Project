@@ -17,8 +17,8 @@ const Servicescards = () => {
     <section id='inner'>
       <div className='container'>
         <div className='row g-3'>
-        {services.length > 0 && services.map((element, index) => (
-             <div key={index}  className='col-xl-4'>
+        {services.length > 0 && services.map((element) => (
+             <div key={element.id}  className='col-xl-4'>
                 <div className='services-cards'>
                     <div className='services-image'>
                         <img src={element.image} alt="images" />

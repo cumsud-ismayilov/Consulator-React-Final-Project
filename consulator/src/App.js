@@ -4,7 +4,7 @@ import "../src/style/global.scss";
 import routes from "./router";
 import Layout from "./components/Layout/Layout";
 import ScrollToTop  from "./components/ScrollToTop/ScrollToTop"
-
+import ScrooltotopOnpageChange from "./components/ScrollToTopOnPageChange/ScrollToTopOnPageChange";
 const App = () => {
   const location = useLocation();
   console.log(`location`, location);
@@ -25,6 +25,7 @@ const App = () => {
     
   ) : (
     <Layout>
+      <ScrooltotopOnpageChange/>
       <ScrollToTop/>
       <Routes>
         {routes.length > 0 &&

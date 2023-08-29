@@ -46,9 +46,9 @@ const TestimionalSlide = () => {
             className="mySwiper"
           >
             {testimional.length > 0 &&
-              testimional.map((element) => (
+              testimional.map((element,id) => (
                 <SwiperSlide>
-                  <div key={element.index} className="testimional-card">
+                  <div key={element.id} className="testimional-card">
                     <h6>
                       <FaQuoteLeft />
                     </h6>

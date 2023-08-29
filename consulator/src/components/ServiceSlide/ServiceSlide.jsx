@@ -48,10 +48,10 @@ const ServiceSlide = () => {
             className="mySwiper"
           >
             {service.length > 0 &&
-              service.map((element, index) => (
+              service.map((element) => (
                 <SwiperSlide>
                   {" "}
-                  <div key={index} className="explore-card">
+                  <div key={element.id} className="explore-card">
                     <h3>
                       <img src={element.images} alt="trophy" />
                     </h3>
