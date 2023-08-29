@@ -1,7 +1,5 @@
-import React   from "react";
-import Box from "@mui/material/Box";
-import TextField from "@mui/material/TextField";
-import { ToastContainer, toast } from "react-toastify";
+import React, { useState } from "react";
+
 import "react-toastify/dist/ReactToastify.css";
 import { Link } from "react-router-dom";
 import "../Register/Register.scss";
@@ -9,69 +7,61 @@ import Buttonitem from "../../components/ButtonComponent/Buttons";
 import { BiLogoFacebook, BiLogoTwitter } from "react-icons/bi";
 import { FaLinkedinIn } from "react-icons/fa";
 const Register = () => {
-  const notify = () => toast.error("Empty field is not allowed!");
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [confirmpassword, setConfirmpassword] = useState("");
+  const [error, setError] = useState(false);
 
-
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (name.length===0 || email.length===0 || password.length===0 || confirmpassword.length===0) {
+      setError(true)
+    }
+    console.log(name, password);
+  };
 
   return (
     <section id="register-page">
       <div class="register">
         <p>Sign In</p>
         <h2>Sign in to your account</h2>
-        <Box>
-          <TextField
-            fullWidth
-            id="outlined-read-only-input"
-            label="Name"
-            name="username"
-            defaultValue="Full Name"
-            InputProps={{
-              readOnly: false,
-            }}
-           
-          />
-          <TextField
-            fullWidth
-            id="outlined-read-only-input"
-            label="E-mail"
-            name="emaiils"
-            defaultValue="E-mail"
-            className="passwordinputs"
-            InputProps={{
-              readOnly: false,
-            }}
-          />
-          <TextField
-            fullWidth
-            id="outlined-read-only-input"
-            label="Password"
-            name="password"
-            defaultValue="Password"
-            className="passwordinputs"
-            InputProps={{
-              readOnly: false,
-            }}
-          />
-          <TextField
-            fullWidth
-            id="outlined-read-only-input"
-            label="Confirm Password"
-            name="confirmpassword"
-            defaultValue="Confirm Password"
-            className="passwordinputs"
-            InputProps={{
-              readOnly: false,
-            }}
-          />
-        </Box>
 
-        <Buttonitem
-          type="text"
-          className="login-button"
-          tittle="SIGN UP"
-          onClick={notify}
-        />
-        <ToastContainer />
+        <form onSubmit={handleSubmit}>
+          <fieldset>
+            <legend>Name</legend>
+            <input type="text"  placeholder="Full Name" onChange={(e) => setName(e.target.value)} />
+            {
+              error?<span>Enter your name</span>:""
+            }
+          </fieldset>
+
+          <fieldset>
+            <legend>E-mail</legend>
+            <input type="text"  placeholder="E-mail" onChange={(e) => setEmail(e.target.value)} />
+            {
+              error?<span>Enter your email</span>:""
+            }
+          </fieldset>
+
+          <fieldset>
+            <legend>Password</legend>
+            <input type="text"  placeholder="Password" onChange={(e) => setPassword(e.target.value)} />
+            {
+              error?<span>Enter your password</span>:""
+            }
+          </fieldset>
+
+          <fieldset>
+            <legend>Password</legend>
+            <input type="text"  placeholder="Confirm Password" onChange={(e) => setConfirmpassword(e.target.value)} />
+            {
+              error?<span>Enter your confirm-password</span>:""
+            }
+          </fieldset>
+          <Buttonitem type="text" className="login-button" tittle="SIGN UP" />
+        </form>
+
         <div className="login-social">
           <h5 className="face-bk">
             <BiLogoFacebook color="#fff" size="18px" />

@@ -11,7 +11,7 @@
     }
     width: $width14;
     max-width: $max-width1;
-
+    margin: 4rem;
     background: $back-color3;
     padding: $padding-random3;
     border-radius: $br-radius3;
@@ -30,34 +30,40 @@
       font-weight: $fn-weight2;
       color: $color13;
     }
-    .passwordinputs {
-      margin-top: $margin-top2;
-    }
-    .checkedandpassword {
-      @include Login(center, space-between);
 
-      padding-top: $padding-top9;
-      .checked-icons {
-        @include Login(center, center);
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+      fieldset {
+        position: relative;
+        width: 100%;
+        legend {
+          margin: 0;
+          color: #666;
+          font-size: 12px;
+          background-color: #fff;
+          width: 43px;
+          position: absolute;
+          top: -8px;
+          left: 12px;
+        }
+        input {
+          font-size: 13px;
+          letter-spacing: 0;
+          width: 100%;
+          padding: 18px 14px;
+          border-radius: 5px;
+          border: 1px solid rgba(0, 0, 0, 0.23);
+        }
 
-        h3 {
-          color: $color7;
-          font-size: $fn-size4;
-          font-weight: $fn-weight2;
-          margin: $margin1;
-          cursor: $cursor;
+        span {
+          font-size: 15px;
+          color: red;
         }
       }
-      .forgot-password {
-        a {
-          text-decoration: $txt-decoration2;
-          font-size: $fnt-size1;
-          font-weight: $fn-weight1;
-          color: $color12;
-          cursor: $cursor;
-        }
-      }
     }
+
     .login-button {
       background-color: $back-color12;
       border: $border3;
