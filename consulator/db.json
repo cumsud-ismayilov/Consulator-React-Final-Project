@@ -19,7 +19,6 @@
       "description": "One way to categorize the activities is in terms of the professional’s area of expertise such as competitive analysis, corporate strategy."
     }
   ],
-
   "servicesitem": [
     {
       "id": 1,
@@ -384,6 +383,28 @@
       "id":4,
       "tittle":"30+",
       "desc":"Award Winning"
+    }
+  ],
+  "accordionitem":[
+    {
+      "id":1,
+      "tittle":"Market research on our global panel with support from our experts.",
+      "desc":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum exercitationem pariatur iure nemo esse repellendus est quo recusandae. Delectus, maxime."
+    },
+    {
+      "id":2,
+      "tittle":"Planning can help alleviate workplace stress and increase productivity.",
+      "desc":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum exercitationem pariatur iure nemo esse repellendus est quo recusandae. Delectus, maxime."
+    },
+    {
+      "id":3,
+      "tittle":"Those who experiment the most, are able to innovate the best.",
+      "desc":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum exercitationem pariatur iure nemo esse repellendus est quo recusandae. Delectus, maxime."
+    },
+    {
+      "id":4,
+      "tittle":"Understand Your Problem, You must understand the issue.",
+      "desc":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum exercitationem pariatur iure nemo esse repellendus est quo recusandae. Delectus, maxime."
     }
   ]
 }
