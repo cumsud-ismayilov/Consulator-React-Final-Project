@@ -350,11 +350,7 @@ const BannerNavbar = () => {
               </div>
               <div className="col-xl-3">
                 <div className="site-right">
-                  <Buttons
-                    type="text"
-                    tittle="Free Consulting"
-                    className="consulting"
-                  />
+                <h2 className="consulting"><Link to="/contact" >Free Consulting</Link></h2>
                   <p className="search">
                     {showButton && (
                       <GoSearch
