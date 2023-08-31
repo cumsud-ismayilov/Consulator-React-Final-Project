@@ -6,28 +6,28 @@
   .container {
     .row {
       .gallery-cards {
-        position:$position-rela;
-        overflow:$overflow1;
+        position: $position-rela;
+        overflow: $overflow1;
         &:hover {
           .card-hover {
             transform: $transform1;
           }
         }
         .cards-img {
-          @media screen and (max-width: 768px){
-            height:$hgt1;
+          @media screen and (max-width: 768px) {
+            height: $hgt1;
           }
           width: $width2;
-          height:$hgt2;
+          height: $hgt2;
           img {
             width: $width2;
             height: $height2;
-            object-fit:$object-ft1;
-            object-position:$object-post1;
+            object-fit: $object-ft1;
+            object-position: $object-post1;
           }
         }
         .card-hover {
-          @media screen and (max-width: 768px){
+          @media screen and (max-width: 768px) {
             height: $hgt1;
           }
           background-color: $back-color14;
@@ -37,27 +37,33 @@
           right: $right1;
           width: $width2;
           height: $hgt2;
-          filter:$filter-one;
-          @include CardHover(center,center,column);
-          transform:$transform2;
+          filter: $filter-one;
+          @include CardHover(center, center, column);
+          transform: $transform2;
           transition: $transition1;
           p {
-            font-size:$fn-size11;
+            font-size: $fn-size11;
             color: $color1;
             font-weight: $fn-weight3;
           }
           h3 {
-            width:$width16;
+            width: $width16;
             height: $hgt3;
             border: $border4;
             border-radius: $br-radius1;
-            @include  Person-line(center,center);
-         
-            img {
-              width: $width17;
-              height: $hgt4;
-              object-fit: $object-ft2;
-              object-position:$object-post1;
+            @include Person-line(center, center);
+
+            a {
+              text-decoration: none;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              img {
+                width: $width17;
+                height: $hgt4;
+                object-fit: $object-ft2;
+                object-position: $object-post1;
+              }
             }
           }
         }

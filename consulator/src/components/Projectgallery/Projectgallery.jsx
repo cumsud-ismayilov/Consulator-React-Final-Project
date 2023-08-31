@@ -2,6 +2,7 @@ import React from "react";
 import { useEffect, useState } from "react";
 import "../Projectgallery/Projectgallery.scss";
 import Plusimg from "../../images/plus (1).png";
+import { Link } from "react-router-dom";
 const Projectgallery = () => {
   const [project, setProject] = useState([]);
   const BASE_URL = "http://localhost:3001/";
@@ -27,7 +28,7 @@ const Projectgallery = () => {
                   <div className="card-hover">
                     <p>{element.hovertext}</p>
                     <h3>
-                      <img src={Plusimg} alt="plusimg" />
+                      <Link to="/projectsingle" ><img src={Plusimg} alt="plusimg" /></Link>
                     </h3>
                   </div>
                 </div>

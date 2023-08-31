@@ -2,7 +2,6 @@ import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import "../Navbar/navbar.scss";
-import Buttons from "../../ButtonComponent/Buttons";
 import { GoSearch, GoChevronRight } from "react-icons/go";
 import { AiOutlineClose, AiOutlineSearch } from "react-icons/ai";
 import { FaBars } from "react-icons/fa";
@@ -314,11 +313,8 @@ const Navbar = () => {
             </div>
             <div className="col-xl-3">
               <div className="site-right">
-                <Buttons
-                  type="text"
-                  tittle="Free Consulting"
-                  className="consulting"
-                />
+                <h2 className="consulting"><Link to="/contact" >Free Consulting</Link></h2>
+               
                 <p className="search">
                   {showButton && (
                     <GoSearch
