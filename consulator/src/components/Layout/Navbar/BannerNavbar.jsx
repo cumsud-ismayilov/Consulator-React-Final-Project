@@ -5,7 +5,7 @@ import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 import { TfiLocationPin, TfiGoogle } from "react-icons/tfi";
 import { HiOutlineMailOpen } from "react-icons/hi";
 import { Link } from "react-router-dom";
-import Buttons from "../../ButtonComponent/Buttons";
+
 import { GoSearch, GoChevronRight } from "react-icons/go";
 import { FaBars } from "react-icons/fa";
 import { IoCloseOutline } from "react-icons/io5";
