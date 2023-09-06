@@ -111,6 +111,10 @@ main {
                   box-shadow: $box-shadow3 !important;
                   padding-left:$pd-dft;
                 }
+                span{
+                  font-size: 14px;
+                  color: red;
+                }
               }
               .form-field {
                 .lastname {
@@ -125,6 +129,10 @@ main {
                   box-shadow: $box-shadow3 !important;
                   padding-left:$pd-dft;
                 }
+                span{
+                  font-size: 14px;
+                  color: red;
+                }
               }
               .form-field {
                 .emailss {
@@ -137,6 +145,10 @@ main {
                   padding-left:$pd-dft;
                   margin-top:$margin-top6;
                 }
+                span{
+                  font-size: 14px;
+                  color: red;
+                }
               }
               .form-field {
                 .subject {
@@ -148,6 +160,10 @@ main {
                   box-shadow: $box-shadow3 !important;
                   padding-left:$pd-dft;
                   margin-top:$margin-top6;
+                }
+                span{
+                  font-size: 14px;
+                  color: red;
                 }
               }
               .form-field {
